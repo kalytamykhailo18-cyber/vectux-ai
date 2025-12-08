@@ -22,7 +22,7 @@ export default function Navbar({ locoScroll }) {
                     <div className="flex-shrink-0 text-white font-bold text-xl select-none cursor-pointer">
                         <Link href="/" className="hover:text-purple-400 transition">
                             <Image
-                                src="/assets/LogoVectux.png"
+                                src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221274/vectux-academy/assets/LogoVectux.png"
                                 alt="Logo"
                                 width={80}
                                 height={60}

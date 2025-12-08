@@ -14,7 +14,7 @@ const HeroSection = () => {
             <div
                 className="absolute inset-0 w-full h-full"
                 style={{
-                    backgroundImage: "url('/assets/bg-3.jpg')",
+                    backgroundImage: "url('https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221003/vectux-academy/assets/bg-3.jpg')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}

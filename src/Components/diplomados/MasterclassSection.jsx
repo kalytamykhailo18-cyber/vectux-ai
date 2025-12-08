@@ -29,7 +29,7 @@ const MasterclassSection = () => {
                 >
                     <div className="relative aspect-[16/7] w-full">
                         <Image
-                            src="/assets/insight.jpg"
+                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221271/vectux-academy/assets/insight.jpg"
                             alt="Próximas Masterclass"
                             fill
                             unoptimized

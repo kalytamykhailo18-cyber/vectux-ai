@@ -78,7 +78,7 @@ const ContactSection = () => {
                         >
                             <div className="bg-white p-3 rounded-[12px]">
                                 <Image
-                                    src="/assets/qrcode.jpg"
+                                    src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221777/vectux-academy/assets/qrcode.jpg"
                                     alt="QR Code - Contacto"
                                     width={120}
                                     height={120}

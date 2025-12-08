@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const reasons = [
     {
-        image: "/assets/why-2.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221867/vectux-academy/assets/why-2.jpg",
         title: "World-Class Faculty",
         description: "with experts certified by MIT, Kellogg, Microsoft",
         aos: "fade-right",
@@ -12,7 +12,7 @@ const reasons = [
         delay: 0
     },
     {
-        image: "/assets/why-3.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221890/vectux-academy/assets/why-3.jpg",
         title: "Training with immediate impact",
         description: "70% practical, 30% theoretical foundations",
         aos: "zoom-in",
@@ -20,7 +20,7 @@ const reasons = [
         delay: 100
     },
     {
-        image: "/assets/why-4.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765223371/vectux-academy/assets/why-4.jpg",
         title: "Direct focus on business results in human capital",
         description: "",
         aos: "zoom-in",
@@ -28,7 +28,7 @@ const reasons = [
         delay: 200
     },
     {
-        image: "/assets/why-1.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221861/vectux-academy/assets/why-1.jpg",
         title: "Active student community and access to job opportunities",
         description: "",
         aos: "fade-left",

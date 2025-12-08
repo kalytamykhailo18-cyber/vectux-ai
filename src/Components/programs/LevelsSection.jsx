@@ -22,8 +22,8 @@ const LevelsData = [
     },
     {
         id: 3,
-        bgImage: "/assets/benefits3.jpg",
-        cardImage: "/assets/benefits3_card.jpg",
+        bgImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220981/vectux-academy/assets/benefits3.jpg",
+        cardImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220982/vectux-academy/assets/benefits3_card.jpg",
         alt: "benefit-card3",
         aos: "zoom-in",
         duration: "600",
@@ -31,8 +31,8 @@ const LevelsData = [
     },
     {
         id: 4,
-        bgImage: "/assets/benefits4.jpg",
-        cardImage: "/assets/benefits4_card.jpg",
+        bgImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220984/vectux-academy/assets/benefits4.jpg",
+        cardImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220986/vectux-academy/assets/benefits4_card.jpg",
         alt: "benefit-card4",
         aos: "fade-up",
         duration: "1000",

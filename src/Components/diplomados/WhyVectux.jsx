@@ -62,7 +62,7 @@ const WhyVectux = () => {
                     >
                         <div className="relative overflow-hidden rounded-tl-none rounded-tr-[72px] rounded-bl-[72px] rounded-br-none">
                             <Image
-                                src="/assets/blog-2.jpg"
+                                src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp"
                                 alt="Ana Mireya López - Fundadora & CEO Vectux Academy"
                                 width={600}
                                 height={450}

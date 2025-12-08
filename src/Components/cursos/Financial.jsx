@@ -7,7 +7,7 @@ const programs = [
     {
         title: "Data Analysis for Finance",
         description: "Develop key skills in Power BI and descriptive analytics to interpret financial KPIs, margins, profitability, cash flow, and more. Learn to tell stories with data and create dashboards for decision-makers.",
-        image: "/assets/financial-1.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221139/vectux-academy/assets/financial-1.jpg",
         buttonText: "More Info",
         aos: "fade-right",
         duration: "800",
@@ -40,7 +40,7 @@ const programs = [
     {
         title: "Predictive Models with AI for Finance",
         description: "It integrates machine learning techniques to predict revenue, costs, fraud, or customer behavior. Learn about the most powerful algorithms for anomaly detection, financial segmentation, and automated forecasting.",
-        image: "/assets/financial-2.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221164/vectux-academy/assets/financial-2.jpg",
         buttonText: "More Info",
         aos: "zoom-in",
         duration: "600",
@@ -81,7 +81,7 @@ const programs = [
             { text: "adaptive leadership", bold: true },
             " in the face of disruption from artificial intelligence."
         ],
-        image: "/assets/financial-3.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221171/vectux-academy/assets/financial-3.jpg",
         buttonText: "More Info",
         aos: "fade-left",
         duration: "800",
@@ -144,7 +144,7 @@ const Financial = () => {
     return (
         <section
             className="relative overflow-hidden px-8 sm:px-14 py-20 md:py-28 bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: "url('/assets/financial-bg.jpg')" }}
+            style={{ backgroundImage: "url('https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221174/vectux-academy/assets/financial-bg.jpg')" }}
         >
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black opacity-50" />

@@ -5,7 +5,7 @@ import Link from 'next/link'
 const ctaData = {
     title: "Discover our programs",
     buttonText: "View programs",
-    image: "/assets/bg-6.jpg",
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221023/vectux-academy/assets/bg-6.webp",
     link: "/cursos"
 }
 

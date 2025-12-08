@@ -5,7 +5,7 @@ import React from 'react'
 const InfoSection = () => {
     return (
         <section className='relative overflow-hidden px-8 sm:px-20 py-20 sm:py-32 md:py-20 min-[860px]:py-32  bg-blue  flex justify-center items-center
-                            bg-[url("/assets/infoBanner.webp")] bg-ontain bg-center bg-fixed'>
+                            bg-[url("https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226309/vectux-academy/raw/InfoBanner.webp")] bg-ontain bg-center bg-fixed'>
             <div className="absolute -top-20 -left-20 w-[140%] h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
 
             <div className="absolute inset-0 bg-[#000000]  opacity-30 

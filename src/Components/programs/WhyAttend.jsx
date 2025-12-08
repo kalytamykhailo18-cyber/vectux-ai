@@ -97,7 +97,7 @@ export default function WhyAttend() {
                                 alt="services"
                                 width={750}
                                 height={360}
-                                src="/assets/frame40.jpg"
+                                src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221176/vectux-academy/assets/frame40.jpg"
                                 unoptimized
                                 className="relative rounded-[12px] transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#4cc9f0]/50"
                             />

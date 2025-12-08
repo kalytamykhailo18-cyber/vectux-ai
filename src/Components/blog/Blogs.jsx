@@ -17,7 +17,7 @@ const blogPosts = [
         id: 1,
         title: "Which companies use artificial intelligence?",
         excerpt: "Artificial intelligence (AI) is revolutionizing the business landscape, offering innovative solutions that impact efficiency, decision-making, and the customer experience.",
-        image: "/assets/blog-1.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221027/vectux-academy/assets/blog-1.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "que-empresas-usan-la-inteligencia-artificial"
@@ -26,7 +26,7 @@ const blogPosts = [
         id: 2,
         title: "Why use AI in business?",
         excerpt: "Artificial intelligence (AI) has become an essential resource for companies that aspire to improve their processes and maintain their competitiveness.",
-        image: "/assets/blog-2.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "por-que-utilizar-ia-en-las-empresas"
@@ -35,7 +35,7 @@ const blogPosts = [
         id: 3,
         title: "What does artificial intelligence do in companies?",
         excerpt: "Artificial intelligence (AI) is revolutionizing the way companies operate, making it easier for them to optimize processes and make informed decisions.",
-        image: "/assets/blog-3.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221072/vectux-academy/assets/blog-3.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "que-hace-la-inteligencia-artificial-en-las-empresas"
@@ -44,7 +44,7 @@ const blogPosts = [
         id: 4,
         title: "What is needed to learn artificial intelligence?",
         excerpt: "Learning artificial intelligence (AI) might seem challenging, but with the right resources, such as AI courses, anyone can begin their journey in the field.",
-        image: "/assets/blog-4.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221077/vectux-academy/assets/blog-4.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "que-se-necesita-para-aprender-inteligencia-artificial"
@@ -53,7 +53,7 @@ const blogPosts = [
         id: 5,
         title: "Which branch is best for AI?",
         excerpt: "Artificial intelligence (AI) has transformed into a broad discipline encompassing various fields, each with its own particular uses and advantages.",
-        image: "/assets/blog-5.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221090/vectux-academy/assets/blog-5.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "que-rama-es-mejor-para-la-ia"
@@ -62,7 +62,7 @@ const blogPosts = [
         id: 6,
         title: "What degree is needed for artificial intelligence?",
         excerpt: "Artificial intelligence (AI) is revolutionizing industries and reshaping the workplace, and more and more experts are showing interest in researching this revolutionary technology.",
-        image: "/assets/blog-6.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221094/vectux-academy/assets/blog-6.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "que-titulo-se-necesita-para-la-inteligencia-artificial"
@@ -71,7 +71,7 @@ const blogPosts = [
         id: 7,
         title: "What do you do in an artificial intelligence course?",
         excerpt: "In a world increasingly driven by technology, artificial intelligence (AI) has become one of the most revolutionary and in-demand tools.",
-        image: "/assets/blog-7.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221102/vectux-academy/assets/blog-7.webp",
         category: "AI",
         date: "November 29, 2024",
         slug: "que-se-hace-en-un-curso-de-inteligencia-artificial"
@@ -80,7 +80,7 @@ const blogPosts = [
         id: 8,
         title: "What do you need to study to work in artificial intelligence?",
         excerpt: "To focus on artificial intelligence, it is essential to have a robust knowledge base in different fields, since this discipline merges programming.",
-        image: "/assets/blog-8.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221106/vectux-academy/assets/blog-8.webp",
         category: "AI",
         date: "November 25, 2024",
         slug: "que-hay-que-estudiar-para-dedicarse-a-la-inteligencia-artificial"
@@ -89,7 +89,7 @@ const blogPosts = [
         id: 9,
         title: "Who created AI?",
         excerpt: "Artificial intelligence (AI) has fascinated many, yet few know the details of its emergence and development. Artificial intelligence, as an area of study.",
-        image: "/assets/blog-9.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221110/vectux-academy/assets/blog-9.webp",
         category: "AI",
         date: "November 25, 2024",
         slug: "quien-creo-la-ia"
@@ -98,7 +98,7 @@ const blogPosts = [
         id: 10,
         title: "How is AI used?",
         excerpt: "Artificial intelligence (AI) is rapidly revolutionizing the business environment, transforming everything from customer service to process improvement.",
-        image: "/assets/blog-10.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221032/vectux-academy/assets/blog-10.webp",
         category: "AI",
         date: "November 25, 2024",
         slug: "como-se-utiliza-la-ia"
@@ -107,7 +107,7 @@ const blogPosts = [
         id: 11,
         title: "What is Artificial Intelligence?",
         excerpt: "Artificial intelligence (AI) has gained prominence for its ability to mimic human processes such as learning and decision-making.",
-        image: "/assets/blog-11.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221038/vectux-academy/assets/blog-11.webp",
         category: "AI",
         date: "October 10, 2024",
         slug: "que-es-inteligencia-artificial"

@@ -22,7 +22,7 @@ const visionData = {
         " can adapt and thrive in a competitive and digitalized environment by unlocking the ",
         { text: "hidden value of its data.", bold: true }
     ],
-    image: "/assets/course-1.jpg"
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg"
 }
 
 const renderText = (textArray) => {

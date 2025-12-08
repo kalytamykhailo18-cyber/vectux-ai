@@ -13,7 +13,7 @@ const ObjectiveData = {
     title: "Objective of Our Diploma Programs",
     subtitle: "A direct boost to your professional development",
     text: "Acquire highly sought-after skills that will strengthen your profile as a strategic talent leader, with abilities applicable from the first month.",
-    image: "/assets/cursos-2.jpg"
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221133/vectux-academy/assets/cursos-2.webp"
 }
 
 const design = {
@@ -185,7 +185,7 @@ const Exclusive = () => {
     return (
         <section
             className="relative overflow-hidden px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 py-20 md:py-28 bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: "url('/assets/corse-1.jpg')" }}
+            style={{ backgroundImage: "url('https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221121/vectux-academy/assets/corse-1.jpg')" }}
         >
             {/* Top Gradient */}
             <div className="absolute -top-20 -left-20 w-[140%] h-[25%] z-10 bg-gradient-to-b blur-2xl from-[#343ec2] to-[#343ec2]" />

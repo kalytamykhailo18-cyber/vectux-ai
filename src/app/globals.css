@@ -98,7 +98,7 @@ body {
   opacity: 1;
 }
 #bg_1 {
-  background-image: url('/assets/bg-1.webp');
+  background-image: url('https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220991/vectux-academy/assets/bg-1.webp');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

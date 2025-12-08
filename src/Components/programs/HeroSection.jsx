@@ -11,7 +11,7 @@ const HeroSection = () => {
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
-                <source src="/video/2.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dcfjvxt5h/video/upload/v1765231165/vectux-academy/video/2.mp4" type="video/mp4" />
             </video>
 
             <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef60,#343ec280,#8d4aed90)]" />

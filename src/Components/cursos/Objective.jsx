@@ -27,7 +27,7 @@ const ObjectiveData = {
     title: "Objective of Our Diploma Programs",
     subtitle: "A direct boost to your professional development",
     text: "Acquire highly sought-after skills that will strengthen your profile as a strategic talent leader, with abilities applicable from the first month.",
-    image: "/assets/cursos-2.jpg"
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221133/vectux-academy/assets/cursos-2.webp"
 }
 
 const Objective = () => {

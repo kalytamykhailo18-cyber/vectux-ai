@@ -15,7 +15,7 @@ const missionData = {
         " background. We focus on delivering practical, customized programs that drive data-driven strategic decision-making, fostering a ",
         { text: "data-driven business culture.", bold: true }
     ],
-    images: ['/assets/bg-2.jpg', '/assets/blog-9.jpg', '/assets/blog-11.jpg']
+    images: ['https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220995/vectux-academy/assets/bg-2.webp', 'https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221110/vectux-academy/assets/blog-9.webp', 'https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221038/vectux-academy/assets/blog-11.webp']
 }
 
 const renderText = (textArray) => {

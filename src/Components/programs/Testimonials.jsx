@@ -5,21 +5,21 @@ import React, { useState, useEffect } from 'react'
 const TestimonialsData = [
     {
         id: 1,
-        image: "/assets/testimonial-1.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221831/vectux-academy/assets/testimonial-1.jpg",
         quote: "Artificial intelligence is advancing rapidly, and while it offers immense opportunity, it also poses significant risks. If not properly regulated and aligned with human values, AI could become a fundamental threat to civilization.",
         author: "Elon Musk",
         role: "CEO, Tesla & SpaceX"
     },
     {
         id: 2,
-        image: "/assets/testimonial-2.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221838/vectux-academy/assets/testimonial-2.webp",
         quote: "The development of full artificial intelligence could spell the end of the human race. It would take off on its own, and re-design itself at an ever increasing rate. Humans, who are limited by slow biological evolution, couldn't compete.",
         author: "Stephen Hawking",
         role: "Theoretical Physicist"
     },
     {
         id: 3,
-        image: "/assets/testimonial-3.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221842/vectux-academy/assets/testimonial-3.webp",
         quote: "AI is probably the most important thing humanity has ever worked on. I think of it as something more profound than electricity or fire. Any technology that is powerful enough to help can also be used to harm.",
         author: "Sundar Pichai",
         role: "CEO, Google"

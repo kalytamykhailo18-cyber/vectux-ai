@@ -18,7 +18,7 @@ const sections = [
             { text: "anticipating risks, uncovering hidden opportunities", bold: true },
             ", and generating real value with data, automation, and predictive models."
         ],
-        image: "/assets/course-1.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg",
         imageAlt: "Financial Revolution",
         reverse: false,
         aos: "fade-right",
@@ -37,7 +37,7 @@ const sections = [
             { text: "practical and applicable skills from day one", bold: true },
             ", using modern methodologies and state-of-the-art tools."
         ],
-        image: "/assets/course-2.png",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221130/vectux-academy/assets/course-2.png",
         imageAlt: "Course Objectives",
         buttonText: "Request more information",
         reverse: true,
@@ -94,7 +94,7 @@ const Courses = () => {
     return (
         <div
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: "url('/assets/bg-5.jpg')" }}
+            style={{ backgroundImage: "url('https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221016/vectux-academy/assets/bg-5.jpg')" }}
         >
             {/* White Overlay - makes background appear transparent/faded */}
             <div className="absolute inset-0 bg-skyBlue/80" />

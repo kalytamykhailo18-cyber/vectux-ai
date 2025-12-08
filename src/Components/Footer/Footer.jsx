@@ -31,7 +31,7 @@ const Footer = () => {
                     {/* Logo and Description */}
                     <div className="lg:col-span-2 pr-16">
                         <Image
-                            src="/assets/LogoVectux.png"
+                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221274/vectux-academy/assets/LogoVectux.png"
                             alt="Vectux Academy Logo"
                             width={160}
                             height={70}

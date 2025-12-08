@@ -8,7 +8,7 @@ const testimonials = [
         name: "Carlos Mendoza",
         role: "Director de Operaciones",
         company: "Banco Nacional",
-        image: "/assets/blog-1.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221027/vectux-academy/assets/blog-1.webp",
         text: "El diplomado transformó mi manera de ver los datos. Ahora tomo decisiones estratégicas con confianza y mi equipo ha mejorado significativamente sus indicadores.",
         aos: "fade-right",
         duration: "800"
@@ -18,7 +18,7 @@ const testimonials = [
         name: "María González",
         role: "Gerente de Marketing",
         company: "RetailMax",
-        image: "/assets/blog-2.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp",
         text: "Gracias a Vectux, pude implementar modelos predictivos en nuestras campañas. El ROI aumentó un 40% en solo tres meses.",
         aos: "zoom-in",
         duration: "600"
@@ -28,7 +28,7 @@ const testimonials = [
         name: "Roberto Sánchez",
         role: "CFO",
         company: "TechSolutions",
-        image: "/assets/blog-3.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221072/vectux-academy/assets/blog-3.webp",
         text: "La mentoría personalizada fue clave. Los instructores realmente entienden los desafíos del mundo corporativo y te guían paso a paso.",
         aos: "fade-left",
         duration: "800"
@@ -38,7 +38,7 @@ const testimonials = [
         name: "Ana Lucía Torres",
         role: "Directora de RRHH",
         company: "Grupo Industrial",
-        image: "/assets/blog-4.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221077/vectux-academy/assets/blog-4.webp",
         text: "No tenía background técnico, pero el programa está diseñado para líderes como yo. Ahora lidero proyectos de analítica en toda la organización.",
         aos: "fade-right",
         duration: "600"
@@ -48,7 +48,7 @@ const testimonials = [
         name: "Fernando Ruiz",
         role: "Gerente de Ventas",
         company: "Distribuidora Central",
-        image: "/assets/blog-5.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221090/vectux-academy/assets/blog-5.webp",
         text: "El certificado blockchain le dio credibilidad a mi perfil. Ya recibí ofertas de empresas en Estados Unidos gracias a las nuevas competencias.",
         aos: "zoom-in",
         duration: "800"
@@ -58,7 +58,7 @@ const testimonials = [
         name: "Patricia Vega",
         role: "Analista Senior",
         company: "Consultora Global",
-        image: "/assets/blog-6.jpg",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221094/vectux-academy/assets/blog-6.webp",
         text: "Vectux no solo enseña herramientas, enseña a pensar estratégicamente. Mi carrera dio un giro de 180 grados después del diplomado.",
         aos: "fade-left",
         duration: "600"

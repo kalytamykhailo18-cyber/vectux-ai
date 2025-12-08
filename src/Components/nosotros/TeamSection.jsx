@@ -18,7 +18,7 @@ const teamMembers = [
     {
         name: "Gerzo Morales Gallardo",
         role: "CAO, Chief Analytics Officer & Founder",
-        image: "/assets/gerzo.png",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221239/vectux-academy/assets/Gerzo.png",
         linkedin: "https://www.linkedin.com/in/gerzogallardo/",
         description: "Over 300 advanced analytics and artificial intelligence projects, former partner at MetricArts (acquired by EY), founder of the Data Science Institute. Advisor to the IMF and World Bank, professor of Business Intelligence, AI & Marketing Analytics at INCAE.",
         credentials: "Data Science & Big Data, MIT Master; Statistical Methods, University of La Rioja",
@@ -29,7 +29,7 @@ const teamMembers = [
     {
         name: "Horacio Sepúlveda",
         role: "Associate Director of Sales and Promotion IPADE Business School",
-        image: "/assets/horacio.png",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221266/vectux-academy/assets/horacio.png",
         linkedin: "https://www.linkedin.com/in/hsepulv/",
         description: "+30 years of professional experience and +24 years of management experience in transnational companies such as P & G, Unilever and América Móvil. Creator of multiple products and solutions for the telecommunications business and integrator of large work teams.",
         credentials: "Chemical Engineer from La Salle University, MBA with honors from the International University of La Rioja, and certified in the D-1 management development program by IPADE Business School.",
@@ -40,7 +40,7 @@ const teamMembers = [
     {
         name: "Luis Fernando González Lara",
         role: "Master, collaborator",
-        image: "/assets/luis.png",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221316/vectux-academy/assets/Luis.png",
         linkedin: "https://www.linkedin.com/in/luisfernandogonzalezlara/",
         description: "10+ years of experience in data analysis and business intelligence at companies such as AstraZeneca, Coca Cola and Femsa. Currently the Commercial Insights & Advanced Analytics Lead for Johnson & Johnson.",
         credentials: "Degree in Computer Engineering, specializing in Data Analysis and Business Intelligence, certified in Tableau and Power BI. Graduated from the National Polytechnic Institute (UPIICSA).",
@@ -51,7 +51,7 @@ const teamMembers = [
     {
         name: "Francisco Vargas Esparza",
         role: "Chief Data Officer, collaborator",
-        image: "/assets/francisco.png",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221219/vectux-academy/assets/Francisco.png",
         linkedin: "https://www.linkedin.com/in/fvargase/",
         description: "13+ years of experience in Business Intelligence, Advanced Analytics, and Data Science at companies such as Santander, Accenture, and Grupo Bimbo. Currently, he is Chief Data Officer at BimboNet, leading projects in Data Governance, BI, and cloud infrastructure.",
         credentials: "Graduated in actuarial science from Anahuac University, with a Diploma in Business Engineering from ITAM.",

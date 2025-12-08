@@ -41,7 +41,7 @@ const Letstalk = () => {
                             alt="QR Code"
                             width={128}
                             height={128}
-                            src="/assets/qrcode.jpg"
+                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221777/vectux-academy/assets/qrcode.jpg"
                             unoptimized
                             className="mb-2"
                         />

@@ -18,7 +18,7 @@ const HeroSection = () => {
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover"
             >
-                <source src="/video/2.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dcfjvxt5h/video/upload/v1765231165/vectux-academy/video/2.mp4" type="video/mp4" />
             </video>
 
             {/* Gradient Overlay */}
