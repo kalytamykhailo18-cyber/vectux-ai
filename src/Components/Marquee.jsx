@@ -1,0 +1,34 @@
+"use client";
+import React from "react";
+
+const MarqueeList = [
+    "Next Intelligence",
+    "Future Now",
+    "Empowering Innovation",
+    "Smarter Tomorrow",
+    "Think Forward",
+    "Cognitive Shift"
+];
+
+const RotatedMarquee = () => {
+    return (
+        <div className="relative overflow-hidden bg-gradient-to-b from-[#4895ef] via-[#5a6def] to-[#343ec2]">
+            <div className="relative py-5 whitespace-nowrap flex">
+                <div className="marquee-track">
+                    {MarqueeList.concat(MarqueeList).map((item, i) => (
+                        <React.Fragment key={i}>
+                            <span
+                                className="font-Manrope text-white font-semibold text-4xl md:text-5xl min-[860px]:!text-6xl tracking-[0.4px] mx-4"
+                            >
+                                {item}
+                            </span>
+                            <span className="font-Manrope text-white font-semibold text-4xl md:text-5xl min-[860px]:!text-6xl tracking-[0.4px] mx-4">/</span>
+                        </React.Fragment>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default RotatedMarquee;
