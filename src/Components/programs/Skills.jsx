@@ -8,8 +8,8 @@ const SkillsData = [
     {
         id: 1,
         icon: FaUsersGear,
-        title: "Executive or Managerial Level",
-        description: "Advanced Analytics Leadership Program: Workshops focused on strategic leadership and digital transformation.",
+        title: "Nivel Ejecutivo o Gerencial",
+        description: "Programa de Liderazgo en Analítica Avanzada: Talleres enfocados en liderazgo estratégico y transformación digital.",
         aos: "fade-right",
         duration: "800",
         delay: 0
@@ -17,8 +17,8 @@ const SkillsData = [
     {
         id: 2,
         icon: LuChartNoAxesCombined,
-        title: "Intermediate or Departmental Management Level",
-        description: "Certification in Data Analysis for Managers: Improving data analysis skills for decision making.",
+        title: "Nivel Intermedio o Gerencia Departamental",
+        description: "Certificación en Análisis de Datos para Gerentes: Mejorando habilidades de análisis de datos para la toma de decisiones.",
         aos: "zoom-in",
         duration: "600",
         delay: 150
@@ -26,8 +26,8 @@ const SkillsData = [
     {
         id: 3,
         icon: TbAdjustmentsSearch,
-        title: "Level of Operational or Base Employees",
-        description: "Fundamentals of Data Analysis: Introduction to basic concepts and practical applications.",
+        title: "Nivel de Empleados Operativos o Base",
+        description: "Fundamentos de Análisis de Datos: Introducción a conceptos básicos y aplicaciones prácticas.",
         aos: "fade-left",
         duration: "800",
         delay: 300
@@ -41,10 +41,10 @@ const Skills = () => {
                 <div>
                     <div className="flex flex-col justify-center items-center gap-3 text-center">
                         <h1 data-aos="zoom-in" data-aos-duration="800" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl md:text-5xl lg:text-[48px] leading-[56px]">
-                            Levels
+                            Niveles
                         </h1>
-                        <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" className="text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] sm:w-[80%] md:w-[60%]">
-                            Our artificial intelligence and advanced analytics courses for businesses are focused on three different levels of the organization:
+                        <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" className="text-white font-Manrope text-[16px] font-[500] leading-[28px] sm:w-[80%] md:w-[60%]">
+                            Nuestros cursos de inteligencia artificial y analítica avanzada para empresas están enfocados en tres diferentes niveles de la organización:
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8 px-2 min-[860px]:px-6">

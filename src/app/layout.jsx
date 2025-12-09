@@ -18,12 +18,12 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Vectux Academy",
-  description: "AI and Data Analytics Training for Businesses",
+  description: "Formación en Inteligencia Artificial y Analítica de Datos para Empresas",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

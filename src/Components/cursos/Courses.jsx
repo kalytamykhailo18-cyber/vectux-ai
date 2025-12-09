@@ -5,41 +5,41 @@ import { HiBriefcase, HiChartBar, HiChatBubbleLeftRight, HiUserGroup } from "rea
 
 const sections = [
     {
-        title: "Prepare to Lead the Financial Revolution",
+        title: "Prepárate para Liderar la Revolución Financiera",
         description: [
-            "In an environment where markets are evolving at digital speed and artificial intelligence is redefining decision-making, the new financial professional must be ",
-            { text: "analytical, strategic, and technologically competent", bold: true },
+            "En un entorno donde los mercados evolucionan a velocidad digital y la inteligencia artificial está redefiniendo la toma de decisiones, el nuevo profesional financiero debe ser ",
+            { text: "analítico, estratégico y tecnológicamente competente", bold: true },
             "."
         ],
         description2: [
-            "Our programs are designed to turn you into a ",
-            { text: "data-driven financial leader", bold: true },
-            ", capable of ",
-            { text: "anticipating risks, uncovering hidden opportunities", bold: true },
-            ", and generating real value with data, automation, and predictive models."
+            "Nuestros programas están diseñados para convertirte en un ",
+            { text: "líder financiero basado en datos", bold: true },
+            ", capaz de ",
+            { text: "anticipar riesgos, descubrir oportunidades ocultas", bold: true },
+            ", y generar valor real con datos, automatización y modelos predictivos."
         ],
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg",
-        imageAlt: "Financial Revolution",
+        imageAlt: "Revolución Financiera",
         reverse: false,
         aos: "fade-right",
         duration: "800",
         delay: 0
     },
     {
-        title: "Objective of Our Courses",
+        title: "Objetivo de Nuestros Cursos",
         description: [
-            "In a world where data is the new oil and artificial intelligence is redefining industries, our programs are focused on ",
-            { text: "turning you into a data-driven leader", bold: true },
-            ", capable of making smarter, more agile, and strategic decisions."
+            "En un mundo donde los datos son el nuevo petróleo y la inteligencia artificial está redefiniendo las industrias, nuestros programas están enfocados en ",
+            { text: "convertirte en un líder basado en datos", bold: true },
+            ", capaz de tomar decisiones más inteligentes, ágiles y estratégicas."
         ],
         description2: [
-            "Each course has been designed to develop ",
-            { text: "practical and applicable skills from day one", bold: true },
-            ", using modern methodologies and state-of-the-art tools."
+            "Cada curso ha sido diseñado para desarrollar ",
+            { text: "habilidades prácticas y aplicables desde el primer día", bold: true },
+            ", utilizando metodologías modernas y herramientas de última generación."
         ],
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221130/vectux-academy/assets/course-2.png",
-        imageAlt: "Course Objectives",
-        buttonText: "Request more information",
+        imageAlt: "Objetivos del Curso",
+        buttonText: "Solicitar más información",
         reverse: true,
         aos: "fade-left",
         duration: "800",
@@ -50,28 +50,28 @@ const sections = [
 const whoIsFor = [
     {
         icon: HiBriefcase,
-        title: "CFOs, Controllers, Financial Managers",
+        title: "CFOs, Contralores, Gerentes Financieros",
         aos: "fade-up",
         duration: "600",
         delay: 0
     },
     {
         icon: HiChartBar,
-        title: "Financial Analysts, Financial Planning",
+        title: "Analistas Financieros, Planificación Financiera",
         aos: "fade-right",
         duration: "800",
         delay: 100
     },
     {
         icon: HiChatBubbleLeftRight,
-        title: "Consultants, Controllers and FP&A Leaders",
+        title: "Consultores, Contralores y Líderes de FP&A",
         aos: "zoom-in",
         duration: "600",
         delay: 200
     },
     {
         icon: HiUserGroup,
-        title: "Business professionals with a strategic and analytical orientation",
+        title: "Profesionales de negocios con orientación estratégica y analítica",
         aos: "fade-left",
         duration: "800",
         delay: 300
@@ -169,7 +169,7 @@ const Courses = () => {
                         data-aos="fade-up"
                         className="text-white font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16"
                     >
-                        Who is it for?
+                        ¿Para quién es?
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {whoIsFor.map((item, index) => {

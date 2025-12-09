@@ -7,18 +7,18 @@ import { MdOutlineSettingsSuggest } from "react-icons/md"
 const benefits = [
     {
         icon: HiBriefcase,
-        title: "Real Cases and Practical Projects:",
-        description: "It works with current datasets and real HR problems."
+        title: "Casos Reales y Proyectos Prácticos:",
+        description: "Trabaja con datasets actuales y problemas reales de RR.HH."
     },
     {
         icon: FaProjectDiagram,
-        title: "Final Project",
-        description: "With direct application to your organization."
+        title: "Proyecto Final",
+        description: "Con aplicación directa a tu organización."
     },
     {
         icon: MdOutlineSettingsSuggest,
-        title: "Access to tools",
-        description: "Access to the most in-demand tools on the market (Power BI, Machine Learning, Generative AI)."
+        title: "Acceso a herramientas",
+        description: "Acceso a las herramientas más demandadas del mercado (Power BI, Machine Learning, IA Generativa)."
     }
 ]
 
@@ -28,7 +28,7 @@ const Benefits = () => {
             <div className="max-w-[1200px] mx-auto">
                 {/* Title */}
                 <h2 data-aos="fade-up" className="text-white font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16">
-                    Differential Benefits
+                    Beneficios Diferenciales
                 </h2>
 
                 {/* Benefits Grid */}

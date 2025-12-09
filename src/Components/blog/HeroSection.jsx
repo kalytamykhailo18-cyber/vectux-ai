@@ -133,7 +133,7 @@ const HeroSection = () => {
                     Blog
                 </h1>
                 <p data-aos="fade-up" data-aos-delay="300" className="text-white/80 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px] mt-6 max-w-[800px] mx-auto">
-                    Articles, news and resources on artificial intelligence, data analytics and technology trends.
+                    Artículos, noticias y recursos sobre inteligencia artificial, análisis de datos y tendencias tecnológicas.
                 </p>
             </div>
 

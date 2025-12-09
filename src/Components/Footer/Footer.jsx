@@ -18,8 +18,8 @@ const QuickLinks = [
 ];
 
 const LegalLinks = [
-    { id: 1, label: "Privacy Policy", href: "/privacy-policy" },
-    { id: 2, label: "Cookies Policy", href: "/cookies-policy" }
+    { id: 1, label: "Política de Privacidad", href: "/privacy-policy" },
+    { id: 2, label: "Política de Cookies", href: "/cookies-policy" }
 ];
 
 const Footer = () => {
@@ -39,7 +39,7 @@ const Footer = () => {
                             className="mb-6"
                         />
                         <p className="text-white/80 font-Manrope text-[14px] leading-[24px] mb-6">
-                            We are part of Vectux Analytics, a leading company in the field of data analysis and artificial intelligence consulting in Latin America.
+                            Somos parte de Vectux Analytics, una empresa líder en el campo del análisis de datos y consultoría de inteligencia artificial en América Latina.
                         </p>
                         <div className="flex gap-3">
                             {SocialLinks.map((social) => {
@@ -61,7 +61,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-white font-bold text-[18px] mb-6">Links</h3>
+                        <h3 className="text-white font-bold text-[18px] mb-6">Enlaces</h3>
                         <ul className="space-y-3">
                             {QuickLinks.map((link) => (
                                 <li key={link.id}>
@@ -78,7 +78,7 @@ const Footer = () => {
 
                     {/* Legal Links */}
                     <div>
-                        <h3 className="text-white font-bold text-[18px] mb-6">Legal Policy</h3>
+                        <h3 className="text-white font-bold text-[18px] mb-6">Políticas Legales</h3>
                         <ul className="space-y-3">
                             {LegalLinks.map((link) => (
                                 <li key={link.id}>
@@ -95,7 +95,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="text-white font-bold text-[18px] mb-6">Contact Us</h3>
+                        <h3 className="text-white font-bold text-[18px] mb-6">Contáctanos</h3>
                         <div className="space-y-3 text-white/70 font-Manrope text-[14px]">
                             <p>mpaez@vectuxanalytics.com</p>
                             <p>+52 56 1195-5405</p>
@@ -103,7 +103,7 @@ const Footer = () => {
                                 href="/cursos/#contact"
                                 className="block text-white/70 hover:text-[#4cc9f0] transition-colors duration-300 mt-4"
                             >
-                                Contact Us
+                                Contáctanos
                             </Link>
                         </div>
                     </div>

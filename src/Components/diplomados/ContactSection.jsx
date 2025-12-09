@@ -47,7 +47,7 @@ const ContactSection = () => {
                                 Mercedes Paez
                             </p>
                             <p className="text-white/60 font-Manrope text-[14px] mb-6">
-                                Head of Growth and Strategic Partnerships
+                                Directora de Crecimiento y Alianzas Estratégicas
                             </p>
 
                             {/* Contact Details */}

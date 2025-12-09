@@ -6,21 +6,21 @@ const TestimonialsData = [
     {
         id: 1,
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221831/vectux-academy/assets/testimonial-1.jpg",
-        quote: "Artificial intelligence is advancing rapidly, and while it offers immense opportunity, it also poses significant risks. If not properly regulated and aligned with human values, AI could become a fundamental threat to civilization.",
+        quote: "La inteligencia artificial está avanzando rápidamente, y aunque ofrece una inmensa oportunidad, también plantea riesgos significativos. Si no se regula adecuadamente y se alinea con los valores humanos, la IA podría convertirse en una amenaza fundamental para la civilización.",
         author: "Elon Musk",
-        role: "CEO, Tesla & SpaceX"
+        role: "CEO, Tesla y SpaceX"
     },
     {
         id: 2,
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221838/vectux-academy/assets/testimonial-2.webp",
-        quote: "The development of full artificial intelligence could spell the end of the human race. It would take off on its own, and re-design itself at an ever increasing rate. Humans, who are limited by slow biological evolution, couldn't compete.",
+        quote: "El desarrollo de una inteligencia artificial completa podría significar el fin de la raza humana. Despegaría por sí sola y se rediseñaría a un ritmo cada vez mayor. Los humanos, limitados por la lenta evolución biológica, no podrían competir.",
         author: "Stephen Hawking",
-        role: "Theoretical Physicist"
+        role: "Físico Teórico"
     },
     {
         id: 3,
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221842/vectux-academy/assets/testimonial-3.webp",
-        quote: "AI is probably the most important thing humanity has ever worked on. I think of it as something more profound than electricity or fire. Any technology that is powerful enough to help can also be used to harm.",
+        quote: "La IA es probablemente lo más importante en lo que la humanidad ha trabajado. Lo considero algo más profundo que la electricidad o el fuego. Cualquier tecnología lo suficientemente poderosa para ayudar también puede usarse para hacer daño.",
         author: "Sundar Pichai",
         role: "CEO, Google"
     }

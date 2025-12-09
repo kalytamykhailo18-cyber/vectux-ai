@@ -15,101 +15,101 @@ const animationPatterns = [
 const blogPosts = [
     {
         id: 1,
-        title: "Which companies use artificial intelligence?",
-        excerpt: "Artificial intelligence (AI) is revolutionizing the business landscape, offering innovative solutions that impact efficiency, decision-making, and the customer experience.",
+        title: "¿Qué empresas usan la inteligencia artificial?",
+        excerpt: "La inteligencia artificial (IA) está revolucionando el panorama empresarial, ofreciendo soluciones innovadoras que impactan en la eficiencia, la toma de decisiones y la experiencia del cliente.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221027/vectux-academy/assets/blog-1.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "que-empresas-usan-la-inteligencia-artificial"
     },
     {
         id: 2,
-        title: "Why use AI in business?",
-        excerpt: "Artificial intelligence (AI) has become an essential resource for companies that aspire to improve their processes and maintain their competitiveness.",
+        title: "¿Por qué utilizar IA en las empresas?",
+        excerpt: "La inteligencia artificial (IA) se ha convertido en un recurso esencial para las empresas que aspiran a mejorar sus procesos y mantener su competitividad.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "por-que-utilizar-ia-en-las-empresas"
     },
     {
         id: 3,
-        title: "What does artificial intelligence do in companies?",
-        excerpt: "Artificial intelligence (AI) is revolutionizing the way companies operate, making it easier for them to optimize processes and make informed decisions.",
+        title: "¿Qué hace la inteligencia artificial en las empresas?",
+        excerpt: "La inteligencia artificial (IA) está revolucionando la forma en que operan las empresas, facilitándoles la optimización de procesos y la toma de decisiones informadas.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221072/vectux-academy/assets/blog-3.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "que-hace-la-inteligencia-artificial-en-las-empresas"
     },
     {
         id: 4,
-        title: "What is needed to learn artificial intelligence?",
-        excerpt: "Learning artificial intelligence (AI) might seem challenging, but with the right resources, such as AI courses, anyone can begin their journey in the field.",
+        title: "¿Qué se necesita para aprender inteligencia artificial?",
+        excerpt: "Aprender inteligencia artificial (IA) puede parecer desafiante, pero con los recursos adecuados, como cursos de IA, cualquiera puede comenzar su camino en este campo.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221077/vectux-academy/assets/blog-4.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "que-se-necesita-para-aprender-inteligencia-artificial"
     },
     {
         id: 5,
-        title: "Which branch is best for AI?",
-        excerpt: "Artificial intelligence (AI) has transformed into a broad discipline encompassing various fields, each with its own particular uses and advantages.",
+        title: "¿Qué rama es mejor para la IA?",
+        excerpt: "La inteligencia artificial (IA) se ha transformado en una disciplina amplia que abarca varios campos, cada uno con sus propios usos y ventajas particulares.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221090/vectux-academy/assets/blog-5.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "que-rama-es-mejor-para-la-ia"
     },
     {
         id: 6,
-        title: "What degree is needed for artificial intelligence?",
-        excerpt: "Artificial intelligence (AI) is revolutionizing industries and reshaping the workplace, and more and more experts are showing interest in researching this revolutionary technology.",
+        title: "¿Qué título se necesita para la inteligencia artificial?",
+        excerpt: "La inteligencia artificial (IA) está revolucionando las industrias y remodelando el lugar de trabajo, y cada vez más expertos muestran interés en investigar esta tecnología revolucionaria.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221094/vectux-academy/assets/blog-6.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "que-titulo-se-necesita-para-la-inteligencia-artificial"
     },
     {
         id: 7,
-        title: "What do you do in an artificial intelligence course?",
-        excerpt: "In a world increasingly driven by technology, artificial intelligence (AI) has become one of the most revolutionary and in-demand tools.",
+        title: "¿Qué se hace en un curso de inteligencia artificial?",
+        excerpt: "En un mundo cada vez más impulsado por la tecnología, la inteligencia artificial (IA) se ha convertido en una de las herramientas más revolucionarias y demandadas.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221102/vectux-academy/assets/blog-7.webp",
-        category: "AI",
-        date: "November 29, 2024",
+        category: "IA",
+        date: "29 de Noviembre, 2024",
         slug: "que-se-hace-en-un-curso-de-inteligencia-artificial"
     },
     {
         id: 8,
-        title: "What do you need to study to work in artificial intelligence?",
-        excerpt: "To focus on artificial intelligence, it is essential to have a robust knowledge base in different fields, since this discipline merges programming.",
+        title: "¿Qué hay que estudiar para dedicarse a la inteligencia artificial?",
+        excerpt: "Para enfocarse en la inteligencia artificial, es esencial tener una base de conocimientos robusta en diferentes campos, ya que esta disciplina fusiona la programación.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221106/vectux-academy/assets/blog-8.webp",
-        category: "AI",
-        date: "November 25, 2024",
+        category: "IA",
+        date: "25 de Noviembre, 2024",
         slug: "que-hay-que-estudiar-para-dedicarse-a-la-inteligencia-artificial"
     },
     {
         id: 9,
-        title: "Who created AI?",
-        excerpt: "Artificial intelligence (AI) has fascinated many, yet few know the details of its emergence and development. Artificial intelligence, as an area of study.",
+        title: "¿Quién creó la IA?",
+        excerpt: "La inteligencia artificial (IA) ha fascinado a muchos, pero pocos conocen los detalles de su surgimiento y desarrollo. La inteligencia artificial, como área de estudio.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221110/vectux-academy/assets/blog-9.webp",
-        category: "AI",
-        date: "November 25, 2024",
+        category: "IA",
+        date: "25 de Noviembre, 2024",
         slug: "quien-creo-la-ia"
     },
     {
         id: 10,
-        title: "How is AI used?",
-        excerpt: "Artificial intelligence (AI) is rapidly revolutionizing the business environment, transforming everything from customer service to process improvement.",
+        title: "¿Cómo se utiliza la IA?",
+        excerpt: "La inteligencia artificial (IA) está revolucionando rápidamente el entorno empresarial, transformando todo, desde el servicio al cliente hasta la mejora de procesos.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221032/vectux-academy/assets/blog-10.webp",
-        category: "AI",
-        date: "November 25, 2024",
+        category: "IA",
+        date: "25 de Noviembre, 2024",
         slug: "como-se-utiliza-la-ia"
     },
     {
         id: 11,
-        title: "What is Artificial Intelligence?",
-        excerpt: "Artificial intelligence (AI) has gained prominence for its ability to mimic human processes such as learning and decision-making.",
+        title: "¿Qué es la Inteligencia Artificial?",
+        excerpt: "La inteligencia artificial (IA) ha ganado prominencia por su capacidad de imitar procesos humanos como el aprendizaje y la toma de decisiones.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221038/vectux-academy/assets/blog-11.webp",
-        category: "AI",
-        date: "October 10, 2024",
+        category: "IA",
+        date: "10 de Octubre, 2024",
         slug: "que-es-inteligencia-artificial"
     }
 ]
@@ -161,13 +161,13 @@ const Blogs = () => {
                                     href={`/blog/${post.slug}`}
                                     className="inline-block text-[#4cc9f0] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] hover:text-white transition-colors duration-300"
                                 >
-                                    Read
+                                    Leer
                                 </Link>
 
                                 {/* Meta */}
                                 <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-white/50 font-Manrope text-[12px]">
                                     <span>{post.date}</span>
-                                    <span>No comments</span>
+                                    <span>Sin comentarios</span>
                                 </div>
                             </div>
                             </article>

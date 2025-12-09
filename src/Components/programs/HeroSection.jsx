@@ -24,7 +24,7 @@ const HeroSection = () => {
                         data-aos-delay="200"
                         className="font-bold text-blue-500 inline-block"
                     >
-                        Unlock
+                        Desbloquea
                     </span>
                     <div
                         data-aos="fade-up"
@@ -32,7 +32,7 @@ const HeroSection = () => {
                         data-aos-delay="400"
                         className="text-[18px] sm:text-[20px] md:text-4xl lg:text-[34px]"
                     >
-                        the power of AI
+                        el poder de la IA
                     </div>
                 </h1>
                 <div

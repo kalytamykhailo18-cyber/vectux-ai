@@ -5,23 +5,23 @@ import Image from 'next/image'
 const reasons = [
     {
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221867/vectux-academy/assets/why-2.jpg",
-        title: "World-Class Faculty",
-        description: "with experts certified by MIT, Kellogg, Microsoft",
+        title: "Facultad de Clase Mundial",
+        description: "con expertos certificados por MIT, Kellogg, Microsoft",
         aos: "fade-right",
         duration: "800",
         delay: 0
     },
     {
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221890/vectux-academy/assets/why-3.jpg",
-        title: "Training with immediate impact",
-        description: "70% practical, 30% theoretical foundations",
+        title: "Formación con impacto inmediato",
+        description: "70% práctico, 30% fundamentos teóricos",
         aos: "zoom-in",
         duration: "600",
         delay: 100
     },
     {
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765223371/vectux-academy/assets/why-4.jpg",
-        title: "Direct focus on business results in human capital",
+        title: "Enfoque directo en resultados de negocio en capital humano",
         description: "",
         aos: "zoom-in",
         duration: "600",
@@ -29,7 +29,7 @@ const reasons = [
     },
     {
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221861/vectux-academy/assets/why-1.jpg",
-        title: "Active student community and access to job opportunities",
+        title: "Comunidad activa de estudiantes y acceso a oportunidades laborales",
         description: "",
         aos: "fade-left",
         duration: "800",
@@ -44,7 +44,7 @@ const WhyUs = () => {
             <div className="max-w-[1200px] mx-auto">
                 {/* Title */}
                 <h2 data-aos="fade-up" className="text-white font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16">
-                    Why Choose Us?
+                    ¿Por Qué Elegirnos?
                 </h2>
 
                 {/* Reasons Grid */}

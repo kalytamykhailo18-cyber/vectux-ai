@@ -21,10 +21,10 @@ const HeroSection = () => {
             {/* Content */}
             <div className="relative z-10 max-w-[1200px] text-center px-8 sm:px-14 py-12 bg-black/20 backdrop-blur-sm rounded-[16px]">
                 <h1 data-aos="fade-up" className="text-white font-bold text-4xl md:text-5xl lg:text-[56px] leading-[50px] sm:leading-[65px]">
-                    About Us
+                    Sobre Nosotros
                 </h1>
                 <p data-aos="fade-up" data-aos-delay="300" className="text-white font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px] mt-6 max-w-[800px] mx-auto">
-                    Meet the team of experts leading digital transformation and artificial intelligence training.
+                    Conoce al equipo de expertos que lidera la transformación digital y la formación en inteligencia artificial.
                 </p>
             </div>
 

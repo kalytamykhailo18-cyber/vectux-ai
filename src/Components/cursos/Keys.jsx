@@ -4,28 +4,28 @@ import { FaCheckCircle } from "react-icons/fa"
 
 const sections = [
     {
-        title: "Unique Methodology – Learning by Doing",
+        title: "Metodología Única – Aprender Haciendo",
         aos: "fade-right",
         duration: "800",
         delay: 0,
         items: [
-            { text: "100% Online with Live Sessions: Flexible learning, without sacrificing interaction.", aos: "fade-up", duration: "600", delay: 100 },
-            { text: "Real Cases and Practical Projects: Work with current datasets and real HR problems.", aos: "fade-right", duration: "800", delay: 200 },
-            { text: "Direct Mentoring from Experts: Professors with international experience in leading companies.", aos: "zoom-in", duration: "600", delay: 300 },
-            { text: "Executive Networking: Connect with leaders and professionals from across the region.", aos: "fade-left", duration: "800", delay: 400 }
+            { text: "100% Online con Sesiones en Vivo: Aprendizaje flexible, sin sacrificar la interacción.", aos: "fade-up", duration: "600", delay: 100 },
+            { text: "Casos Reales y Proyectos Prácticos: Trabaja con datasets actuales y problemas reales de RR.HH.", aos: "fade-right", duration: "800", delay: 200 },
+            { text: "Mentoría Directa de Expertos: Profesores con experiencia internacional en empresas líderes.", aos: "zoom-in", duration: "600", delay: 300 },
+            { text: "Networking Ejecutivo: Conéctate con líderes y profesionales de toda la región.", aos: "fade-left", duration: "800", delay: 400 }
         ]
     },
     {
-        title: "Key Benefits",
+        title: "Beneficios Clave",
         aos: "fade-left",
         duration: "800",
         delay: 150,
         items: [
-            { text: "Applied learning from the first class", aos: "fade-up", duration: "600", delay: 100 },
-            { text: "Access to the most in-demand tools on the market (Power BI, Machine Learning, Generative AI)", aos: "fade-right", duration: "800", delay: 200 },
-            { text: "Final project with direct application to your organization", aos: "zoom-in", duration: "600", delay: 300 },
-            { text: "Internationally recognized certification", aos: "fade-left", duration: "800", delay: 400 },
-            { text: "Flexible working hours for executives and leaders", aos: "fade-up", duration: "1000", delay: 500 }
+            { text: "Aprendizaje aplicado desde la primera clase", aos: "fade-up", duration: "600", delay: 100 },
+            { text: "Acceso a las herramientas más demandadas del mercado (Power BI, Machine Learning, IA Generativa)", aos: "fade-right", duration: "800", delay: 200 },
+            { text: "Proyecto final con aplicación directa a tu organización", aos: "zoom-in", duration: "600", delay: 300 },
+            { text: "Certificación con reconocimiento internacional", aos: "fade-left", duration: "800", delay: 400 },
+            { text: "Horarios flexibles para ejecutivos y líderes", aos: "fade-up", duration: "1000", delay: 500 }
         ]
     }
 ]

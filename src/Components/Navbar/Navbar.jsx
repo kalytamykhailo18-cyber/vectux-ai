@@ -83,7 +83,7 @@ export default function Navbar({ locoScroll }) {
                             ))}
                             <li>
                                 <button className="w-max sm:w-full bg-skyBlue hover:bg-skyBlue transition text-white font-semibold px-5 py-2 rounded-md select-none">
-                                    Contact Us
+                                    Contáctanos
                                 </button>
                             </li>
                         </ul>

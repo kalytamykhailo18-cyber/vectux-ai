@@ -7,7 +7,7 @@ const SkillsData = [
     {
         id: 1,
         icon: GiArtificialIntelligence,
-        title: "Artificial Intelligence & Machine Learning",
+        title: "Inteligencia Artificial y Aprendizaje Automático",
         aos: "fade-up",
         duration: "600",
         delay: 0
@@ -15,7 +15,7 @@ const SkillsData = [
     {
         id: 2,
         icon: GiBrain,
-        title: "Generative Artificial Intelligence",
+        title: "Inteligencia Artificial Generativa",
         aos: "fade-right",
         duration: "800",
         delay: 100
@@ -23,7 +23,7 @@ const SkillsData = [
     {
         id: 3,
         icon: PiListPlus,
-        title: "Advanced Data Analysis",
+        title: "Análisis de Datos Avanzado",
         aos: "zoom-in",
         duration: "600",
         delay: 150
@@ -31,7 +31,7 @@ const SkillsData = [
     {
         id: 4,
         icon: GiBookmarklet,
-        title: "Storytelling",
+        title: "Narrativa de Datos",
         aos: "fade-left",
         duration: "800",
         delay: 200
@@ -39,7 +39,7 @@ const SkillsData = [
     {
         id: 5,
         icon: GiPuzzle,
-        title: "Problem Solving",
+        title: "Resolución de Problemas",
         aos: "fade-up",
         duration: "1000",
         delay: 250
@@ -47,7 +47,7 @@ const SkillsData = [
     {
         id: 6,
         icon: PiUsersThree,
-        title: "Creative Thinking",
+        title: "Pensamiento Creativo",
         aos: "zoom-in",
         duration: "600",
         delay: 300
@@ -55,7 +55,7 @@ const SkillsData = [
     {
         id: 7,
         icon: GiLightBulb,
-        title: "Strategic",
+        title: "Estrategia",
         aos: "fade-right",
         duration: "800",
         delay: 350
@@ -63,7 +63,7 @@ const SkillsData = [
     {
         id: 8,
         icon: GiSpeaker,
-        title: "Effective Communication",
+        title: "Comunicación Efectiva",
         aos: "fade-up",
         duration: "1000",
         delay: 400
@@ -77,16 +77,16 @@ export default function WhyAttend() {
                 <div className="flex flex-col min-[860px]:flex-row">
                     <div className="flex flex-col justify-center gap-6 md:w-[60%] lg:w-[65%]">
                         <h1 data-aos="fade-right" data-aos-duration="800" className="text-[#fa0] font-bold text-[38px] md:text-5xl lg:text-[43px] leading-[45px] sm:leading-[56px]">
-                            We develop
+                            Desarrollamos
                             <br />
-                            <span className="">analytical skills</span>
+                            <span className="">habilidades analíticas</span>
                         </h1>
                         <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" className="text-white font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[28px] sm:w-[80%] md:w-full min-[860px]:!w-[80%]">
-                            Our programs are custom-developed and focused on enhancing the "soft" and "hard" analytical skills of your employees, which are necessary to keep your business at the forefront in the age of Artificial Intelligence.
+                            Nuestros programas están diseñados a medida y enfocados en potenciar las habilidades analíticas "blandas" y "duras" de tus colaboradores, necesarias para mantener tu negocio a la vanguardia en la era de la Inteligencia Artificial.
                         </p>
                         <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600" className="flex flex-col mt-2 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                             <button className="bg-skyBlue cursor-pointer w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
-                                More information
+                                Más información
                             </button>
                         </div>
                     </div>

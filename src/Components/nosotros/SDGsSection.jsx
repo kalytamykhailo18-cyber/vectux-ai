@@ -5,21 +5,21 @@ import { HiBookOpen, HiBriefcase, HiSparkles } from "react-icons/hi2"
 const sdgs = [
     {
         icon: HiBookOpen,
-        title: "SDG 4",
-        subtitle: "Quality education:",
-        description: "We are committed to providing a quality education, promoting continuous learning and preparing people for the future of work."
+        title: "ODS 4",
+        subtitle: "Educación de calidad:",
+        description: "Estamos comprometidos en proporcionar una educación de calidad, promoviendo el aprendizaje continuo y preparando a las personas para el futuro del trabajo."
     },
     {
         icon: HiBriefcase,
-        title: "SDG 8",
-        subtitle: "Decent work and economic growth:",
-        description: "Empowering employees and managers to improve productivity and innovation in their organizations."
+        title: "ODS 8",
+        subtitle: "Trabajo decente y crecimiento económico:",
+        description: "Empoderando a empleados y gerentes para mejorar la productividad y la innovación en sus organizaciones."
     },
     {
         icon: HiSparkles,
-        title: "SDG 9",
-        subtitle: "Industry, innovation and infrastructure:",
-        description: "Promoting the use of technology and data analytics as fundamental pillars for innovation in companies."
+        title: "ODS 9",
+        subtitle: "Industria, innovación e infraestructura:",
+        description: "Promoviendo el uso de la tecnología y el análisis de datos como pilares fundamentales para la innovación en las empresas."
     }
 ]
 
@@ -31,7 +31,7 @@ const SDGsSection = () => {
                     data-aos="fade-up"
                     className="text-white font-bold text-[24px] md:text-3xl lg:text-[36px] leading-[34px] md:leading-[46px] text-center mb-16"
                 >
-                    Vectux Academy and its commitment to the Sustainable Development Goals (SDGs)
+                    Vectux Academy y su compromiso con los Objetivos de Desarrollo Sostenible (ODS)
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

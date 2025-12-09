@@ -3,19 +3,19 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 const contactData = {
-    title: "Empower your team!",
-    description: "Contact us today to learn about our programs and how we can boost your company's operations.",
+    title: "¡Potencia a tu equipo!",
+    description: "Contáctanos hoy para conocer nuestros programas y cómo podemos impulsar las operaciones de tu empresa.",
     image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220951/vectux-academy/assets/aibusiness.webp"
 }
 
 const formFields = [
-    { name: "name", label: "Name", type: "text", placeholder: "Name", required: true, colSpan: "half" },
-    { name: "lastName", label: "Last name", type: "text", placeholder: "Last name", required: true, colSpan: "half" },
-    { name: "email", label: "E-mail", type: "email", placeholder: "E-mail", required: true, colSpan: "half" },
-    { name: "phone", label: "Phone", type: "tel", placeholder: "Phone", required: true, colSpan: "half" },
-    { name: "company", label: "Company", type: "text", placeholder: "Company", required: false, colSpan: "half" },
-    { name: "position", label: "Position", type: "text", placeholder: "Position", required: false, colSpan: "half" },
-    { name: "message", label: "Message", type: "textarea", placeholder: "Write your message here", required: false, colSpan: "full" }
+    { name: "name", label: "Nombre", type: "text", placeholder: "Nombre", required: true, colSpan: "half" },
+    { name: "lastName", label: "Apellido", type: "text", placeholder: "Apellido", required: true, colSpan: "half" },
+    { name: "email", label: "Correo electrónico", type: "email", placeholder: "Correo electrónico", required: true, colSpan: "half" },
+    { name: "phone", label: "Teléfono", type: "tel", placeholder: "Teléfono", required: true, colSpan: "half" },
+    { name: "company", label: "Empresa", type: "text", placeholder: "Empresa", required: false, colSpan: "half" },
+    { name: "position", label: "Cargo", type: "text", placeholder: "Cargo", required: false, colSpan: "half" },
+    { name: "message", label: "Mensaje", type: "textarea", placeholder: "Escribe tu mensaje aquí", required: false, colSpan: "full" }
 ]
 
 const Contact = () => {
@@ -105,7 +105,7 @@ const Contact = () => {
                                 type="submit"
                                 className="w-full bg-[#4cc9f0] hover:bg-[#3ab8df] text-[#0a0a1a] font-Manrope font-bold text-[14px] uppercase tracking-[1.5px] px-8 py-4 rounded-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#4cc9f0]/30 mt-6"
                             >
-                                Send Message
+                                Enviar Mensaje
                             </button>
                         </form>
                     </div>

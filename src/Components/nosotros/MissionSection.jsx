@@ -4,16 +4,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const missionData = {
-    title: "Mission.",
+    title: "Misión.",
     description: [
-        "Our mission is ",
-        { text: "to empower businesses and professionals to transform their data into knowledge through business analytics", bold: true },
-        " training. We provide advanced training in data analytics, ",
-        { text: "artificial intelligence, and machine learning,", bold: true },
-        " accessible to everyone, regardless of their programming or ",
-        { text: "IT", bold: true },
-        " background. We focus on delivering practical, customized programs that drive data-driven strategic decision-making, fostering a ",
-        { text: "data-driven business culture.", bold: true }
+        "Nuestra misión es ",
+        { text: "empoderar a empresas y profesionales para transformar sus datos en conocimiento a través de formación en analítica de negocios", bold: true },
+        ". Proporcionamos capacitación avanzada en análisis de datos, ",
+        { text: "inteligencia artificial y aprendizaje automático,", bold: true },
+        " accesible para todos, independientemente de su formación en programación o ",
+        { text: "TI", bold: true },
+        ". Nos enfocamos en ofrecer programas prácticos y personalizados que impulsan la toma de decisiones estratégicas basadas en datos, fomentando una ",
+        { text: "cultura empresarial basada en datos.", bold: true }
     ],
     images: ['https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220995/vectux-academy/assets/bg-2.webp', 'https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221110/vectux-academy/assets/blog-9.webp', 'https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221038/vectux-academy/assets/blog-11.webp']
 }
@@ -55,7 +55,7 @@ const MissionSection = () => {
                                 href="/contactanos"
                                 className="inline-block bg-skyBlue cursor-pointer font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
                             >
-                                Contact us
+                                Contáctanos
                             </Link>
                         </div>
                     </div>

@@ -5,109 +5,109 @@ import Modal from '@/Components/LayoutWrapper/Modal'
 
 const programs = [
     {
-        title: "Data Analysis for Finance",
-        description: "Develop key skills in Power BI and descriptive analytics to interpret financial KPIs, margins, profitability, cash flow, and more. Learn to tell stories with data and create dashboards for decision-makers.",
+        title: "Análisis de Datos para Finanzas",
+        description: "Desarrolla habilidades clave en Power BI y analítica descriptiva para interpretar KPIs financieros, márgenes, rentabilidad, flujo de caja y más. Aprende a contar historias con datos y crear dashboards para tomadores de decisiones.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221139/vectux-academy/assets/financial-1.jpg",
-        buttonText: "More Info",
+        buttonText: "Más Información",
         aos: "fade-right",
         duration: "800",
         delay: 0,
         modalData: {
-            moduleLabel: "MODULE I",
-            title: "Descriptive Talent Analytics and Decision Making with Dashboards",
-            duration: "18 hours (3 hours daily)",
+            moduleLabel: "MÓDULO I",
+            title: "Analítica Descriptiva de Talento y Toma de Decisiones con Dashboards",
+            duration: "18 horas (3 horas diarias)",
             learningObjectives: [
-                "Define HR KPIs linked to decisions (turnover, absenteeism, vacancy coverage, performance, DEI, internal mobility).",
-                "Build executive dashboards with alerts, thresholds and correct interpretation (avoid aggregation biases).",
-                "Establish minimum data contract for People Analytics (data dictionary, quality, traceability and ethics)."
+                "Definir KPIs de RR.HH. vinculados a decisiones (rotación, ausentismo, cobertura de vacantes, desempeño, DEI, movilidad interna).",
+                "Construir dashboards ejecutivos con alertas, umbrales e interpretación correcta (evitar sesgos de agregación).",
+                "Establecer contrato mínimo de datos para People Analytics (diccionario de datos, calidad, trazabilidad y ética)."
             ],
             keyContents: [
-                "People data model (employee journey: attraction → onboarding → development → exit).",
-                "Good visualization practices (Power BI or similar), segmentation by groups and cohorts.",
-                "Executive reading: how to go from an indicator to a decision."
+                "Modelo de datos de personas (employee journey: atracción → onboarding → desarrollo → salida).",
+                "Buenas prácticas de visualización (Power BI o similar), segmentación por grupos y cohortes.",
+                "Lectura ejecutiva: cómo pasar de un indicador a una decisión."
             ],
             practice: [
-                "Building an Executive Talent Dashboard with 3 views: \"Risk\", \"Opportunity\", \"Operation\".",
-                "Data quality check + remediation plan."
+                "Construcción de un Dashboard Ejecutivo de Talento con 3 vistas: \"Riesgo\", \"Oportunidad\", \"Operación\".",
+                "Verificación de calidad de datos + plan de remediación."
             ],
             deliverable: [
-                "Board published + interpretation guide for leaders."
+                "Tablero publicado + guía de interpretación para líderes."
             ],
             ctaLink: "mailto:mpaez@vectuxanalytics.com?subject=Información%20Curso%201%20|%20People%20Analytics",
-            ctaText: "Sign up now"
+            ctaText: "Inscríbete ahora"
         }
     },
     {
-        title: "Predictive Models with AI for Finance",
-        description: "It integrates machine learning techniques to predict revenue, costs, fraud, or customer behavior. Learn about the most powerful algorithms for anomaly detection, financial segmentation, and automated forecasting.",
+        title: "Modelos Predictivos con IA para Finanzas",
+        description: "Integra técnicas de machine learning para predecir ingresos, costos, fraude o comportamiento del cliente. Aprende sobre los algoritmos más poderosos para detección de anomalías, segmentación financiera y pronósticos automatizados.",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221164/vectux-academy/assets/financial-2.jpg",
-        buttonText: "More Info",
+        buttonText: "Más Información",
         aos: "zoom-in",
         duration: "600",
         delay: 150,
         modalData: {
-            moduleLabel: "MODULE II",
-            title: "Analytical Modeling: Leakage and Potential Prediction",
-            duration: "21 hours (3 hours daily)",
+            moduleLabel: "MÓDULO II",
+            title: "Modelado Analítico: Predicción de Fuga y Potencial",
+            duration: "21 horas (3 horas diarias)",
             learningObjectives: [
-                "Formulate classification/regression problems in HR (risk of leaving, probability of success in role, time to fill vacancies).",
-                "Design pipelines: feature store, time splitting, validation, cost/benefit metrics.",
-                "Controlling ethical risks: biases, explainability, fairness tests by subpopulations."
+                "Formular problemas de clasificación/regresión en RR.HH. (riesgo de salida, probabilidad de éxito en rol, tiempo para cubrir vacantes).",
+                "Diseñar pipelines: feature store, división temporal, validación, métricas de costo/beneficio.",
+                "Controlar riesgos éticos: sesgos, explicabilidad, pruebas de equidad por subpoblaciones."
             ],
             keyContents: [
-                "Base models: Logistics, Trees/GBM, and shape/explainability for HR.",
-                "Simple uplift modeling to prioritize interventions (who changes with the action).",
-                "Scenario simulation (limited budget, top-N prioritization)."
+                "Modelos base: Logísticos, Árboles/GBM, y shape/explicabilidad para RR.HH.",
+                "Modelado uplift simple para priorizar intervenciones (quién cambia con la acción).",
+                "Simulación de escenarios (presupuesto limitado, priorización top-N)."
             ],
             practice: [
-                "Train an attrition model with quarterly cut-off and cost matrix.",
-                "Generate an actionable list: \"Top 50 employees at risk + explainable reasons\"."
+                "Entrenar un modelo de deserción con corte trimestral y matriz de costos.",
+                "Generar una lista accionable: \"Top 50 empleados en riesgo + razones explicables\"."
             ],
             deliverable: [
-                "Model artifact (technical report + model card) and intervention playbook by segment."
+                "Artefacto del modelo (reporte técnico + model card) y playbook de intervención por segmento."
             ],
             ctaLink: "mailto:mpaez@vectuxanalytics.com?subject=Información%20Curso%202%20|%20People%20Analytics",
-            ctaText: "Sign up now"
+            ctaText: "Inscríbete ahora"
         }
     },
     {
-        title: "Transform your leadership for the digital future.",
+        title: "Transforma tu liderazgo para el futuro digital.",
         description: [
-            "21st-century leadership demands more than operational skills: it requires ",
-            { text: "critical thinking", bold: true },
+            "El liderazgo del siglo XXI demanda más que habilidades operativas: requiere ",
+            { text: "pensamiento crítico", bold: true },
             ", ",
-            { text: "strategic storytelling", bold: true },
-            ", and ",
-            { text: "adaptive leadership", bold: true },
-            " in the face of disruption from artificial intelligence."
+            { text: "storytelling estratégico", bold: true },
+            ", y ",
+            { text: "liderazgo adaptativo", bold: true },
+            " ante la disrupción de la inteligencia artificial."
         ],
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221171/vectux-academy/assets/financial-3.jpg",
-        buttonText: "More Info",
+        buttonText: "Más Información",
         aos: "fade-left",
         duration: "800",
         delay: 300,
         modalData: {
-            moduleLabel: "MODULE III",
-            title: "Storytelling and Influence with Data for Executives",
-            duration: "9 hours (3 hours daily)",
+            moduleLabel: "MÓDULO III",
+            title: "Storytelling e Influencia con Datos para Ejecutivos",
+            duration: "9 horas (3 horas diarias)",
             learningObjectives: [
-                "Design a narrative that connects KPI → risk → model → expected ROI.",
-                "Prepare executive materials (1-pager, 10-sheet deck, live demo).",
-                "Practice presenting and handling objections (finance, legal, operations)."
+                "Diseñar una narrativa que conecte KPI → riesgo → modelo → ROI esperado.",
+                "Preparar materiales ejecutivos (1-pager, deck de 10 hojas, demo en vivo).",
+                "Practicar presentación y manejo de objeciones (finanzas, legal, operaciones)."
             ],
             keyContents: [
-                "Narrative structures (problem → evidence → options → recommendation → plan).",
-                "Visual storytelling of the pipeline: from the dashboard to the \"actionable list\" and the economic impact.",
-                "Role-play workshop (steering committee): decisions under uncertainty."
+                "Estructuras narrativas (problema → evidencia → opciones → recomendación → plan).",
+                "Storytelling visual del pipeline: del dashboard a la \"lista accionable\" y el impacto económico.",
+                "Taller de role-play (comité directivo): decisiones bajo incertidumbre."
             ],
             practice: [
-                "Recorded rehearsal of the final presentation with rubric-based feedback (clarity, accuracy, low cognitive friction)"
+                "Ensayo grabado de la presentación final con retroalimentación basada en rúbrica (claridad, precisión, baja fricción cognitiva)"
             ],
             deliverable: [
-                "Approvable executive presentation + technical annex for data/IT."
+                "Presentación ejecutiva aprobable + anexo técnico para datos/TI."
             ],
             ctaLink: "mailto:mpaez@vectuxanalytics.com?subject=Información%20Curso%203%20|%20People%20Analytics",
-            ctaText: "Sign up now"
+            ctaText: "Inscríbete ahora"
         }
     }
 ]
@@ -158,7 +158,7 @@ const Financial = () => {
                     data-aos="fade-up"
                     className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16"
                 >
-                    Programs in Financial Analytics
+                    Programas en Analítica Financiera
                 </h2>
 
                 {/* Programs Grid */}

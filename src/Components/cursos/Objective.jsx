@@ -6,27 +6,27 @@ import { TbChartHistogram } from "react-icons/tb"
 import { BsRobot } from "react-icons/bs"
 
 const design={
-    title: "Our programs are designed to:",
+    title: "Nuestros programas están diseñados para:",
     cards: [
         {
             icon: PiUsersThreeFill,
-            text: "HR and Talent Directors and Managers"
+            text: "Directores y Gerentes de RR.HH. y Talento"
         },
         {
             icon: TbChartHistogram,
-            text: "Human Resources teams that want to evolve towards People Analytics"
+            text: "Equipos de Recursos Humanos que quieren evolucionar hacia People Analytics"
         },
         {
             icon: BsRobot,
-            text: "Leaders who are betting on artificial intelligence to manage the talent of the future"
+            text: "Líderes que apuestan por la inteligencia artificial para gestionar el talento del futuro"
         }
     ]
 }
 
 const ObjectiveData = {
-    title: "Objective of Our Diploma Programs",
-    subtitle: "A direct boost to your professional development",
-    text: "Acquire highly sought-after skills that will strengthen your profile as a strategic talent leader, with abilities applicable from the first month.",
+    title: "Objetivo de Nuestros Diplomados",
+    subtitle: "Un impulso directo a tu desarrollo profesional",
+    text: "Adquiere habilidades altamente demandadas que fortalecerán tu perfil como líder estratégico de talento, con capacidades aplicables desde el primer mes.",
     image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221133/vectux-academy/assets/cursos-2.webp"
 }
 
@@ -51,7 +51,7 @@ const Objective = () => {
                         </p>
                         <div data-aos="fade-up" data-aos-delay="300" className="mt-4">
                             <button className="bg-skyBlue cursor-pointer w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
-                                View Programs
+                                Ver Programas
                             </button>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Objective = () => {
                         <div className="relative group cursor-pointer">
                             <div className="absolute -inset-1 bg-gradient-to-r from-[#4cc9f0] via-[#f72585] to-[#4895ef] rounded-tl-none rounded-tr-[16px] rounded-bl-[16px] rounded-br-none blur-sm opacity-75 group-hover:opacity-100 transition-all duration-500 group-hover:blur-md animate-pulse"></div>
                             <Image
-                                alt="Diploma Programs"
+                                alt="Programas de Diplomado"
                                 width={550}
                                 height={400}
                                 src={ObjectiveData.image}

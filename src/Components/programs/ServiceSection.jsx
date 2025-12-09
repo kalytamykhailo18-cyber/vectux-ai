@@ -17,16 +17,16 @@ const AccordionData = [
         id: 2,
         title: "Diseñamos con propósito empresarial",
         icon: FaBriefcase,
-        description: "Nuestros programas están directamente conectados a real impact project (ROI generation for the employer).",
+        description: "Nuestros programas están directamente conectados a proyectos de impacto real (generación de ROI para el empleador).",
         aos: "fade-up",
         duration: "800",
         delay: 150
     },
     {
         id: 3,
-        title: "Data-driven y human-centric",
+        title: "Basado en datos y centrado en el humano",
         icon: FaChartLine,
-        description: "Analized interactive, critique, liderazgo, storytelling, and technology (Artificial Intelligence and IA generation), from the focus on human and ético liderazgo.",
+        description: "Análisis interactivo, pensamiento crítico, liderazgo, storytelling y tecnología (Inteligencia Artificial e IA generativa), con enfoque en el ser humano y liderazgo ético.",
         aos: "zoom-in",
         duration: "600",
         delay: 300
@@ -46,20 +46,20 @@ const ServiceSection = () => {
                 <div data-aos="fade-right" data-aos-duration="800" className="lg:w-3/5 flex items-center justify-start pl-8 lg:pl-16">
                     <div className="text-left">
                         <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100" className="text-white mb-6">
-                            <p className='text-[120px]'>The AI</p>
+                            <p className='text-[120px]'>IA</p>
                             <p>
                                 <span className='text-[#fa0] text-[60px]'>+</span>
-                                <span className='text-[#4cc9f0] text-[50px]'>Shift Program</span>
+                                <span className='text-[#4cc9f0] text-[50px]'>Programa Shift</span>
                             </p>
                         </div>
                         <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" className="text-white text-lg lg:text-xl max-w-lg mb-8 leading-relaxed border-l-4 border-[#00acf4] pl-4">
-                            The AI Shift Program no es un curso más.
+                            El Programa IA Shift no es un curso más.
                             <span className="font-bold"> Es un programa de capacitación en inteligencia artificial y analítica avanzada</span> con mentoría de proyectos reales, diseñado para que tus líderes generen resultados desde el primer día.
                         </p>
                         <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" className="text-3xl lg:text-4xl xl:text-5xl leading-tight">
-                            <span className="text-white">Data.</span>
-                            <span className="text-[#4cc9f0]"> Thinking.</span>
-                            <span className="text-white"> Action.</span>
+                            <span className="text-white">Datos.</span>
+                            <span className="text-[#4cc9f0]"> Pensamiento.</span>
+                            <span className="text-white"> Acción.</span>
                         </div>
                     </div>
                 </div>

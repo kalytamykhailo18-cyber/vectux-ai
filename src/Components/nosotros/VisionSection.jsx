@@ -3,24 +3,24 @@ import React from 'react'
 import Image from 'next/image'
 
 const visionData = {
-    title: "Vision.",
+    title: "Visión.",
     description: [
-        "To be the leading provider of ",
-        { text: "accessible, ongoing", bold: true },
-        " business analytics training for companies and professionals, offering practical tools in advanced analytics, AI, and ",
-        { text: "digital transformation", bold: true },
-        " that translate ",
-        { text: "deep data insights into actionable business", bold: true },
-        " solutions. We aspire to lead the creation of a ",
-        { text: "global network of companies and skilled talent,", bold: true },
-        " fostering ",
-        { text: "strategic innovation", bold: true },
-        " and ",
-        { text: "sustainable growth.", bold: true },
-        " Our goal is to facilitate access to training so that any organization, regardless of size or ",
-        { text: "analytical maturity level,", bold: true },
-        " can adapt and thrive in a competitive and digitalized environment by unlocking the ",
-        { text: "hidden value of its data.", bold: true }
+        "Ser el proveedor líder de formación en analítica de negocios ",
+        { text: "accesible y continua", bold: true },
+        " para empresas y profesionales, ofreciendo herramientas prácticas en analítica avanzada, IA y ",
+        { text: "transformación digital", bold: true },
+        " que transformen los ",
+        { text: "conocimientos profundos de datos en soluciones empresariales accionables", bold: true },
+        ". Aspiramos a liderar la creación de una ",
+        { text: "red global de empresas y talento capacitado,", bold: true },
+        " fomentando la ",
+        { text: "innovación estratégica", bold: true },
+        " y el ",
+        { text: "crecimiento sostenible.", bold: true },
+        " Nuestro objetivo es facilitar el acceso a la formación para que cualquier organización, independientemente de su tamaño o ",
+        { text: "nivel de madurez analítica,", bold: true },
+        " pueda adaptarse y prosperar en un entorno competitivo y digitalizado desbloqueando el ",
+        { text: "valor oculto de sus datos.", bold: true }
     ],
     image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg"
 }

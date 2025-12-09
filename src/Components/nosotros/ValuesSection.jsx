@@ -5,40 +5,40 @@ import { HiLightBulb, HiAcademicCap, HiCog, HiGlobeAlt, HiHeart } from "react-ic
 const values = [
     {
         icon: HiLightBulb,
-        title: "Innovation:",
-        description: "We continuously update our programs to offer advanced knowledge in artificial intelligence and data analytics. Immediate impact: We design practical courses that generate tangible results in professional life and business performance.",
+        title: "Innovación:",
+        description: "Actualizamos continuamente nuestros programas para ofrecer conocimientos avanzados en inteligencia artificial y análisis de datos. Impacto inmediato: Diseñamos cursos prácticos que generan resultados tangibles en la vida profesional y el desempeño empresarial.",
         aos: "fade-up",
         duration: "600",
         delay: 0
     },
     {
         icon: HiAcademicCap,
-        title: "Educational excellence:",
-        description: "Our experts combine theory and practice to ensure high-quality training and real-world applicability.",
+        title: "Excelencia educativa:",
+        description: "Nuestros expertos combinan teoría y práctica para garantizar una formación de alta calidad y aplicabilidad en el mundo real.",
         aos: "fade-right",
         duration: "800",
         delay: 100
     },
     {
         icon: HiCog,
-        title: "Sustainability and responsibility:",
-        description: "Aligned with the SDGs, we promote inclusive education and the use of technology for social well-being and sustainable economic growth.",
+        title: "Sostenibilidad y responsabilidad:",
+        description: "Alineados con los ODS, promovemos la educación inclusiva y el uso de la tecnología para el bienestar social y el crecimiento económico sostenible.",
         aos: "zoom-in",
         duration: "600",
         delay: 200
     },
     {
         icon: HiGlobeAlt,
-        title: "Global collaboration:",
-        description: "We foster an international collaboration network for the mutual growth of professionals and organizations.",
+        title: "Colaboración global:",
+        description: "Fomentamos una red de colaboración internacional para el crecimiento mutuo de profesionales y organizaciones.",
         aos: "fade-left",
         duration: "800",
         delay: 300
     },
     {
         icon: HiHeart,
-        title: "Accessibility for all:",
-        description: "We believe that learning should be inclusive and accessible to all, facilitating the development of critical skills in an increasingly digital business environment.",
+        title: "Accesibilidad para todos:",
+        description: "Creemos que el aprendizaje debe ser inclusivo y accesible para todos, facilitando el desarrollo de habilidades críticas en un entorno empresarial cada vez más digital.",
         aos: "fade-up",
         duration: "1000",
         delay: 400
@@ -54,7 +54,7 @@ const ValuesSection = () => {
                     data-aos-duration="800"
                     className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16"
                 >
-                    Our Values.
+                    Nuestros Valores.
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -72,7 +72,7 @@ const Modal = ({ isOpen, onClose, moduleData }) => {
                     {moduleData.learningObjectives && moduleData.learningObjectives.length > 0 && (
                         <div>
                             <h2 className="text-[#4cc9f0] font-bold text-base mb-2">
-                                Learning objectives
+                                Objetivos de aprendizaje
                             </h2>
                             <ul className="space-y-1.5">
                                 {moduleData.learningObjectives.map((item, index) => (
@@ -91,7 +91,7 @@ const Modal = ({ isOpen, onClose, moduleData }) => {
                     {moduleData.keyContents && moduleData.keyContents.length > 0 && (
                         <div>
                             <h2 className="text-[#4cc9f0] font-bold text-base mb-2">
-                                Key contents
+                                Contenidos clave
                             </h2>
                             <ul className="space-y-1.5">
                                 {moduleData.keyContents.map((item, index) => (
@@ -110,7 +110,7 @@ const Modal = ({ isOpen, onClose, moduleData }) => {
                     {moduleData.practice && moduleData.practice.length > 0 && (
                         <div>
                             <h2 className="text-[#4cc9f0] font-bold text-base mb-2">
-                                Practice
+                                Práctica
                             </h2>
                             <ul className="space-y-1.5">
                                 {moduleData.practice.map((item, index) => (
@@ -129,7 +129,7 @@ const Modal = ({ isOpen, onClose, moduleData }) => {
                     {moduleData.deliverable && moduleData.deliverable.length > 0 && (
                         <div>
                             <h2 className="text-[#4cc9f0] font-bold text-base mb-2">
-                                Deliverable
+                                Entregable
                             </h2>
                             <ul className="space-y-1.5">
                                 {moduleData.deliverable.map((item, index) => (
@@ -152,7 +152,7 @@ const Modal = ({ isOpen, onClose, moduleData }) => {
                             rel="noopener noreferrer"
                             className="inline-block w-full text-center bg-skyBlue hover:bg-sky-700 transition-all duration-300 text-white font-Manrope font-bold text-xs tracking-[1px] uppercase px-6 py-3 rounded-full"
                         >
-                            {moduleData.ctaText || "Sign up now"}
+                            {moduleData.ctaText || "Inscríbete ahora"}
                         </a>
                     </div>
                 </div>

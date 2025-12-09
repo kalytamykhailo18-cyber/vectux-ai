@@ -2,9 +2,9 @@
 import React from 'react'
 
 const requestData = {
-    title: "Request Personalized Information",
-    description: "Leave us your details and an academic advisor will contact you in less than 24 hours.",
-    buttonText: "I want more information!",
+    title: "Solicita Información Personalizada",
+    description: "Déjanos tus datos y un asesor académico te contactará en menos de 24 horas.",
+    buttonText: "¡Quiero más información!",
     email: "mpaez@vectuxanalytics.com",
     subject: "Información People Analytics"
 }

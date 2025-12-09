@@ -9,52 +9,52 @@ const teamMembers = [
         role: "CEO, MBA",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220965/vectux-academy/assets/Ana.png",
         linkedin: "https://www.linkedin.com/in/ana-mireya-lopez/",
-        description: "+21 years of management experience in finance, strategic planning, business planning and advanced analytics in multinational companies such as Dell, Microsoft, Megablocks, General Electric, Thermo Fisher and Ericsson Telecom.",
-        credentials: "Certificate in Artificial Intelligence Product Design and Development, MIT MBA, IPADE Business School.",
+        description: "+21 años de experiencia gerencial en finanzas, planificación estratégica, planificación de negocios y analítica avanzada en empresas multinacionales como Dell, Microsoft, Megablocks, General Electric, Thermo Fisher y Ericsson Telecom.",
+        credentials: "Certificado en Diseño y Desarrollo de Productos de Inteligencia Artificial, MIT MBA, IPADE Business School.",
         aos: "fade-right",
         duration: "800",
         delay: 0
     },
     {
         name: "Gerzo Morales Gallardo",
-        role: "CAO, Chief Analytics Officer & Founder",
+        role: "CAO, Director de Analítica y Fundador",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221239/vectux-academy/assets/Gerzo.png",
         linkedin: "https://www.linkedin.com/in/gerzogallardo/",
-        description: "Over 300 advanced analytics and artificial intelligence projects, former partner at MetricArts (acquired by EY), founder of the Data Science Institute. Advisor to the IMF and World Bank, professor of Business Intelligence, AI & Marketing Analytics at INCAE.",
-        credentials: "Data Science & Big Data, MIT Master; Statistical Methods, University of La Rioja",
+        description: "Más de 300 proyectos de analítica avanzada e inteligencia artificial, ex socio en MetricArts (adquirida por EY), fundador del Instituto de Ciencia de Datos. Asesor del FMI y Banco Mundial, profesor de Inteligencia de Negocios, IA y Marketing Analytics en INCAE.",
+        credentials: "Ciencia de Datos y Big Data, MIT Maestría; Métodos Estadísticos, Universidad de La Rioja",
         aos: "fade-left",
         duration: "800",
         delay: 100
     },
     {
         name: "Horacio Sepúlveda",
-        role: "Associate Director of Sales and Promotion IPADE Business School",
+        role: "Director Asociado de Ventas y Promoción IPADE Business School",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221266/vectux-academy/assets/horacio.png",
         linkedin: "https://www.linkedin.com/in/hsepulv/",
-        description: "+30 years of professional experience and +24 years of management experience in transnational companies such as P & G, Unilever and América Móvil. Creator of multiple products and solutions for the telecommunications business and integrator of large work teams.",
-        credentials: "Chemical Engineer from La Salle University, MBA with honors from the International University of La Rioja, and certified in the D-1 management development program by IPADE Business School.",
+        description: "+30 años de experiencia profesional y +24 años de experiencia gerencial en empresas transnacionales como P&G, Unilever y América Móvil. Creador de múltiples productos y soluciones para el negocio de telecomunicaciones e integrador de grandes equipos de trabajo.",
+        credentials: "Ingeniero Químico de la Universidad La Salle, MBA con honores de la Universidad Internacional de La Rioja, y certificado en el programa de desarrollo gerencial D-1 por IPADE Business School.",
         aos: "fade-right",
         duration: "1000",
         delay: 200
     },
     {
         name: "Luis Fernando González Lara",
-        role: "Master, collaborator",
+        role: "Maestro, colaborador",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221316/vectux-academy/assets/Luis.png",
         linkedin: "https://www.linkedin.com/in/luisfernandogonzalezlara/",
-        description: "10+ years of experience in data analysis and business intelligence at companies such as AstraZeneca, Coca Cola and Femsa. Currently the Commercial Insights & Advanced Analytics Lead for Johnson & Johnson.",
-        credentials: "Degree in Computer Engineering, specializing in Data Analysis and Business Intelligence, certified in Tableau and Power BI. Graduated from the National Polytechnic Institute (UPIICSA).",
+        description: "10+ años de experiencia en análisis de datos e inteligencia de negocios en empresas como AstraZeneca, Coca Cola y Femsa. Actualmente es el Líder de Commercial Insights & Advanced Analytics para Johnson & Johnson.",
+        credentials: "Licenciatura en Ingeniería en Computación, especializado en Análisis de Datos e Inteligencia de Negocios, certificado en Tableau y Power BI. Egresado del Instituto Politécnico Nacional (UPIICSA).",
         aos: "fade-left",
         duration: "800",
         delay: 300
     },
     {
         name: "Francisco Vargas Esparza",
-        role: "Chief Data Officer, collaborator",
+        role: "Director de Datos, colaborador",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221219/vectux-academy/assets/Francisco.png",
         linkedin: "https://www.linkedin.com/in/fvargase/",
-        description: "13+ years of experience in Business Intelligence, Advanced Analytics, and Data Science at companies such as Santander, Accenture, and Grupo Bimbo. Currently, he is Chief Data Officer at BimboNet, leading projects in Data Governance, BI, and cloud infrastructure.",
-        credentials: "Graduated in actuarial science from Anahuac University, with a Diploma in Business Engineering from ITAM.",
+        description: "13+ años de experiencia en Inteligencia de Negocios, Analítica Avanzada y Ciencia de Datos en empresas como Santander, Accenture y Grupo Bimbo. Actualmente es Director de Datos en BimboNet, liderando proyectos en Gobernanza de Datos, BI e infraestructura en la nube.",
+        credentials: "Egresado en ciencias actuariales de la Universidad Anáhuac, con Diplomado en Ingeniería de Negocios del ITAM.",
         aos: "fade-right",
         duration: "1000",
         delay: 400
@@ -69,7 +69,7 @@ const TeamSection = () => {
                     data-aos="fade-up"
                     className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16"
                 >
-                    Meet our team.
+                    Conoce a nuestro equipo.
                 </h2>
 
                 <div className="space-y-12">

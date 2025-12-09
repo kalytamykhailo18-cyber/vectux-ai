@@ -10,32 +10,32 @@ import { BsRobot } from "react-icons/bs"
 import Modal from '@/Components/LayoutWrapper/Modal'
 
 const ObjectiveData = {
-    title: "Objective of Our Diploma Programs",
-    subtitle: "A direct boost to your professional development",
-    text: "Acquire highly sought-after skills that will strengthen your profile as a strategic talent leader, with abilities applicable from the first month.",
+    title: "Objetivo de Nuestros Diplomados",
+    subtitle: "Un impulso directo a tu desarrollo profesional",
+    text: "Adquiere habilidades altamente demandadas que fortalecerán tu perfil como líder estratégico de talento, con capacidades aplicables desde el primer mes.",
     image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221133/vectux-academy/assets/cursos-2.webp"
 }
 
 const design = {
-    title: "Our programs are designed to:",
+    title: "Nuestros programas están diseñados para:",
     cards: [
         {
             icon: PiUsersThreeFill,
-            text: "HR and Talent Directors and Managers",
+            text: "Directores y Gerentes de RR.HH. y Talento",
             aos: "fade-right",
             duration: "800",
             delay: 0
         },
         {
             icon: TbChartHistogram,
-            text: "Human Resources teams that want to evolve towards People Analytics",
+            text: "Equipos de Recursos Humanos que quieren evolucionar hacia People Analytics",
             aos: "zoom-in",
             duration: "600",
             delay: 100
         },
         {
             icon: BsRobot,
-            text: "Leaders who are betting on artificial intelligence to manage the talent of the future",
+            text: "Líderes que apuestan por la inteligencia artificial para gestionar el talento del futuro",
             aos: "fade-left",
             duration: "800",
             delay: 200
@@ -46,97 +46,97 @@ const design = {
 const modules = [
     {
         number: 1,
-        title: "Descriptive Talent Analytics and Decision Making with Dashboards",
-        description: "Take talent decisions to the next level with data and analytics.",
+        title: "Analítica Descriptiva de Talento y Toma de Decisiones con Dashboards",
+        description: "Lleva las decisiones de talento al siguiente nivel con datos y analítica.",
         aos: "fade-right",
         duration: "800",
         delay: 0,
         modalData: {
-            moduleLabel: "MODULE I",
-            title: "Descriptive Talent Analytics and Decision Making with Dashboards",
-            duration: "18 hours (3 hours daily)",
+            moduleLabel: "MÓDULO I",
+            title: "Analítica Descriptiva de Talento y Toma de Decisiones con Dashboards",
+            duration: "18 horas (3 horas diarias)",
             learningObjectives: [
-                "Define HR KPIs linked to decisions (turnover, absenteeism, vacancy coverage, performance, DEI, internal mobility).",
-                "Build executive dashboards with alerts, thresholds and correct interpretation (avoid aggregation biases).",
-                "Establish minimum data contract for People Analytics (data dictionary, quality, traceability and ethics)."
+                "Definir KPIs de RR.HH. vinculados a decisiones (rotación, ausentismo, cobertura de vacantes, desempeño, DEI, movilidad interna).",
+                "Construir dashboards ejecutivos con alertas, umbrales e interpretación correcta (evitar sesgos de agregación).",
+                "Establecer contrato mínimo de datos para People Analytics (diccionario de datos, calidad, trazabilidad y ética)."
             ],
             keyContents: [
-                "People data model (employee journey: attraction → onboarding → development → exit).",
-                "Good visualization practices (Power BI or similar), segmentation by groups and cohorts.",
-                "Executive reading: how to go from an indicator to a decision."
+                "Modelo de datos de personas (employee journey: atracción → onboarding → desarrollo → salida).",
+                "Buenas prácticas de visualización (Power BI o similar), segmentación por grupos y cohortes.",
+                "Lectura ejecutiva: cómo pasar de un indicador a una decisión."
             ],
             practice: [
-                "Building an Executive Talent Dashboard with 3 views: \"Risk\", \"Opportunity\", \"Operation\".",
-                "Data quality check + remediation plan."
+                "Construcción de un Dashboard Ejecutivo de Talento con 3 vistas: \"Riesgo\", \"Oportunidad\", \"Operación\".",
+                "Verificación de calidad de datos + plan de remediación."
             ],
             deliverable: [
-                "Board published + interpretation guide for leaders."
+                "Tablero publicado + guía de interpretación para líderes."
             ],
             ctaLink: "mailto:mpaez@vectuxanalytics.com?subject=Información%20Módulo%201%20|%20People%20Analytics",
-            ctaText: "Sign up now"
+            ctaText: "Inscríbete ahora"
         }
     },
     {
         number: 2,
-        title: "Analytical Modeling: Leakage and Potential Prediction",
-        description: "Develop AI skills to directly impact talent management.",
+        title: "Modelado Analítico: Predicción de Fuga y Potencial",
+        description: "Desarrolla habilidades de IA para impactar directamente en la gestión del talento.",
         aos: "zoom-in",
         duration: "600",
         delay: 150,
         modalData: {
-            moduleLabel: "MODULE II",
-            title: "Analytical Modeling: Leakage and Potential Prediction",
-            duration: "21 hours (3 hours daily)",
+            moduleLabel: "MÓDULO II",
+            title: "Modelado Analítico: Predicción de Fuga y Potencial",
+            duration: "21 horas (3 horas diarias)",
             learningObjectives: [
-                "Formulate classification/regression problems in HR (risk of leaving, probability of success in role, time to fill vacancies).",
-                "Design pipelines: feature store, time splitting, validation, cost/benefit metrics.",
-                "Controlling ethical risks: biases, explainability, fairness tests by subpopulations."
+                "Formular problemas de clasificación/regresión en RR.HH. (riesgo de salida, probabilidad de éxito en rol, tiempo para cubrir vacantes).",
+                "Diseñar pipelines: feature store, división temporal, validación, métricas de costo/beneficio.",
+                "Controlar riesgos éticos: sesgos, explicabilidad, pruebas de equidad por subpoblaciones."
             ],
             keyContents: [
-                "Base models: Logistics, Trees/GBM, and shape/explainability for HR.",
-                "Simple uplift modeling to prioritize interventions (who changes with the action).",
-                "Scenario simulation (limited budget, top-N prioritization)."
+                "Modelos base: Logísticos, Árboles/GBM, y shape/explicabilidad para RR.HH.",
+                "Modelado uplift simple para priorizar intervenciones (quién cambia con la acción).",
+                "Simulación de escenarios (presupuesto limitado, priorización top-N)."
             ],
             practice: [
-                "Train an attrition model with quarterly cut-off and cost matrix.",
-                "Generate an actionable list: \"Top 50 employees at risk + explainable reasons\"."
+                "Entrenar un modelo de deserción con corte trimestral y matriz de costos.",
+                "Generar una lista accionable: \"Top 50 empleados en riesgo + razones explicables\"."
             ],
             deliverable: [
-                "Model artifact (technical report + model card) and intervention playbook by segment."
+                "Artefacto del modelo (reporte técnico + model card) y playbook de intervención por segmento."
             ],
             ctaLink: "mailto:mpaez@vectuxanalytics.com?subject=Información%20Módulo%202%20|%20People%20Analytics",
-            ctaText: "Sign up now"
+            ctaText: "Inscríbete ahora"
         }
     },
     {
         number: 3,
-        title: "Storytelling and Influence with Data for Executives",
-        description: "21st-century leadership demands strategic storytelling and adaptive leadership in the face of disruption from artificial intelligence.",
+        title: "Storytelling e Influencia con Datos para Ejecutivos",
+        description: "El liderazgo del siglo XXI demanda storytelling estratégico y liderazgo adaptativo ante la disrupción de la inteligencia artificial.",
         aos: "fade-left",
         duration: "800",
         delay: 300,
         modalData: {
-            moduleLabel: "MODULE III",
-            title: "Storytelling and Influence with Data for Executives",
-            duration: "9 hours (3 hours daily)",
+            moduleLabel: "MÓDULO III",
+            title: "Storytelling e Influencia con Datos para Ejecutivos",
+            duration: "9 horas (3 horas diarias)",
             learningObjectives: [
-                "Design a narrative that connects KPI → risk → model → expected ROI.",
-                "Prepare executive materials (1-pager, 10-sheet deck, live demo).",
-                "Practice presenting and handling objections (finance, legal, operations)."
+                "Diseñar una narrativa que conecte KPI → riesgo → modelo → ROI esperado.",
+                "Preparar materiales ejecutivos (1-pager, deck de 10 hojas, demo en vivo).",
+                "Practicar presentación y manejo de objeciones (finanzas, legal, operaciones)."
             ],
             keyContents: [
-                "Narrative structures (problem → evidence → options → recommendation → plan).",
-                "Visual storytelling of the pipeline: from the dashboard to the \"actionable list\" and the economic impact.",
-                "Role-play workshop (steering committee): decisions under uncertainty."
+                "Estructuras narrativas (problema → evidencia → opciones → recomendación → plan).",
+                "Storytelling visual del pipeline: del dashboard a la \"lista accionable\" y el impacto económico.",
+                "Taller de role-play (comité directivo): decisiones bajo incertidumbre."
             ],
             practice: [
-                "Recorded rehearsal of the final presentation with rubric-based feedback (clarity, accuracy, low cognitive friction)"
+                "Ensayo grabado de la presentación final con retroalimentación basada en rúbrica (claridad, precisión, baja fricción cognitiva)"
             ],
             deliverable: [
-                "Approvable executive presentation + technical annex for data/IT."
+                "Presentación ejecutiva aprobable + anexo técnico para datos/TI."
             ],
             ctaLink: "mailto:mpaez@vectuxanalytics.com?subject=Información%20Módulo%203%20|%20People%20Analytics",
-            ctaText: "Sign up now"
+            ctaText: "Inscríbete ahora"
         }
     }
 ]
@@ -144,24 +144,24 @@ const modules = [
 const benefits = [
     {
         icon: HiBriefcase,
-        title: "Real Cases and Practical Projects:",
-        description: "It works with current datasets and real HR problems.",
+        title: "Casos Reales y Proyectos Prácticos:",
+        description: "Trabaja con datasets actuales y problemas reales de RR.HH.",
         aos: "fade-up",
         duration: "600",
         delay: 0
     },
     {
         icon: FaProjectDiagram,
-        title: "Final Project",
-        description: "With direct application to your organization.",
+        title: "Proyecto Final",
+        description: "Con aplicación directa a tu organización.",
         aos: "fade-up",
         duration: "800",
         delay: 100
     },
     {
         icon: MdOutlineSettingsSuggest,
-        title: "Access to tools",
-        description: "Access to the most in-demand tools on the market (Power BI, Machine Learning, Generative AI).",
+        title: "Acceso a herramientas",
+        description: "Acceso a las herramientas más demandadas del mercado (Power BI, Machine Learning, IA Generativa).",
         aos: "fade-up",
         duration: "1000",
         delay: 200
@@ -210,7 +210,7 @@ const Exclusive = () => {
                         </p>
                         <div data-aos="fade-up" data-aos-delay="300" className="mt-4">
                             <button className="bg-skyBlue cursor-pointer w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
-                                View Programs
+                                Ver Programas
                             </button>
                         </div>
                     </div>
@@ -260,10 +260,10 @@ const Exclusive = () => {
                 {/* Modules Section */}
                 <div className="text-center mb-16">
                     <h2 data-aos="fade-up" className="text-white font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] mb-4">
-                        Executive Diploma in People Analytics and Artificial Intelligence Applied to HR
+                        Diplomado Ejecutivo en People Analytics e Inteligencia Artificial Aplicada a RR.HH.
                     </h2>
                     <p data-aos="fade-up" data-aos-delay="100" className="text-[#4cc9f0] font-Manrope font-semibold text-[18px] md:text-[20px]">
-                        Our program consists of 3 independent modules:
+                        Nuestro programa consta de 3 módulos independientes:
                     </p>
                 </div>
 
@@ -278,7 +278,7 @@ const Exclusive = () => {
                         >
                             {/* Module Number Badge */}
                             <div className="flex items-center gap-3 mb-4">
-                                <span className="text-[#4cc9f0] font-Manrope text-[14px] uppercase tracking-[2px]">Module</span>
+                                <span className="text-[#4cc9f0] font-Manrope text-[14px] uppercase tracking-[2px]">Módulo</span>
                                 <span className="w-10 h-10 flex items-center justify-center rounded-full bg-[#4cc9f0] text-[#0a0a1a] font-bold text-[18px]">
                                     {module.number}
                                 </span>
@@ -297,7 +297,7 @@ const Exclusive = () => {
                                 onClick={() => handleOpenModal(module.modalData)}
                                 className="bg-transparent border border-[#4cc9f0] text-[#4cc9f0] hover:bg-[#4cc9f0] hover:text-[#0a0a1a] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] px-6 py-3 rounded-full transition-all duration-300 cursor-pointer"
                             >
-                                More Info
+                                Más Información
                             </button>
                         </div>
                     ))}
@@ -306,7 +306,7 @@ const Exclusive = () => {
                 {/* Benefits Section */}
                 <div className="mt-20">
                     <h2 data-aos="fade-up" className="text-white font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] text-center mb-16">
-                        Differential Benefits
+                        Beneficios Diferenciales
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

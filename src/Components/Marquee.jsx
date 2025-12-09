@@ -2,12 +2,12 @@
 import React from "react";
 
 const MarqueeList = [
-    "Next Intelligence",
-    "Future Now",
-    "Empowering Innovation",
-    "Smarter Tomorrow",
-    "Think Forward",
-    "Cognitive Shift"
+    "Próxima Inteligencia",
+    "El Futuro Ahora",
+    "Impulsando la Innovación",
+    "Un Mañana Más Inteligente",
+    "Piensa en el Futuro",
+    "Cambio Cognitivo"
 ];
 
 const RotatedMarquee = () => {
