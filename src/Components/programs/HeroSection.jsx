@@ -16,12 +16,31 @@ const HeroSection = () => {
 
             <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef60,#343ec280,#8d4aed90)]" />
 
-            <div data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="1000" className="relative z-30 flex flex-col items-center justify-center text-center gap-2 sm:gap-0 h-full px-4">
-                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-[37px] sm:text-[42px] md:text-5xl lg:text-[72px] mb-3 leading-tight">
-                    <span className="font-bold text-blue-500">Unlock</span>
-                    <div className="text-[18px] sm:text-[20px] md:text-4xl lg:text-[34px]">the power of AI</div>
+            <div className="relative z-30 flex flex-col items-center justify-center text-center gap-10 h-full px-4">
+                <h1 className="text-white font-semibold text-[37px] sm:text-[42px] md:text-5xl lg:text-[72px] leading-tight">
+                    <span
+                        data-aos="fade-down"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
+                        className="font-bold text-blue-500 inline-block"
+                    >
+                        Unlock
+                    </span>
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="400"
+                        className="text-[18px] sm:text-[20px] md:text-4xl lg:text-[34px]"
+                    >
+                        the power of AI
+                    </div>
                 </h1>
-                <div className="flex flex-col mt-5 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <div
+                    data-aos="zoom-in"
+                    data-aos-duration="600"
+                    data-aos-delay="600"
+                    className="flex flex-col mt-5 md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+                >
                     <a
                         href="#section-tickets"
                         className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
@@ -29,13 +48,26 @@ const HeroSection = () => {
                         Más información
                     </a>
                 </div>
-                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-[27px] sm:text-[32px] uppercase md:text-2xl lg:text-[54px] mb-3 leading-tight">
+                <h1
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-delay="800"
+                    className="text-white font-semibold text-[27px] sm:text-[32px] uppercase md:text-2xl lg:text-[54px] mb-3 leading-tight"
+                >
                     Formamos Organizaciones Data Driven
                 </h1>
+                <p
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="1000"
+                    className="text-white text-center font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[28px] w-full sm:w-[70%] md:w-[50%]"
+                >
+                    En Vectux Academy, impartimos certificaciones y cursos de inteligencia artificial y analítica avanzada para empresas, con formación de alto impacto liderada por expertos certificados de prestigiosas instituciones como el MIT, Harvard, Kellogg, IPADE, ITAM y la Universidad Católica de Chile. Una combinación de excelencia académica y experiencia práctica adaptada a las necesidades de tu negocio.
+                </p>
             </div>
 
-            {/* Bottom Gradient Blur - blends with Marquee */}
-            <div className="absolute -bottom-28 -left-20 w-[140%] h-[20%] z-50 bg-gradient-to-b blur-2xl from-[#4895ef] to-[#4895ef]" />
+            {/* Bottom Gradient Blur - blends with AboutSection */}
+            <div className="absolute -bottom-28 -left-20 w-[140%] h-[20%] z-50 bg-gradient-to-b blur-2xl from-[#343ec2] to-[#343ec2]" />
         </section>
     );
 };

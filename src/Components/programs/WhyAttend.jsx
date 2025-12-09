@@ -72,7 +72,7 @@ const SkillsData = [
 
 export default function WhyAttend() {
     return (
-        <section className="bg-[linear-gradient(90deg,#4895ef,#343ec2,#8d4aed)] px-8 pt-4 sm:px-7 md:px-10 min-[860px]:!px-10 lg:!px-14 sm:pt-10 pb-24 sm:pb-16 md:pb-24 flex justify-center items-center">
+        <section className="bg-gradient-to-b from-[#4895ef] via-[#5a6def] to-[#8d4aed] px-8 pt-4 sm:px-7 md:px-10 min-[860px]:!px-10 lg:!px-14 sm:pt-10 pb-24 sm:pb-16 md:pb-24 flex justify-center items-center">
             <div className="max-w-[1200px]">
                 <div className="flex flex-col min-[860px]:flex-row">
                     <div className="flex flex-col justify-center gap-6 md:w-[60%] lg:w-[65%]">

@@ -13,10 +13,10 @@ const ProgramasPage = () => {
     return (
         <>
             <HeroSection />
-            <RotatedMarquee />
             <AboutSection />
             <ServiceSection />
             <LevelsSection />
+            <RotatedMarquee />
             <WhyAttend />
             <Skills />
             <Testimonials />

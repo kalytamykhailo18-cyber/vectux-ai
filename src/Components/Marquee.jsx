@@ -12,7 +12,7 @@ const MarqueeList = [
 
 const RotatedMarquee = () => {
     return (
-        <div className="relative overflow-hidden bg-gradient-to-b from-[#4895ef] via-[#5a6def] to-[#343ec2]">
+        <div className="relative overflow-hidden bg-gradient-to-b from-[#343ec2] via-[#4a45c9] to-[#4895ef]">
             <div className="relative py-5 whitespace-nowrap flex">
                 <div className="marquee-track">
                     {MarqueeList.concat(MarqueeList).map((item, i) => (

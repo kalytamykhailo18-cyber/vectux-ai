@@ -59,21 +59,6 @@ const CardData = [
 const AboutSection = () => {
     return (
         <section className="relative py-20 flex flex-col items-center justify-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#343ec2]">
-            {/* About Content */}
-            <div id="about" className="flex justify-center items-center max-w-[1200px]">
-                <div className="flex flex-col justify-center items-center gap-6 sm:gap-3 md:gap-6">
-                    <p data-aos="fade-down" data-aos-duration="400" className="text-white font-Manrope text-center font-semibold text-lg md:text-[15px] tracking-[0.2px]">
-                        En Vectux Academy
-                    </p>
-                    <h1 data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] text-center bg-clip-text text-transparent font-bold text-4xl leading-[45px] md:text-5xl lg:text-[48px] sm:leading-[56px]">
-                        Formamos Organizaciones
-                        <br /> Data Driven
-                    </h1>
-                    <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" className="text-[#ffffffda] text-center font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[28px] w-full sm:w-[90%]">
-                        En Vectux Academy, impartimos certificaciones y cursos de inteligencia artificial y analítica avanzada para empresas, con formación de alto impacto liderada por expertos certificados de prestigiosas instituciones como el MIT, Harvard, Kellogg, IPADE, ITAM y la Universidad Católica de Chile. Una combinación de excelencia académica y experiencia práctica adaptada a las necesidades de tu negocio.
-                    </p>
-                </div>
-            </div>
 
             {/* Benefits Content */}
             <div className="max-w-[1200px] mt-20">
