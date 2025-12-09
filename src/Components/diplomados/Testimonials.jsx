@@ -130,7 +130,7 @@ const Testimonials = () => {
                                         </div>
 
                                         {/* Content */}
-                                        <div className="flex-1 text-center md:text-left">
+                                        <div className="flex-1 text-center md:text-center pl-20">
                                             {/* Quote */}
                                             <p className="text-white/90 font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[26px] mb-6 italic">
                                                 "{testimonial.text}"

@@ -129,24 +129,24 @@ const HeroSection = () => {
             />
 
             {/* Content */}
-            <div className="relative z-10 max-w-[1200px] px-8 sm:px-14 py-20">
+            <div className="relative z-10 max-w-[1200px] px-8 sm:px-14 py-20 text-white">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Block 1 */}
                     <div data-aos="fade-right" data-aos-duration="800">
-                        <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-3xl md:text-4xl lg:text-[48px] leading-[40px] sm:leading-[55px] mb-6">
+                        <h1 className="font-bold text-3xl md:text-4xl lg:text-[48px] leading-[40px] sm:leading-[55px] mb-6">
                             Prepárate para liderar en la era de los datos.
                         </h1>
-                        <p className="text-white/80 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
+                        <p className="font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
                             Transforma tu carrera con analítica, inteligencia artificial y habilidades de storytelling.
                         </p>
                     </div>
 
                     {/* Block 2 */}
                     <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                        <h2 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-2xl md:text-3xl lg:text-[40px] leading-[35px] sm:leading-[50px] mb-6">
+                        <h2 className="font-bold text-2xl md:text-3xl lg:text-[40px] leading-[35px] sm:leading-[50px] mb-6">
                             Diplomados ejecutivos para líderes que toman decisiones, no excusas.
                         </h2>
-                        <p className="text-white/80 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
+                        <p className="font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
                             Aprende a usar la analítica como tu ventaja competitiva en la era digital.
                         </p>
                     </div>
