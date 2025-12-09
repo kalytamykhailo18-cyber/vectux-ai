@@ -12,9 +12,9 @@ export default function LenisProvider({ children }) {
 
     lenisRef.current = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, 1 - Math.pow(1 - t, 3)), 
+      easing: (t) => Math.min(1, 1 - Math.pow(1 - t, 3)),
       smooth: true,
-      smoothTouch: false, 
+      smoothTouch: false,
       wheelMultiplier: 1,
     })
 
