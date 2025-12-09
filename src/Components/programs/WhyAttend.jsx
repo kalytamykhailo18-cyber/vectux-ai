@@ -79,7 +79,7 @@ export default function WhyAttend() {
                         <h1 data-aos="fade-right" data-aos-duration="800" className="text-[#fa0] font-bold text-[38px] md:text-5xl lg:text-[43px] leading-[45px] sm:leading-[56px]">
                             We develop
                             <br />
-                            <span className="text-[#af0]">analytical skills</span>
+                            <span className="">analytical skills</span>
                         </h1>
                         <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" className="text-white font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[28px] sm:w-[80%] md:w-full min-[860px]:!w-[80%]">
                             Our programs are custom-developed and focused on enhancing the "soft" and "hard" analytical skills of your employees, which are necessary to keep your business at the forefront in the age of Artificial Intelligence.
@@ -99,7 +99,7 @@ export default function WhyAttend() {
                                 height={360}
                                 src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221176/vectux-academy/assets/frame40.jpg"
                                 unoptimized
-                                className="relative rounded-[12px] transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#4cc9f0]/50"
+                                className="relative  rounded-tl-none rounded-tr-[72px] rounded-bl-[72px] rounded-br-none transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#4cc9f0]/50"
                             />
                         </div>
                     </div>

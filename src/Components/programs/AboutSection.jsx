@@ -62,7 +62,7 @@ const AboutSection = () => {
 
             {/* Benefits Content */}
             <div className="max-w-[1200px] mt-20">
-                <h2 data-aos="fade-right" data-aos-duration="800" className="text-center bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-[32px] leading-[38px] md:text-4xl lg:text-[48px] sm:leading-[56px] mb-12">
+                <h2 data-aos="fade-right" data-aos-duration="800" className="text-center text-white font-bold text-[32px] leading-[38px] md:text-4xl lg:text-[48px] sm:leading-[56px] mb-12">
                     <span className="font-bold text-blue-400">Data-driven:&nbsp;</span>
                     <span className="text-[18px] sm:text-[20px] md:text-4xl lg:text-[34px]">la ventaja competitiva del futuro</span>
                 </h2>
@@ -82,7 +82,7 @@ const AboutSection = () => {
                                 </div>
                                 <h3 className="text-white font-Manrope font-semibold text-xl mb-2">{card.title}</h3>
                                 <p className="text-white/80 font-Manrope text-sm">
-                                    <strong>{card.highlight}</strong> {card.desc}
+                                    <strong className='text-md text-[16px] text-white'>{card.highlight}</strong> {card.desc}
                                 </p>
                             </div>
                         );

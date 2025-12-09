@@ -35,92 +35,62 @@ const HeroSection = () => {
                     },
                     fpsLimit: 60,
                     particles: {
-                        color: { value: "#ffffff" },
+                        number: {
+                            value: 197,
+                            density: {
+                                enable: true,
+                                area: 962,
+                            },
+                        },
+                        color: { value: "#aaa" },
+                        shape: { type: "circle" },
+                        opacity: { value: 0.5 },
+                        size: {
+                            value: { min: 1, max: 3 },
+                            random: true,
+                        },
                         links: {
-                            color: "#ffffff",
-                            distance: 150,
                             enable: true,
-                            opacity: 0.3,
+                            distance: 150,
+                            color: "#ffffff",
+                            opacity: 0.4,
                             width: 1,
                         },
                         move: {
                             enable: true,
-                            speed: 0.4,
+                            speed: 6,
                             direction: "none",
-                            outModes: { default: "bounce" },
-                        },
-                        number: {
-                            density: { enable: true, area: 800 },
-                            value: 50,
-                        },
-                        opacity: { value: 0.5 },
-                        shape: { type: "circle" },
-                        size: { value: { min: 1, max: 3 } },
-                    },
-                    interactivity: {
-                        events: {
-                            onHover: { enable: true, mode: "grab" },
-                            onClick: { enable: true, mode: "push" },
-                        },
-                        modes: {
-                            grab: { distance: 140, links: { opacity: 0.5 } },
-                            push: { quantity: 4 },
-                        },
-                    },
-                    detectRetina: true,
-                }}
-            />
-
-            {/* Snowflake Particles */}
-            <Particles
-                id="tsparticles-snow"
-                init={particlesInit}
-                className="absolute inset-0 z-[6]"
-                options={{
-                    fullScreen: false,
-                    background: {
-                        color: { value: "transparent" },
-                    },
-                    fpsLimit: 60,
-                    particles: {
-                        color: { value: ["#ffffff", "#e0f7ff", "#c9eeff"] },
-                        move: {
-                            enable: true,
-                            speed: { min: 0.3, max: 1 },
-                            direction: "bottom",
-                            random: true,
+                            random: false,
                             straight: false,
                             outModes: { default: "out" },
+                            bounce: false,
                         },
-                        number: {
-                            density: { enable: true, area: 800 },
-                            value: 30,
+                    },
+                    interactivity: {
+                        detectsOn: "window",
+                        events: {
+                            onHover: { enable: true, mode: "repulse" },
+                            onClick: { enable: true, mode: "push" },
+                            resize: true,
                         },
-                        opacity: {
-                            value: { min: 0.2, max: 0.6 },
-                            animation: {
-                                enable: true,
-                                speed: 0.8,
-                                minimumValue: 0.1,
-                                sync: false,
+                        modes: {
+                            grab: {
+                                distance: 400,
+                                links: { opacity: 1 },
                             },
-                        },
-                        shape: { type: "star" },
-                        size: {
-                            value: { min: 1, max: 4 },
-                            animation: {
-                                enable: true,
-                                speed: 2,
-                                minimumValue: 0.5,
-                                sync: false,
+                            bubble: {
+                                distance: 400,
+                                size: 40,
+                                duration: 2,
+                                opacity: 0.8,
+                                speed: 3,
                             },
-                        },
-                        twinkle: {
-                            particles: {
-                                enable: true,
-                                frequency: 0.1,
-                                opacity: 1,
+                            repulse: {
+                                distance: 150,
+                                duration: 0.4,
                             },
+                            push: { quantity: 4 },
+                            remove: { quantity: 2 },
                         },
                     },
                     detectRetina: true,
@@ -129,10 +99,10 @@ const HeroSection = () => {
 
             {/* Content */}
             <div className="relative z-10 max-w-[1200px] text-center px-8 sm:px-14">
-                <h1 data-aos="fade-up" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl md:text-5xl lg:text-[56px] leading-[50px] sm:leading-[65px]">
+                <h1 data-aos="fade-up" className="text-white font-bold text-4xl md:text-5xl lg:text-[56px] leading-[50px] sm:leading-[65px]">
                     Cursos y Diplomados
                 </h1>
-                <p data-aos="fade-up" data-aos-delay="300" className="text-white/80 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px] mt-6 max-w-[800px] mx-auto">
+                <p data-aos="fade-up" data-aos-delay="300" className="text-white font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px] mt-6 max-w-[800px] mx-auto">
                     Descubre nuestra oferta académica en inteligencia artificial, analítica de datos y habilidades del futuro.
                 </p>
             </div>
