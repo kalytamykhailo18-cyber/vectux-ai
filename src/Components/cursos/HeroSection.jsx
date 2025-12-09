@@ -9,19 +9,7 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 w-full h-full"
-                style={{
-                    backgroundImage: "url('https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221003/vectux-academy/assets/bg-3.jpg')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                }}
-            />
-
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef80,#343ec2a0,#8d4aeda0)]" />
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#4895ef] via-[#343ec2] to-[#343ec2]">
 
             {/* Network Particles */}
             <Particles
@@ -36,15 +24,15 @@ const HeroSection = () => {
                     fpsLimit: 60,
                     particles: {
                         number: {
-                            value: 197,
+                            value: 100,
                             density: {
                                 enable: true,
                                 area: 962,
                             },
                         },
-                        color: { value: "#aaa" },
+                        color: { value: "#fff" },
                         shape: { type: "circle" },
-                        opacity: { value: 0.5 },
+                        opacity: { value: 0.1 },
                         size: {
                             value: { min: 1, max: 3 },
                             random: true,
@@ -53,12 +41,12 @@ const HeroSection = () => {
                             enable: true,
                             distance: 150,
                             color: "#ffffff",
-                            opacity: 0.4,
+                            opacity: 0.1,
                             width: 1,
                         },
                         move: {
                             enable: true,
-                            speed: 6,
+                            speed: 1,
                             direction: "none",
                             random: false,
                             straight: false,
@@ -69,28 +57,77 @@ const HeroSection = () => {
                     interactivity: {
                         detectsOn: "window",
                         events: {
-                            onHover: { enable: true, mode: "repulse" },
+                            onHover: { enable: true, mode: "attract" },
                             onClick: { enable: true, mode: "push" },
                             resize: true,
                         },
                         modes: {
-                            grab: {
-                                distance: 400,
-                                links: { opacity: 1 },
+                            attract: {
+                                distance: 200,
+                                duration: 0.1,
+                                easing: "ease-out-quad",
+                                factor: 1,
+                                maxSpeed: 50,
+                                speed: 10,
                             },
-                            bubble: {
-                                distance: 400,
-                                size: 40,
-                                duration: 2,
-                                opacity: 0.8,
-                                speed: 3,
+                            push: { quantity: 10 },
+                            remove: { quantity: 8 },
+                        },
+                    },
+                    detectRetina: true,
+                }}
+            />
+
+            {/* Snowflake Particles */}
+            <Particles
+                id="tsparticles-snow"
+                init={particlesInit}
+                className="absolute inset-0 z-[6]"
+                options={{
+                    fullScreen: false,
+                    background: {
+                        color: { value: "transparent" },
+                    },
+                    fpsLimit: 60,
+                    particles: {
+                        color: { value: ["#ffffff", "#e0f7ff", "#c9eeff"] },
+                        move: {
+                            enable: true,
+                            speed: { min: 0.3, max: 1 },
+                            direction: "bottom",
+                            random: true,
+                            straight: false,
+                            outModes: { default: "out" },
+                        },
+                        number: {
+                            density: { enable: true, area: 800 },
+                            value: 100,
+                        },
+                        opacity: {
+                            value: { min: 0.2, max: 0.6 },
+                            animation: {
+                                enable: true,
+                                speed: 0.8,
+                                minimumValue: 0.1,
+                                sync: false,
                             },
-                            repulse: {
-                                distance: 150,
-                                duration: 0.4,
+                        },
+                        shape: { type: "star" },
+                        size: {
+                            value: { min: 1, max: 3 },
+                            animation: {
+                                enable: true,
+                                speed: 1,
+                                minimumValue: 0.5,
+                                sync: false,
                             },
-                            push: { quantity: 4 },
-                            remove: { quantity: 2 },
+                        },
+                        twinkle: {
+                            particles: {
+                                enable: true,
+                                frequency: 0.1,
+                                opacity: 1,
+                            },
                         },
                     },
                     detectRetina: true,
