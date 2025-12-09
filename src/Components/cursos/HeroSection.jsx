@@ -9,7 +9,7 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#0865af] via-[#343ec2] to-[#343ec2]">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#2895ef] via-[#343ec2] to-[#343ec2]">
 
             {/* Network Particles */}
             <Particles
