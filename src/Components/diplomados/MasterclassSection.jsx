@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import { FaCalendarAlt, FaClock, FaLaptop } from 'react-icons/fa'
 
 const MasterclassSection = () => {
     return (
@@ -9,55 +10,104 @@ const MasterclassSection = () => {
             <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
 
             <div className="max-w-[1200px] mx-auto">
-                {/* Header */}
-                <div className="text-center mb-12">
-                    <h2
-                        data-aos="fade-up"
-                        data-aos-duration="600"
-                        className="text-white font-bold text-3xl md:text-4xl lg:text-[48px] leading-[45px] sm:leading-[58px]"
+                <div className="grid md:grid-cols-2 gap-10 items-center">
+                    {/* Left Side - Image */}
+                    <div
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                        className="relative"
                     >
-                        Próximas Masterclass Gratuitas
-                    </h2>
-                </div>
-
-                {/* Image with Overlay */}
-                <div
-                    data-aos="zoom-in"
-                    data-aos-duration="800"
-                    data-aos-delay="200"
-                    className="relative rounded-[24px] overflow-hidden"
-                >
-                    <div className="relative aspect-[16/7] w-full">
                         <Image
-                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221271/vectux-academy/assets/insight.jpg"
-                            alt="Próximas Masterclass"
-                            fill
+                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765366777/Ana-2-fotor-2025121073910_hiwcgd.png"
+                            alt="Ana Mireya López"
+                            width={600}
+                            height={700}
                             unoptimized
-                            className="object-cover"
+                            className="w-full h-auto object-cover rounded-lg"
+                            style={{
+                                maskImage: 'linear-gradient(to right, transparent 12%, black 50%), linear-gradient(to top, transparent 0%, black 20%)',
+                                WebkitMaskImage: 'linear-gradient(to right, transparent 12%, black 50%), linear-gradient(to top, transparent 0%, black 20%)',
+                                maskComposite: 'intersect',
+                                WebkitMaskComposite: 'source-in'
+                            }}
                         />
-                        {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#343ec2]/80 via-transparent to-transparent" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#8d4aed]/40 via-transparent to-[#4895ef]/40" />
                     </div>
 
-                    {/* Floating Content Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                            <div>
-                                <p
-                                    data-aos="fade-right"
-                                    data-aos-duration="600"
-                                    data-aos-delay="400"
-                                    className="text-white/90 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[28px] max-w-[600px]"
-                                >
-                                    Participa en nuestras masterclass gratuitas y descubre cómo la analítica puede transformar tu carrera profesional.
-                                </p>
+                    {/* Right Side - Content */}
+                    <div
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
+                        className="flex flex-col items-center gap-6"
+                    >
+                        {/* Masterclass Badge */}
+                        <div className="inline-block w-max">
+                            <span className="bg-[#4cc9f0] text-[#0a0a1a] font-Manrope font-[700] text-[12px] uppercase tracking-[1px] px-4 py-2 rounded-full">
+                                Masterclass
+                            </span>
+                        </div>
+
+                        {/* Title */}
+                        <h2 className="text-center text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight">
+                            Del Insight a la Acción.
+                        </h2>
+
+                        {/* Subtitle */}
+                        <h3 className="text-[#faa307] text-center font-bold text-xl md:text-2xl leading-tight">
+                            Storytelling con Datos para Inspirar Decisiones y ROI
+                        </h3>
+
+                        {/* Description */}
+                        <p className="text-white/80 text-center font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[26px]">
+                            Transforma tus datos en historias que capturan atención, impulsan decisiones y generan resultados reales.
+                        </p>
+
+                        {/* Speaker Info */}
+                        <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg p-6">
+                            <p className="text-white font-Manrope font-[600] text-[16px] mb-2">
+                                Ponente: Ana Mireya López
+                            </p>
+                            <p className="text-white/70 font-Manrope text-[14px] leading-[22px]">
+                                Certificada en Inteligencia Artificial - MIT<br />
+                                CEO de Vectux Academy & Vectux Analytics
+                            </p>
+                        </div>
+
+                        {/* Event Details */}
+                        <div className="flex flex-wrap gap-4">
+                            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3">
+                                <FaCalendarAlt className="text-[#4cc9f0] w-5 h-5" />
+                                <div>
+                                    <p className="text-white/60 font-Manrope text-[11px] uppercase">Inicio:</p>
+                                    <p className="text-white font-Manrope font-[600] text-[14px]">12 ENE 2025</p>
+                                </div>
                             </div>
-                            <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">
-                                <button className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[14px] tracking-[1.3px] px-8 py-3.5 rounded-md select-none whitespace-nowrap">
-                                    Ver Calendario
-                                </button>
+
+                            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3">
+                                <FaClock className="text-[#4cc9f0] w-5 h-5" />
+                                <div>
+                                    <p className="text-white font-Manrope font-[600] text-[14px]">6:00 PM</p>
+                                    <p className="text-white/60 font-Manrope text-[11px]">Hora del Este</p>
+                                </div>
                             </div>
+
+                            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3">
+                                <FaLaptop className="text-[#4cc9f0] w-5 h-5" />
+                                <div>
+                                    <p className="text-white/60 font-Manrope text-[11px] uppercase">Modalidad</p>
+                                    <p className="text-white font-Manrope font-[600] text-[14px]">Online</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Buttons */}
+                        <div className="flex flex-wrap gap-4 mt-4">
+                            <button className="bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 transition text-white font-Manrope font-[700] text-[13px] uppercase tracking-[1px] px-6 py-3 rounded-full">
+                                Certificado Digital de Participación
+                            </button>
+                            <button className="bg-[#faa307] hover:bg-[#f48c06] transition text-[#0a0a1a] font-Manrope font-[700] text-[13px] uppercase tracking-[1px] px-8 py-3 rounded-full">
+                                Inscríbete
+                            </button>
                         </div>
                     </div>
                 </div>

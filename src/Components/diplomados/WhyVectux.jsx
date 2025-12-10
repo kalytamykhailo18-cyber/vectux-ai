@@ -7,7 +7,7 @@ const WhyVectux = () => {
         <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#8d4aed]">
             <div className="max-w-[1200px] mx-auto">
                 {/* Block 1 - Why Vectux */}
-                <div className="mb-20">
+                <div className="mb-20 p-8 md:p-12">
                     <h2
                         data-aos="fade-up"
                         data-aos-duration="600"
@@ -41,14 +41,6 @@ const WhyVectux = () => {
                         >
                             En Vectux diseñamos programas ejecutivos que nacen desde la práctica: conocemos el negocio, dominamos la tecnología y llevamos años resolviendo desafíos reales en banca, retail, salud, energía y servicios.
                         </p>
-                        <p
-                            data-aos="zoom-in"
-                            data-aos-duration="600"
-                            data-aos-delay="400"
-                            className="text-white/80 font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px] text-center"
-                        >
-                            Nuestros diplomados están diseñados para que apliques desde el día uno, con herramientas que usarás en tu trabajo actual, no en un futuro hipotético.
-                        </p>
                     </div>
                 </div>
 
@@ -62,15 +54,14 @@ const WhyVectux = () => {
                     >
                         <div className="relative overflow-hidden rounded-tl-none rounded-tr-[72px] rounded-bl-[72px] rounded-br-none">
                             <Image
-                                src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp"
+                                src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765338332/Ana-1-fotor-20251209234527_einmgc.png"
                                 alt="Ana Mireya López - Fundadora & CEO Vectux Academy"
                                 width={600}
                                 height={450}
                                 unoptimized
                                 className="w-full h-auto object-cover"
+                                style={{ maskImage: 'linear-gradient(to bottom, black 0%, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 60%, transparent 100%)' }}
                             />
-                            {/* Gradient overlay on image */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#343ec2]/50 to-transparent" />
                         </div>
                     </div>
 
@@ -81,10 +72,8 @@ const WhyVectux = () => {
                         data-aos-delay="200"
                         className="relative"
                     >
-                        {/* Quote mark */}
-                        <span className="absolute -top-4 -left-2 text-[80px] text-[#4cc9f0]/30 font-serif leading-none">"</span>
 
-                        <div className="pl-6 border-l-4 border-[#4cc9f0]">
+                        <div className="pl-6 p-8 bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg">
                             <p className="text-white/90 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px] mb-4 italic">
                                 Quiero ayudarte a pensar con claridad en la era digital y a tomar decisiones con visión.
                             </p>

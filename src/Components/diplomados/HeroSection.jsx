@@ -9,17 +9,7 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Video Background */}
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-            >
-                <source src="https://res.cloudinary.com/dcfjvxt5h/video/upload/v1765231165/vectux-academy/video/2.mp4" type="video/mp4" />
-            </video>
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#4895ef] via-[#343ec2] to-[#8d4aed]">
 
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef80,#343ec2a0,#8d4aeda0)]" />
@@ -130,24 +120,14 @@ const HeroSection = () => {
 
             {/* Content */}
             <div className="relative z-10 max-w-[1200px] px-8 sm:px-14 py-20 text-white">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="flex justify-center items-center">
                     {/* Block 1 */}
-                    <div data-aos="fade-right" data-aos-duration="800">
+                    <div data-aos="fade-right" data-aos-duration="800" className="text-center max-w-[800px]">
                         <h1 className="font-bold text-3xl md:text-4xl lg:text-[48px] leading-[40px] sm:leading-[55px] mb-6">
                             Prepárate para liderar en la era de los datos.
                         </h1>
                         <p className="font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
                             Transforma tu carrera con analítica, inteligencia artificial y habilidades de storytelling.
-                        </p>
-                    </div>
-
-                    {/* Block 2 */}
-                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                        <h2 className="font-bold text-2xl md:text-3xl lg:text-[40px] leading-[35px] sm:leading-[50px] mb-6">
-                            Diplomados ejecutivos para líderes que toman decisiones, no excusas.
-                        </h2>
-                        <p className="font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
-                            Aprende a usar la analítica como tu ventaja competitiva en la era digital.
                         </p>
                     </div>
                 </div>
