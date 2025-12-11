@@ -12,13 +12,13 @@ const benefitsItems = [
         icon: "✨", aos: "fade-up", duration: "600", delay: 0
     },
     {
-        title: "Aplica en tu trabajo desde el primer módulo",
-        text: "Mentoría personalizada y acompañamiento estratégico",
+        title: "Potencia tu carrera profesional",
+        text: "Te abrimos las puertas a puestos mejor pagados",
         icon: "🎓", aos: "fade-up", duration: "600", delay: 100
     },
     {
-        title: "Conecta con mentores y pares de alto nivel en Latinoamérica",
-        text: "Mentores en activo, trabajando en el mundo de la analítica con empresas top Mundiales",
+        title: "Conecta con mentores y pares de alto nivel",
+        text: "Nuestros mentores son altos ejecutivos de empresas Fortune 500",
         icon: "🤝", aos: "fade-up", duration: "600", delay: 200
     },
     {
@@ -31,7 +31,7 @@ const benefitsItems = [
 const targetAudienceItems = [
     {
         text: "Analistas, gerentes y directivos de cualquier industria",
-        icon: MdBusinessCenter, aos: "fade-up", duration: "600", delay: 0
+        icon: FaUsers, aos: "fade-up", duration: "600", delay: 0
     },
     {
         text: "Líderes funcionales que no son técnicos, pero toman decisiones clave",
@@ -40,10 +40,6 @@ const targetAudienceItems = [
     {
         text: "Profesionales que quieren impulsar su carrera o prepararse para mercados globales",
         icon: FaRocket, aos: "fade-up", duration: "600", delay: 200
-    },
-    {
-        text: "Equipos internos de empresas que buscan mejorar su capacidad analítica",
-        icon: FaUsers, aos: "fade-up", duration: "1000", delay: 300
     }
 ]
 

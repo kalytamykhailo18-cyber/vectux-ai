@@ -5,7 +5,7 @@ import { HiMail, HiPhone } from 'react-icons/hi'
 
 const ContactSection = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#4a45c9] to-[#5a3db8]">
+        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#4a45c9] to-[#343ec2]">
             {/* Top Gradient Blur for section transition */}
             <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#343ec2] blur-xl" />
 
@@ -17,7 +17,8 @@ const ContactSection = () => {
                         data-aos-duration="800"
                         className="relative"
                     >
-                        <div className="relative overflow-hidden rounded-tl-[24px] rounded-tr-none rounded-bl-none rounded-br-[24px]">
+                        <div className="relative relative">
+                            <img src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765420894/robot_uhbrwt.jpg" alt="" className="absolute -top-20 right-0 w-full h-auto z-10" />
                             <Image
                                 src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220969/vectux-academy/assets/askus.jpg"
                                 alt="Contáctanos"
@@ -97,7 +98,7 @@ const ContactSection = () => {
             </div>
 
             {/* Bottom Gradient Blur for footer transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#5a3db8] blur-xl" />
+            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#343ec2] blur-xl" />
         </section>
     )
 }

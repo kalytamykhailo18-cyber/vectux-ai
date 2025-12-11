@@ -89,7 +89,7 @@ const Testimonials = () => {
                         data-aos-duration="600"
                         className="text-white font-bold text-3xl md:text-4xl lg:text-[48px] leading-[45px] sm:leading-[58px] mb-6"
                     >
-                        Testimonios que impactan
+                        Testimonios con impacto
                     </h2>
                     <p
                         data-aos="fade-up"
@@ -97,7 +97,7 @@ const Testimonials = () => {
                         data-aos-delay="200"
                         className="text-white/70 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[28px] max-w-[800px] mx-auto"
                     >
-                        Nuestros alumnos no sólo aprenden analítica: transforman su carrera profesional, amplían sus oportunidades, mejoran sus ingresos y aceleran su futuro.
+                        Ellos no solo tomaron un diplomado. Transformaron su forma de pensar, decidir y liderar.
                     </p>
                 </div>
 
@@ -113,7 +113,7 @@ const Testimonials = () => {
                                 key={testimonial.id}
                                 className="w-full flex-shrink-0 flex-grow-0 basis-full"
                             >
-                                <div className="w-full bg-black/30 backdrop-blur-sm rounded-[20px] p-8 md:p-10 border border-[#e3e3e330]">
+                                <div className="w-full bg-black/10 backdrop-blur-sm rounded-[20px] p-8 md:p-10 border border-[#e3e3e330]">
                                     <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                                         {/* Avatar */}
                                         <div className="flex-shrink-0">

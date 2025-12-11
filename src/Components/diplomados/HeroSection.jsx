@@ -1,149 +1,49 @@
-"use client"
-import React, { useCallback } from 'react'
-import Particles from 'react-tsparticles'
-import { loadSlim } from 'tsparticles-slim'
+import Image from 'next/image';
+import React from 'react';
 
 const HeroSection = () => {
-    const particlesInit = useCallback(async (engine) => {
-        await loadSlim(engine)
-    }, [])
+  return (
+    <section className='relative min-h-screen flex items-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 py-20 bg-gradient-to-b from-[#4895ef] via-[#5a3db8] to-[#343ec2]'>
+      <div className='grid grid-cols-1 min-[860px]:grid-cols-2 place-content-center gap-12 sm:gap-8 max-w-[1200px] mx-auto w-full'>
+        {/* Text Content */}
+        <div className='flex flex-col justify-center items-center gap-6 order-2 min-[860px]:order-1'>
+          <p data-aos="fade-up" className="text-white font-Manrope text-center font-semibold text-lg md:text-[15px] tracking-[0.2px]">
+            <span className='text-skyBlue'>{"["}</span> En Vectux Academy <span className='text-skyBlue'>{"]"}</span>
+          </p>
+          <h1 data-aos="fade-up" data-aos-delay="300" className="text-center text-white font-bold text-4xl leading-[45px] md:text-5xl lg:text-[56px] sm:leading-[64px]">
+            From zero to data-driven
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="500" className='text-center text-[#eee] font-Manrope text-[15px] sm:text-[17px] font-[500] leading-[30px] w-full sm:w-[95%]'>
+            En Vectux Academy no somos una escuela tradicional. Somos una consultora de Inteligencia Artificial con una misión clara: abrirle las puertas del mundo de los datos a líderes, profesionales y equipos que quieren evolucionar y avanzar en la economía digital.
+          </p>
+          <div data-aos="fade-up" data-aos-delay="600" className="mt-4">
+            <a
+              href="#section-tickets"
+              className="bg-skyBlue w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none inline-block"
+            >
+              Contáctanos
+            </a>
+          </div>
+        </div>
 
-    return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#4895ef] via-[#343ec2] to-[#8d4aed]">
+        {/* Image */}
+        <div data-aos="big-zoom" data-aos-duration="2000" className='flex justify-center items-center order-1 min-[860px]:order-2'>
+          <Image
+            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/f_auto,q_auto,w_450/v1765414817/c1_nlnzf2.webp"
+            alt="Logo"
+            width={450}
+            height={450}
+            priority
+            unoptimized
+            className="rotate w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]"
+          />
+        </div>
+      </div>
 
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef80,#343ec2a0,#8d4aeda0)]" />
+      {/* Bottom Gradient Blur for section transition */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#343ec2] to-transparent" />
+    </section>
+  );
+};
 
-            {/* Network Particles */}
-            <Particles
-                id="tsparticles-network-diplomados"
-                init={particlesInit}
-                className="absolute inset-0 z-[5]"
-                options={{
-                    fullScreen: false,
-                    background: {
-                        color: { value: "transparent" },
-                    },
-                    fpsLimit: 60,
-                    particles: {
-                        color: { value: "#ffffff" },
-                        links: {
-                            color: "#ffffff",
-                            distance: 150,
-                            enable: true,
-                            opacity: 0.3,
-                            width: 1,
-                        },
-                        move: {
-                            enable: true,
-                            speed: 0.4,
-                            direction: "none",
-                            outModes: { default: "bounce" },
-                        },
-                        number: {
-                            density: { enable: true, area: 800 },
-                            value: 50,
-                        },
-                        opacity: { value: 0.5 },
-                        shape: { type: "circle" },
-                        size: { value: { min: 1, max: 3 } },
-                    },
-                    interactivity: {
-                        events: {
-                            onHover: { enable: true, mode: "grab" },
-                            onClick: { enable: true, mode: "push" },
-                        },
-                        modes: {
-                            grab: { distance: 140, links: { opacity: 0.5 } },
-                            push: { quantity: 4 },
-                        },
-                    },
-                    detectRetina: true,
-                }}
-            />
-
-            {/* Snowflake Particles */}
-            <Particles
-                id="tsparticles-snow-diplomados"
-                init={particlesInit}
-                className="absolute inset-0 z-[6]"
-                options={{
-                    fullScreen: false,
-                    background: {
-                        color: { value: "transparent" },
-                    },
-                    fpsLimit: 60,
-                    particles: {
-                        color: { value: ["#ffffff", "#e0f7ff", "#c9eeff"] },
-                        move: {
-                            enable: true,
-                            speed: { min: 0.3, max: 1 },
-                            direction: "bottom",
-                            random: true,
-                            straight: false,
-                            outModes: { default: "out" },
-                        },
-                        number: {
-                            density: { enable: true, area: 800 },
-                            value: 30,
-                        },
-                        opacity: {
-                            value: { min: 0.2, max: 0.6 },
-                            animation: {
-                                enable: true,
-                                speed: 0.8,
-                                minimumValue: 0.1,
-                                sync: false,
-                            },
-                        },
-                        shape: { type: "star" },
-                        size: {
-                            value: { min: 1, max: 4 },
-                            animation: {
-                                enable: true,
-                                speed: 2,
-                                minimumValue: 0.5,
-                                sync: false,
-                            },
-                        },
-                        twinkle: {
-                            particles: {
-                                enable: true,
-                                frequency: 0.1,
-                                opacity: 1,
-                            },
-                        },
-                    },
-                    detectRetina: true,
-                }}
-            />
-
-            {/* Content */}
-            <div className="relative z-10 max-w-[1200px] px-8 sm:px-14 py-20 text-white">
-                <div className="flex justify-center items-center">
-                    {/* Block 1 */}
-                    <div data-aos="fade-right" data-aos-duration="800" className="text-center max-w-[800px]">
-                        <h1 className="font-bold text-3xl md:text-4xl lg:text-[48px] leading-[40px] sm:leading-[55px] mb-6">
-                            Prepárate para liderar en la era de los datos.
-                        </h1>
-                        <p className="font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[30px]">
-                            Transforma tu carrera con analítica, inteligencia artificial y habilidades de storytelling.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Contact Button */}
-                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400" className="mt-12 text-center">
-                    <button className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[14px] tracking-[1.3px] px-8 py-3.5 rounded-md select-none">
-                        Contactar
-                    </button>
-                </div>
-            </div>
-
-            {/* Bottom Gradient Blur */}
-            <div className="absolute -bottom-28 -left-20 w-[140%] h-[20%] z-20 bg-gradient-to-b blur-2xl from-[#343ec2] to-[#343ec2]" />
-        </section>
-    )
-}
-
-export default HeroSection
+export default HeroSection;

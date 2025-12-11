@@ -5,9 +5,10 @@ import Link from 'next/link'
 const diplomados = [
     {
         id: 1,
-        icon: "🧠",
-        title: "Diplomado en Business Analytics (BA)",
-        description: "Lidera con datos, no con suposiciones. Aprende a transformar información en decisiones estratégicas, visuales y accionables para tu negocio. Ideal para analistas y gerentes de cualquier área: administración, operaciones, ventas, recursos humanos y líderes que necesitan incorporar la analítica en sus funciones.",
+        icon: "📊",
+        title: "Business Analytics",
+        subtitle: "Domina el idioma de los datos para tomar mejores decisiones.",
+        description: "Una experiencia ejecutiva para líderes de distintas áreas que quieren integrar la analítica en su día a día, sin ser técnicos. Aprende a visualizar, interpretar y aplicar datos para liderar con confianza en un entorno cambiante.",
         buttonText: "Ver Detalle",
         slug: "business-analytics",
         aos: "fade-right",
@@ -16,9 +17,10 @@ const diplomados = [
     },
     {
         id: 2,
-        icon: "📊",
-        title: "Diplomado en Financial Analytics (FA)",
-        description: "Convierte tus datos financieros en decisiones estratégicas. Dirigido a CFOs, controllers, gerentes y equipos contables o financieros que quieren pasar de Excel a modelos predictivos.",
+        icon: "💰",
+        title: "Financial Analytics",
+        subtitle: "Convierte tus datos financieros en decisiones estratégicas.",
+        description: "Dirigido a profesionales de finanzas que quieren ir más allá de los reportes: automatización, modelos predictivos, análisis de rentabilidad y escenarios para tomar decisiones ágiles, informadas y rentables.",
         buttonText: "Ver Detalle",
         slug: "financial-analytics",
         aos: "zoom-in",
@@ -28,8 +30,9 @@ const diplomados = [
     {
         id: 3,
         icon: "📈",
-        title: "Diplomado en Marketing Analytics (MA)",
-        description: "Optimiza campañas, entiende a tu cliente y predice resultados con datos reales. Para líderes de marketing, producto, e-commerce y estrategia digital.",
+        title: "Marketing Analytics",
+        subtitle: "Pasa de suposiciones a decisiones basadas en datos reales.",
+        description: "Para líderes de marketing, producto o e-commerce que buscan optimizar campañas, entender a sus clientes, medir resultados y predecir el rendimiento con herramientas analíticas claras, aplicables y potentes.",
         buttonText: "Ver Detalle",
         slug: "marketing-analytics",
         aos: "fade-left",
@@ -64,7 +67,7 @@ const DiplomadosCards = () => {
                             data-aos={diplomado.aos}
                             data-aos-duration={diplomado.duration}
                             data-aos-delay={diplomado.delay}
-                            className="group bg-black/30 backdrop-blur-sm rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:bg-[#4cc9f0]/10 transition-all duration-300"
+                            className="group backdrop-blur-sm rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:bg-[#4cc9f0]/3 transition-all duration-300"
                         >
                             {/* Icon */}
                             <div className="text-[48px] mb-6 transform group-hover:scale-110 transition-transform duration-300">
@@ -72,12 +75,17 @@ const DiplomadosCards = () => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-white font-bold text-xl md:text-[22px] leading-[30px] mb-4 group-hover:text-[#4cc9f0] transition-colors duration-300">
+                            <h3 className="text-white font-bold text-xl md:text-[22px] leading-[30px] mb-2 group-hover:text-[#4cc9f0] transition-colors duration-300">
                                 {diplomado.title}
                             </h3>
 
+                            {/* Subtitle */}
+                            <p className="text-[#4cc9f0] font-Manrope text-[14px] sm:text-[15px] font-[600] leading-[24px] mb-4">
+                                {diplomado.subtitle}
+                            </p>
+
                             {/* Description */}
-                            <p className="text-white/70 font-Manrope text-[14px] sm:text-[15px] font-[500] leading-[24px] mb-8">
+                            <p className="text-white/90 font-Manrope text-[14px] sm:text-[15px] font-[500] leading-[24px] mb-8">
                                 {diplomado.description}
                             </p>
 
