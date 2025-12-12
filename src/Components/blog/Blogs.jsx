@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const animationPatterns = [
     { aos: "fade-up", duration: "600" },
@@ -115,6 +115,8 @@ const blogPosts = [
 ]
 
 const Blogs = () => {
+    const router = useRouter()
+
     return (
         <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#8d4aed]">
             <div className="max-w-[1200px] mx-auto">
@@ -131,7 +133,7 @@ const Blogs = () => {
                             className="group bg-black/30 backdrop-blur-sm rounded-[16px] overflow-hidden border border-[#e3e3e330] hover:border-[#4cc9f0] transition-all duration-300"
                         >
                             {/* Thumbnail */}
-                            <Link href={`/blog/${post.slug}`} className="block relative aspect-[16/10] overflow-hidden">
+                            <button onClick={() => router.push(`/blog/${post.slug}`)} className="block relative aspect-[16/10] overflow-hidden w-full cursor-pointer">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
@@ -143,26 +145,26 @@ const Blogs = () => {
                                 <span className="absolute top-4 left-4 bg-[#4cc9f0] text-[#0a0a1a] font-Manrope font-bold text-[12px] uppercase tracking-[1px] px-3 py-1 rounded-full">
                                     {post.category}
                                 </span>
-                            </Link>
+                            </button>
 
                             {/* Content */}
                             <div className="p-6">
                                 <h3 className="text-white font-bold text-[18px] leading-[26px] mb-3 group-hover:text-[#4cc9f0] transition-colors duration-300">
-                                    <Link href={`/blog/${post.slug}`}>
+                                    <button onClick={() => router.push(`/blog/${post.slug}`)} className="cursor-pointer">
                                         {post.title}
-                                    </Link>
+                                    </button>
                                 </h3>
                                 <p className="text-white/70 font-Manrope text-[14px] leading-[22px] mb-4 line-clamp-3">
                                     {post.excerpt}
                                 </p>
 
                                 {/* Read More */}
-                                <Link
-                                    href={`/blog/${post.slug}`}
-                                    className="inline-block text-[#4cc9f0] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] hover:text-white transition-colors duration-300"
+                                <button
+                                    onClick={() => router.push(`/blog/${post.slug}`)}
+                                    className="inline-block text-[#4cc9f0] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] hover:text-white transition-colors duration-300 cursor-pointer"
                                 >
                                     Leer
-                                </Link>
+                                </button>
 
                                 {/* Meta */}
                                 <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-white/50 font-Manrope text-[12px]">

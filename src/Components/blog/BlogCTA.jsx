@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const ctaData = {
     title: "Descubre nuestros programas",
@@ -10,6 +10,8 @@ const ctaData = {
 }
 
 const BlogCTA = () => {
+    const router = useRouter()
+
     return (
         <section
             className="relative overflow-hidden px-8 sm:px-14 py-20 md:py-28 bg-cover bg-center bg-fixed"
@@ -27,12 +29,12 @@ const BlogCTA = () => {
                     <h2 className="text-white font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[40px] md:leading-[50px] mb-6">
                         {ctaData.title}
                     </h2>
-                    <Link
-                        href={ctaData.link}
-                        className="inline-block bg-[#4cc9f0] hover:bg-[#3ab8df] text-[#0a0a1a] font-Manrope font-bold text-[13px] uppercase tracking-[1px] px-8 py-4 rounded-full transition-all duration-300"
+                    <button
+                        onClick={() => router.push(ctaData.link)}
+                        className="inline-block bg-[#4cc9f0] hover:bg-[#3ab8df] text-[#0a0a1a] font-Manrope font-bold text-[13px] uppercase tracking-[1px] px-8 py-4 rounded-full transition-all duration-300 cursor-pointer"
                     >
                         {ctaData.buttonText}
-                    </Link>
+                    </button>
                 </div>
             </div>
 

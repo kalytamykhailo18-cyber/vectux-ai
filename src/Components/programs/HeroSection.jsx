@@ -2,6 +2,13 @@
 import React from 'react';
 
 const HeroSection = () => {
+    const scrollToSection = (sectionId) => {
+        const element = document.querySelector(sectionId)
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <section className="relative min-h-screen pb-52 pt-36 w-full flex justify-center items-center overflow-hidden">
             <video
@@ -41,12 +48,12 @@ const HeroSection = () => {
                     data-aos-delay="600"
                     className="flex flex-col mt-5 md:flex-row space-y-4 md:space-y-0 md:space-x-4"
                 >
-                    <a
-                        href="#section-tickets"
-                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
+                    <button
+                        onClick={() => scrollToSection('#section-tickets')}
+                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
                     >
                         Más información
-                    </a>
+                    </button>
                 </div>
                 <h1
                     data-aos="fade-right"

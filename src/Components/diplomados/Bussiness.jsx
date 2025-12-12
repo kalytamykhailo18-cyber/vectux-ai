@@ -1,0 +1,113 @@
+"use client"
+import React from 'react'
+import Image from 'next/image'
+
+const bussinessData = {
+    title: "Tu ruta de transformación: De Principiante a Business Analytics Lead",
+    subtitle: "Un enfoque 100% práctico. Olvida las clases magistrales aburridas; aquí vienes a trabajar.",
+    cards: [
+        {
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529683/bussiness-1_ininrd.jpg",
+            title: "Fase 1: Análisis y Visualización de Datos",
+            text: [
+                "Crea tableros que hablen por sí solos.",
+                "Herramientas: Power BI / Tableau"
+            ]
+        },
+        {
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529687/bussiness-2_hpheyc.jpg",
+            title: "Fase 2: Predicción con IA",
+            text: [
+                "Usa Machine Learning para anticipar tendencias y comportamientos.",
+                "Herramientas: Python (Librerías Pandas/Scikit-Learn) nivel aplicado."
+            ]
+        },
+        {
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529686/bussiness-3_o7n35q.jpg",
+            title: "Fase 3: Data Storytelling",
+            text: [
+                "Genera impacto e influencia a través de los datos"
+            ]
+        }
+    ]
+}
+
+const Bussiness = () => {
+    return (
+        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#8d4aed]">
+            {/* Top Gradient Blur for section transition */}
+            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+
+            <div className="max-w-[1200px] mx-auto">
+                {/* Title */}
+                <h2
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[36px] md:leading-[50px] text-center mb-4"
+                >
+                    {bussinessData.title}
+                </h2>
+
+                {/* Subtitle */}
+                <p
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="100"
+                    className="text-white/80 font-Manrope text-[16px] sm:text-[18px] font-[500] leading-[28px] text-center mb-12 max-w-[800px] mx-auto"
+                >
+                    {bussinessData.subtitle}
+                </p>
+
+                {/* Vertical Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {bussinessData.cards.map((card, index) => (
+                        <div
+                            key={index}
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay={index * 100}
+                            className="group bg-black/20 backdrop-blur-sm rounded-[16px] overflow-hidden border border-[#e3e3e330] hover:border-[#4cc9f0] transition-all duration-300"
+                        >
+                            {/* Card Image */}
+                            <div className="relative aspect-[16/10] overflow-hidden">
+                                <Image
+                                    src={card.image}
+                                    alt={card.title}
+                                    fill
+                                    unoptimized
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                {/* Phase Badge */}
+                                <span className="absolute top-4 left-4 bg-[#4cc9f0] text-[#0a0a1a] font-Manrope font-bold text-[12px] uppercase tracking-[1px] px-3 py-1 rounded-full">
+                                    Fase {index + 1}
+                                </span>
+                            </div>
+
+                            {/* Card Content */}
+                            <div className="p-6">
+                                <h3 className="text-white font-bold text-[18px] leading-[26px] mb-4 group-hover:text-[#4cc9f0] transition-colors duration-300">
+                                    {card.title}
+                                </h3>
+                                <ul className="space-y-2">
+                                    {card.text.map((item, idx) => (
+                                        <li key={idx} className="flex items-start gap-2">
+                                            <span className="text-[#4cc9f0] pb-6">•</span>
+                                            <span className="text-white/70 font-Manrope text-[14px] leading-[22px]">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Bottom Gradient Blur for section transition */}
+            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#8d4aed] blur-xl" />
+        </section>
+    )
+}
+
+export default Bussiness

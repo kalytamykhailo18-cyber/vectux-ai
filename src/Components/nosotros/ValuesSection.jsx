@@ -47,7 +47,10 @@ const values = [
 
 const ValuesSection = () => {
     return (
-        <section id="valores" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#8d4aed]">
+        <section id="valores" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#8d4aed]">
+            {/* Top Gradient Blur for section transition */}
+            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+
             <div className="max-w-[1200px] mx-auto">
                 <h2
                     data-aos="zoom-in"

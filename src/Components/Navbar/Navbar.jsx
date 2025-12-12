@@ -1,6 +1,6 @@
 "use client"
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -14,13 +14,15 @@ const menuItems = [
 
 export default function Navbar({ locoScroll }) {
     const [menuOpen, setMenuOpen] = useState(false);
+    const router = useRouter();
+
     return (
         <>
             <nav className={`fixed top-0 left-0 pt-3 sm:py-1.5 w-full z-[999999] transition-all duration-300 ease-[cubic-bezier(.4,0,.2,1)] "bg-[linear-gradient(90deg,#4895ef,#343ec2,#8d4aed)]/10 backdrop-blur-md shadow-md"`}>
                 <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0 text-white font-bold text-xl select-none cursor-pointer">
-                        <Link href="/" className="hover:text-purple-400 transition">
+                        <button onClick={() => router.push("/")} className="hover:text-purple-400 transition">
                             <Image
                                 src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221274/vectux-academy/assets/LogoVectux.png"
                                 alt="Logo"
@@ -29,16 +31,16 @@ export default function Navbar({ locoScroll }) {
                                 unoptimized
                                 className="w-150px"
                             />
-                        </Link>
+                        </button>
                     </div>
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex font-Manrope font-[700] space-x-9 flex-grow justify-center text-white text-[15px]">
                         {menuItems.map(([label, href]) => (
                             <li key={href}>
-                                <Link href={href} className="hover:text-purple-400 transition">
+                                <button onClick={() => router.push(href)} className="hover:text-purple-400 transition cursor-pointer">
                                     {label}
-                                </Link>
+                                </button>
                             </li>
                         ))}
                     </ul>
@@ -72,13 +74,12 @@ export default function Navbar({ locoScroll }) {
                         <ul className="flex flex-col space-y-4 text-white font-medium">
                             {menuItems.map(([label, href]) => (
                                 <li key={href}>
-                                    <Link
-                                        href={href}
-                                        className="hover:text-skyBlue transition block"
-                                        onClick={() => setMenuOpen(false)} // close menu on click
+                                    <button
+                                        onClick={() => { router.push(href); setMenuOpen(false); }}
+                                        className="hover:text-skyBlue transition block cursor-pointer"
                                     >
                                         {label}
-                                    </Link>
+                                    </button>
                                 </li>
                             ))}
                             <li>

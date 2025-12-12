@@ -146,14 +146,12 @@ const Modal = ({ isOpen, onClose, moduleData }) => {
 
                     {/* CTA Button */}
                     <div className="pt-2">
-                        <a
-                            href={moduleData.ctaLink || "mailto:mpaez@vectuxanalytics.com"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block w-full text-center bg-skyBlue hover:bg-sky-700 transition-all duration-300 text-white font-Manrope font-bold text-xs tracking-[1px] uppercase px-6 py-3 rounded-full"
+                        <button
+                            onClick={() => window.open(moduleData.ctaLink || "mailto:mpaez@vectuxanalytics.com", '_blank', 'noopener,noreferrer')}
+                            className="inline-block w-full text-center bg-skyBlue hover:bg-sky-700 transition-all duration-300 text-white font-Manrope font-bold text-xs tracking-[1px] uppercase px-6 py-3 rounded-full cursor-pointer"
                         >
                             {moduleData.ctaText || "Inscríbete ahora"}
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

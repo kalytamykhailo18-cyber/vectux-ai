@@ -53,20 +53,20 @@ const ContactSection = () => {
 
                             {/* Contact Details */}
                             <div className="space-y-4">
-                                <a
-                                    href="mailto:mpaez@vectuxanalytics.com"
-                                    className="flex items-center gap-3 text-white/80 hover:text-[#4cc9f0] transition-colors duration-300"
+                                <button
+                                    onClick={() => window.open('mailto:mpaez@vectuxanalytics.com', '_self')}
+                                    className="flex items-center gap-3 text-white/80 hover:text-[#4cc9f0] transition-colors duration-300 cursor-pointer"
                                 >
                                     <HiMail className="w-5 h-5 text-[#4cc9f0]" />
                                     <span className="font-Manrope text-[15px]">mpaez@vectuxanalytics.com</span>
-                                </a>
-                                <a
-                                    href="tel:+525611955405"
-                                    className="flex items-center gap-3 text-white/80 hover:text-[#4cc9f0] transition-colors duration-300"
+                                </button>
+                                <button
+                                    onClick={() => window.open('tel:+525611955405', '_self')}
+                                    className="flex items-center gap-3 text-white/80 hover:text-[#4cc9f0] transition-colors duration-300 cursor-pointer"
                                 >
                                     <HiPhone className="w-5 h-5 text-[#4cc9f0]" />
                                     <span className="font-Manrope text-[15px]">+52 56 1195-5405</span>
-                                </a>
+                                </button>
                             </div>
                         </div>
 

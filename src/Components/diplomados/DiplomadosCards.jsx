@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const diplomados = [
     {
@@ -42,6 +42,8 @@ const diplomados = [
 ]
 
 const DiplomadosCards = () => {
+    const router = useRouter()
+
     return (
         <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#5a3db8] via-[#6b3fa0] to-[#8d4aed]">
             {/* Top Gradient Blur for section transition */}
@@ -90,12 +92,12 @@ const DiplomadosCards = () => {
                             </p>
 
                             {/* Button */}
-                            <Link
-                                href={`/diplomados/${diplomado.slug}`}
-                                className="inline-block bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
+                            <button
+                                onClick={() => router.push(`/diplomados/${diplomado.slug}`)}
+                                className="inline-block bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none cursor-pointer"
                             >
                                 {diplomado.buttonText}
-                            </Link>
+                            </button>
                         </div>
                     ))}
                 </div>

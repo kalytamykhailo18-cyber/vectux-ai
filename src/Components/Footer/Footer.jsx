@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const SocialLinks = [
@@ -23,6 +23,8 @@ const LegalLinks = [
 ];
 
 const Footer = () => {
+    const router = useRouter();
+
     return (
         <footer className="bg-gradient-to-b from-[#343ec2] via-[#2a35a8] to-[#1e2785]">
             <div className="max-w-[1200px] mx-auto px-8 sm:px-14">
@@ -45,15 +47,13 @@ const Footer = () => {
                             {SocialLinks.map((social) => {
                                 const IconComponent = social.icon;
                                 return (
-                                    <a
+                                    <button
                                         key={social.id}
-                                        href={social.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="bg-white/10 hover:bg-[#4cc9f0] text-white w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300"
+                                        onClick={() => window.open(social.href, '_blank', 'noopener,noreferrer')}
+                                        className="bg-white/10 hover:bg-[#4cc9f0] text-white w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 cursor-pointer"
                                     >
                                         <IconComponent className="text-[18px]" />
-                                    </a>
+                                    </button>
                                 );
                             })}
                         </div>
@@ -65,12 +65,12 @@ const Footer = () => {
                         <ul className="space-y-3">
                             {QuickLinks.map((link) => (
                                 <li key={link.id}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-white/70 hover:text-[#4cc9f0] font-Manrope text-[14px] transition-colors duration-300"
+                                    <button
+                                        onClick={() => router.push(link.href)}
+                                        className="text-white/70 hover:text-[#4cc9f0] font-Manrope text-[14px] transition-colors duration-300 cursor-pointer"
                                     >
                                         {link.label}
-                                    </Link>
+                                    </button>
                                 </li>
                             ))}
                         </ul>
@@ -82,12 +82,12 @@ const Footer = () => {
                         <ul className="space-y-3">
                             {LegalLinks.map((link) => (
                                 <li key={link.id}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-white/70 hover:text-[#4cc9f0] font-Manrope text-[14px] transition-colors duration-300"
+                                    <button
+                                        onClick={() => router.push(link.href)}
+                                        className="text-white/70 hover:text-[#4cc9f0] font-Manrope text-[14px] transition-colors duration-300 cursor-pointer"
                                     >
                                         {link.label}
-                                    </Link>
+                                    </button>
                                 </li>
                             ))}
                         </ul>
@@ -99,12 +99,12 @@ const Footer = () => {
                         <div className="space-y-3 text-white/70 font-Manrope text-[14px]">
                             <p>mpaez@vectuxanalytics.com</p>
                             <p>+52 56 1195-5405</p>
-                            <Link
-                                href="/cursos/#contact"
-                                className="block text-white/70 hover:text-[#4cc9f0] transition-colors duration-300 mt-4"
+                            <button
+                                onClick={() => router.push('/cursos/#contact')}
+                                className="block text-white/70 hover:text-[#4cc9f0] transition-colors duration-300 mt-4 cursor-pointer"
                             >
                                 Contáctanos
-                            </Link>
+                            </button>
                         </div>
                     </div>
                 </div>

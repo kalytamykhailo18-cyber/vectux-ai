@@ -40,6 +40,9 @@ const renderText = (textArray) => {
 const VisionSection = () => {
     return (
         <section id="vision" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#343ec2]">
+            {/* Top Gradient Blur for section transition */}
+            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex flex-col min-[860px]:flex-row-reverse items-center gap-10 lg:gap-16">
                     {/* Text Content */}

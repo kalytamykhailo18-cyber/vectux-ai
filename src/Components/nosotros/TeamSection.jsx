@@ -64,6 +64,12 @@ const teamMembers = [
 const TeamSection = () => {
     return (
         <section id="team-vectux" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#343ec2]">
+            {/* Top Gradient Blur for section transition */}
+            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#343ec2] blur-xl" />
+
+            {/* Bottom Gradient Blur for footer transition */}
+            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#343ec2] blur-xl" />
+
             <div className="max-w-[1200px] mx-auto">
                 <h2
                     data-aos="fade-up"
@@ -74,15 +80,13 @@ const TeamSection = () => {
 
                 <div className="space-y-12">
                     {teamMembers.map((member, index) => (
-                        <a
+                        <button
                             key={index}
-                            href={member.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            onClick={() => window.open(member.linkedin, '_blank', 'noopener,noreferrer')}
                             data-aos={member.aos}
                             data-aos-duration={member.duration}
                             data-aos-delay={member.delay}
-                            className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-16 p-16 rounded-[16px] border border-[#e3e3e330] bg-black/20 backdrop-blur-sm cursor-pointer hover:border-[#4cc9f0] hover:bg-black/30 transition-all duration-300 group`}
+                            className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-16 p-16 rounded-[16px] border border-[#e3e3e330] bg-black/20 backdrop-blur-sm cursor-pointer hover:border-[#4cc9f0] hover:bg-black/30 transition-all duration-300 group w-full text-left`}
                         >
                             {/* Image */}
                             <div className="w-[200px] h-[200px] flex-shrink-0">
@@ -112,7 +116,7 @@ const TeamSection = () => {
                                     {member.credentials}
                                 </p>
                             </div>
-                        </a>
+                        </button>
                     ))}
                 </div>
             </div>

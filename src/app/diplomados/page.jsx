@@ -1,11 +1,13 @@
 import React from 'react'
 import HeroSection from '@/Components/diplomados/HeroSection'
-import WhyVectux from '@/Components/diplomados/WhyVectux'
 import HowWeLearn from '@/Components/diplomados/HowWeLearn'
 import Testimonials from '@/Components/diplomados/Testimonials'
 import DiplomadosCards from '@/Components/diplomados/DiplomadosCards'
 import MasterclassSection from '@/Components/diplomados/MasterclassSection'
 import ContactSection from '@/Components/diplomados/ContactSection'
+import Lecture from '@/Components/diplomados/Lecture'
+import Promotion from '@/Components/diplomados/Promotion'
+import Bussiness from '@/Components/diplomados/Bussiness'
 
 export const metadata = {
     title: 'Diplomados Ejecutivos | Vectux Academy',
@@ -16,7 +18,9 @@ const DiplomadosPage = () => {
     return (
         <>
             <HeroSection />
-            <WhyVectux />
+            <Lecture />
+            <Promotion />
+            <Bussiness />
             <HowWeLearn />
             <Testimonials />
             <DiplomadosCards />

@@ -1,28 +1,36 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.querySelector(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
-    <section className='relative min-h-screen flex items-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 py-20 bg-gradient-to-b from-[#4895ef] via-[#5a3db8] to-[#343ec2]'>
+    <section className='relative min-h-screen flex items-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 py-20 bg-gradient-to-b from-[#4895ef] via-[#5a3db8] to-[#8d4aed]'>
       <div className='grid grid-cols-1 min-[860px]:grid-cols-2 place-content-center gap-12 sm:gap-8 max-w-[1200px] mx-auto w-full'>
         {/* Text Content */}
         <div className='flex flex-col justify-center items-center gap-6 order-2 min-[860px]:order-1'>
           <p data-aos="fade-up" className="text-white font-Manrope text-center font-semibold text-lg md:text-[15px] tracking-[0.2px]">
-            <span className='text-skyBlue'>{"["}</span> En Vectux Academy <span className='text-skyBlue'>{"]"}</span>
+            <span className='text-skyBlue'>{"["}</span> Para profesionistas no-técnicos que quieren liderar la era de la IA. <span className='text-skyBlue'>{"]"}</span>
           </p>
           <h1 data-aos="fade-up" data-aos-delay="300" className="text-center text-white font-bold text-4xl leading-[45px] md:text-5xl lg:text-[56px] sm:leading-[64px]">
-            From zero to data-driven
+            Deja de intuir, empieza a predecir.
           </h1>
-          <p data-aos="fade-up" data-aos-delay="500" className='text-center text-[#eee] font-Manrope text-[15px] sm:text-[17px] font-[500] leading-[30px] w-full sm:w-[95%]'>
-            En Vectux Academy no somos una escuela tradicional. Somos una consultora de Inteligencia Artificial con una misión clara: abrirle las puertas del mundo de los datos a líderes, profesionales y equipos que quieren evolucionar y avanzar en la economía digital.
+          <p data-aos="fade-up" data-aos-delay="500" className='text-center text-[#eee] font-Manrope text-[18px] sm:text-[20px] font-[500] leading-[30px] w-full sm:w-[95%]'>
+            Domina Business Analytics e IA sin ser ingeniero o programador.
           </p>
           <div data-aos="fade-up" data-aos-delay="600" className="mt-4">
-            <a
-              href="#section-tickets"
-              className="bg-skyBlue w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none inline-block"
+            <button
+              onClick={() => scrollToSection('#section-tickets')}
+              className="bg-skyBlue w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
             >
               Contáctanos
-            </a>
+            </button>
           </div>
         </div>
 
@@ -41,7 +49,7 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom Gradient Blur for section transition */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#343ec2] to-transparent" />
+      <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#8d4aed] blur-xl" />
     </section>
   );
 };
