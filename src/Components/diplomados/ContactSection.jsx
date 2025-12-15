@@ -3,13 +3,25 @@ import React from 'react'
 import Image from 'next/image'
 import { HiMail, HiPhone } from 'react-icons/hi'
 
+const contactBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg"
+
 const ContactSection = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#4a45c9] to-[#343ec2]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#343ec2] blur-xl" />
+        <div
+            className="relative overflow-hidden bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${contactBackgroundImage})` }}
+        >
+            {/* Color Overlay - Blue */}
+            <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-            <div className="max-w-[1200px] mx-auto">
+            {/* Top Gradient - from MasterclassSection (Light Blue) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8db8f2_50%,_transparent_100%)]" />
+
+            {/* Bottom Gradient - transition to Footer */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+
+            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+                <div className="max-w-[1200px] mx-auto relative z-20">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Left - Image */}
                     <div
@@ -38,7 +50,7 @@ const ContactSection = () => {
                             ¿Tienes Dudas? ¡Contáctanos!
                         </h2>
 
-                        <p className="text-white/80 font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px] mb-8">
+                        <p className="text-white font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px] mb-8">
                             Si quieres saber si nuestros programas son para ti o para tu equipo, agenda una llamada o escríbenos directamente.
                         </p>
 
@@ -96,10 +108,8 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Bottom Gradient Blur for footer transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#343ec2] blur-xl" />
-        </section>
+            </section>
+        </div>
     )
 }
 

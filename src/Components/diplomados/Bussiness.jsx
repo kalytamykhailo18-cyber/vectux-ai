@@ -2,6 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 
+const bussinessBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221828/vectux-academy/assets/sample-2.jpg"
+
 const bussinessData = {
     title: "Tu ruta de transformación: De Principiante a Business Analytics Lead",
     subtitle: "Un enfoque 100% práctico. Olvida las clases magistrales aburridas; aquí vienes a trabajar.",
@@ -34,11 +36,21 @@ const bussinessData = {
 
 const Bussiness = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#8d4aed]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+        <div
+            className="relative overflow-hidden bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${bussinessBackgroundImage})` }}
+        >
+            {/* Color Overlay - Blue */}
+            <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-            <div className="max-w-[1200px] mx-auto">
+            {/* Top Gradient - from Promotion (Cyan-Blue) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#4cc9f0_50%,_transparent_100%)]" />
+
+            {/* Bottom Gradient - transition to HowWeLearn (Light Blue) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#6ba3eb_50%,_transparent_100%)]" />
+
+            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+                <div className="max-w-[1200px] mx-auto relative z-20">
                 {/* Title */}
                 <h2
                     data-aos="fade-up"
@@ -85,14 +97,14 @@ const Bussiness = () => {
 
                             {/* Card Content */}
                             <div className="p-6">
-                                <h3 className="text-white font-bold text-[18px] leading-[26px] mb-4 group-hover:text-[#4cc9f0] transition-colors duration-300">
+                                <h3 className="text-white font-bold text-[18px] leading-[26px] mb-4 group-hover:text-[#1cf9f0] transition-colors duration-300">
                                     {card.title}
                                 </h3>
                                 <ul className="space-y-2">
                                     {card.text.map((item, idx) => (
                                         <li key={idx} className="flex items-start gap-2">
-                                            <span className="text-[#4cc9f0] pb-6">•</span>
-                                            <span className="text-white/70 font-Manrope text-[14px] leading-[22px]">
+                                            <span className="text-[#1cf9f0] pb-6">•</span>
+                                            <span className="text-white font-Manrope text-[14px] leading-[22px]">
                                                 {item}
                                             </span>
                                         </li>
@@ -103,10 +115,8 @@ const Bussiness = () => {
                     ))}
                 </div>
             </div>
-
-            {/* Bottom Gradient Blur for section transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#8d4aed] blur-xl" />
-        </section>
+            </section>
+        </div>
     )
 }
 

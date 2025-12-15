@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
+const testimonialsBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221798/vectux-academy/assets/sample-1.jpg"
+
 const testimonials = [
     {
         id: 1,
@@ -77,11 +79,21 @@ const Testimonials = () => {
     }, [])
 
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#4a45c9] to-[#5a3db8] overflow-hidden">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#343ec2] blur-xl" />
+        <div
+            className="relative overflow-hidden bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${testimonialsBackgroundImage})` }}
+        >
+            {/* Color Overlay - Blue */}
+            <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-            <div className="max-w-[1200px] mx-auto">
+            {/* Top Gradient - from HowWeLearn (Green-ish Pink) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#d9bfcc_50%,_transparent_100%)]" />
+
+            {/* Bottom Gradient - transition to DiplomadosCards (Light Blue) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#7caef0_50%,_transparent_100%)]" />
+
+            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+                <div className="max-w-[1200px] mx-auto relative z-20">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2
@@ -172,10 +184,8 @@ const Testimonials = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Bottom Gradient Blur for section transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#5a3db8] blur-xl" />
-        </section>
+            </section>
+        </div>
     )
 }
 

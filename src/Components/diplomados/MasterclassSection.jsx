@@ -3,13 +3,25 @@ import React from 'react'
 import Image from 'next/image'
 import { FaCalendarAlt, FaClock, FaLaptop } from 'react-icons/fa'
 
+const masterclassBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221271/vectux-academy/assets/insight.jpg"
+
 const MasterclassSection = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#6b3fa0] to-[#343ec2] overflow-hidden">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+        <div
+            className="relative overflow-hidden bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${masterclassBackgroundImage})` }}
+        >
+            {/* Color Overlay - Blue */}
+            <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-            <div className="max-w-[1200px] mx-auto">
+            {/* Top Gradient - from DiplomadosCards (Green-ish Pink) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#dec5d1_50%,_transparent_100%)]" />
+
+            {/* Bottom Gradient - transition to ContactSection (Light Blue) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8db8f2_50%,_transparent_100%)]" />
+
+            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+                <div className="max-w-[1200px] mx-auto relative z-20">
                 <div className="grid md:grid-cols-2 gap-10 items-center">
                     {/* Left Side - Image */}
                     <div
@@ -116,10 +128,8 @@ const MasterclassSection = () => {
                 <div className="absolute top-1/4 -left-20 w-40 h-40 bg-[#4cc9f0]/20 rounded-full blur-3xl" />
                 <div className="absolute bottom-1/4 -right-20 w-40 h-40 bg-[#8d4aed]/30 rounded-full blur-3xl" />
             </div>
-
-            {/* Bottom Gradient Blur for section transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#343ec2] blur-xl" />
-        </section>
+            </section>
+        </div>
     )
 }
 

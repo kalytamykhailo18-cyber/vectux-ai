@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 
 const promotionData = {
     title: "La experiencia ya no es suficiente. Los datos son el nuevo lenguaje de la dirección.",
@@ -17,97 +16,73 @@ const promotionData = {
             }
         ]
     },
-    images: [
-        "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765528974/promotion-1_trsdb9.jpg",
-        "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765246143/lecture-1_a77h3w.jpg"
-    ]
+    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765528974/promotion-1_trsdb9.jpg"
 }
 
 const Promotion = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#8d4aed]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+        <div
+            className="relative overflow-hidden bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${promotionData.backgroundImage})` }}
+        >
+            {/* Color Overlay - Blue */}
+            <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-            <div className="max-w-[1200px] mx-auto">
-                {/* Title */}
-                <h2
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[36px] md:leading-[50px] text-center mb-12"
-                >
-                    {promotionData.title}
-                </h2>
+            {/* Top Gradient - from Lecture (Light Blue) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#5a9cf5_50%,_transparent_100%)]" />
 
-                <div className="flex flex-col min-[860px]:flex-row items-stretch gap-10 lg:gap-16">
-                    {/* Left - Content */}
-                    <div className="flex flex-col min-[860px]:w-[65%] gap-8">
-                        {/* Left Sub Container - Description */}
-                        <div
-                            data-aos="fade-right"
-                            data-aos-duration="800"
-                            className="bg-black/20 backdrop-blur-sm rounded-[16px] p-6 border border-[#e3e3e330]"
-                        >
-                            <p className="text-white font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px]">
-                                {promotionData.left.leftSubContainer}
-                            </p>
-                        </div>
+            {/* Bottom Gradient - transition to Bussiness (Cyan-Blue) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#4cc9f0_50%,_transparent_100%)]" />
 
-                        {/* Right Sub Container - Before/After (Vertical) */}
-                        <div className="flex flex-col gap-6">
-                            {promotionData.left.rightSubContainer.map((item, index) => (
-                                <div
-                                    key={index}
-                                    data-aos="fade-up"
-                                    data-aos-duration="800"
-                                    data-aos-delay={index * 100}
-                                    className={`p-6 rounded-[16px] border ${index === 0 ? 'bg-red-900/20 border-red-500/30' : 'bg-green-900/20 border-green-500/30'}`}
-                                >
-                                    <h3 className={`font-bold text-[18px] mb-3 ${index === 0 ? 'text-red-400' : 'text-green-400'}`}>
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-white/80 font-Manrope text-[14px] sm:text-[15px] leading-[24px]">
-                                        {item.text}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Right - Stacked Images (no gap) */}
-                    <div
-                        data-aos="fade-left"
-                        data-aos-duration="800"
-                        data-aos-delay="200"
-                        className="min-[860px]:w-[35%] flex flex-col"
+            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+                <div className="max-w-[1200px] mx-auto relative z-20">
+                    {/* Title */}
+                    <h2
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[36px] md:leading-[50px] text-center mb-12"
                     >
-                        <div className="relative overflow-hidden rounded-tl-none rounded-tr-[48px] rounded-bl-none rounded-br-none">
-                            <Image
-                                src={promotionData.images[0]}
-                                alt="Promotion 1"
-                                width={400}
-                                height={200}
-                                unoptimized
-                                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
-                            />
-                        </div>
-                        <div className="relative overflow-hidden rounded-tl-none rounded-tr-none rounded-bl-[48px] rounded-br-none">
-                            <Image
-                                src={promotionData.images[1]}
-                                alt="Promotion 2"
-                                width={400}
-                                height={200}
-                                unoptimized
-                                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
-                            />
+                        {promotionData.title}
+                    </h2>
+
+                    <div className="flex flex-col min-[860px]:flex-row items-stretch gap-10 lg:gap-16">
+                        {/* Left - Content */}
+                        <div className="flex flex-col min-[860px]:w-full gap-8">
+                            {/* Left Sub Container - Description */}
+                            <div
+                                data-aos="fade-right"
+                                data-aos-duration="800"
+                                className="bg-black/10 backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330]"
+                            >
+                                <p className="text-white font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px]">
+                                    {promotionData.left.leftSubContainer}
+                                </p>
+                            </div>
+
+                            {/* Right Sub Container - Before/After (Vertical) */}
+                            <div className="flex flex-col gap-6">
+                                {promotionData.left.rightSubContainer.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        data-aos="fade-up"
+                                        data-aos-duration="800"
+                                        data-aos-delay={index * 100}
+                                        className={`p-6 rounded-[6px] border backdrop-blur-sm ${index === 0 ? 'bg-red-900/10 border-red-500/10' : 'bg-green-900/10 border-green-500/10'}`}
+                                    >
+                                        <h3 className={`font-bold text-[18px] mb-3 ${index === 0 ? 'text-red-400' : 'text-green-400'}`}>
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-white font-Manrope text-[14px] sm:text-[15px] leading-[24px]">
+                                            {item.text}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* Bottom Gradient Blur for section transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#8d4aed] blur-xl" />
-        </section>
+            </section>
+        </div>
     )
 }
 

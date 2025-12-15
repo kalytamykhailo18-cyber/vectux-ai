@@ -1,9 +1,10 @@
 "use client"
 import React from 'react'
-import { HiUserGroup } from "react-icons/hi"
 import { FaUserTie, FaRocket, FaUsers } from "react-icons/fa"
-import { MdTrendingUp, MdBusinessCenter } from "react-icons/md"
-import { RiTeamFill } from "react-icons/ri"
+
+const howWeLearnData = {
+    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529683/bussiness-1_ininrd.jpg"
+}
 
 const benefitsItems = [
     {
@@ -45,11 +46,21 @@ const targetAudienceItems = [
 
 const HowWeLearn = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#6b3fa0] to-[#343ec2]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+        <div
+            className="relative overflow-hidden bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url(${howWeLearnData.backgroundImage})` }}
+        >
+            {/* Color Overlay - Blue */}
+            <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-            <div className="max-w-[1200px] mx-auto">
+            {/* Top Gradient - from Bussiness (Light Blue) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#6ba3eb_50%,_transparent_100%)]" />
+
+            {/* Bottom Gradient - transition to Testimonials (Green-ish Pink) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#d9bfcc_50%,_transparent_100%)]" />
+
+            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+                <div className="max-w-[1200px] mx-auto relative z-20">
                 <h2
                     data-aos="fade-up"
                     data-aos-duration="600"
@@ -65,14 +76,14 @@ const HowWeLearn = () => {
                             data-aos={item.aos}
                             data-aos-duration={item.duration}
                             data-aos-delay={item.delay}
-                            className="group flex flex-col items-start gap-4 px-6 border-l-4 border-[#4cc9f0] hover:border-white transition-all duration-300 flex-1 rounded-lg"
+                            className="group flex flex-col bg-black/20 p-2 items-start gap-4 px-6 border-l-4 border-[#4cc9f0] hover:border-white transition-all duration-300 flex-1 rounded-lg"
                         >
                             <span className="text-[32px] flex-shrink-0 group-hover:rotate-360 transition-transform duration-500">{item.icon}</span>
                             <div>
                                 <h3 className="text-white font-bold text-[18px] md:text-[20px] leading-[28px] mb-2 group-hover:text-[#4cc9f0] transition-colors duration-300">
                                     {item.title}
                                 </h3>
-                                <p className="text-white/70 font-Manrope text-[14px] sm:text-[15px] font-[500] leading-[24px] group-hover:text-white transition-colors duration-300">
+                                <p className="text-white font-Manrope text-[14px] sm:text-[15px] font-[500] leading-[24px] group-hover:text-white transition-colors duration-300">
                                     {item.text}
                                 </p>
                             </div>
@@ -111,10 +122,8 @@ const HowWeLearn = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Bottom Gradient Blur for section transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#343ec2] blur-xl" />
-        </section>
+            </section>
+        </div>
     )
 }
 
