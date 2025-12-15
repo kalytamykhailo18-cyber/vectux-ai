@@ -25,14 +25,11 @@ const Promotion = () => {
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
             style={{ backgroundImage: `url(${promotionData.backgroundImage})` }}
         >
-            {/* Color Overlay - Blue */}
-            <div className="absolute inset-0 bg-[#4895ef]/75" />
-
-            {/* Top Gradient - from Lecture (Light Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#5a9cf5_50%,_transparent_100%)]" />
+            {/* Top Gradient - from Lecture (Light Purple) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
 
             {/* Bottom Gradient - transition to Bussiness (Cyan-Blue) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#4cc9f0_50%,_transparent_100%)]" />
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -52,7 +49,7 @@ const Promotion = () => {
                             <div
                                 data-aos="fade-right"
                                 data-aos-duration="800"
-                                className="bg-black/10 backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330]"
+                                className="bg-black/50 backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330]"
                             >
                                 <p className="text-white font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px]">
                                     {promotionData.left.leftSubContainer}
@@ -67,7 +64,7 @@ const Promotion = () => {
                                         data-aos="fade-up"
                                         data-aos-duration="800"
                                         data-aos-delay={index * 100}
-                                        className={`p-6 rounded-[6px] border backdrop-blur-sm ${index === 0 ? 'bg-red-900/10 border-red-500/10' : 'bg-green-900/10 border-green-500/10'}`}
+                                        className={`p-6 rounded-[6px] border backdrop-blur-sm bg-black/50 border-red-500/10`}
                                     >
                                         <h3 className={`font-bold text-[18px] mb-3 ${index === 0 ? 'text-red-400' : 'text-green-400'}`}>
                                             {item.title}

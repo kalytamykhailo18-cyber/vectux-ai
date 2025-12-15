@@ -81,16 +81,16 @@ const Testimonials = () => {
     return (
         <div
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: `url(${testimonialsBackgroundImage})` }}
+            // style={{ backgroundImage: `url(${testimonialsBackgroundImage})` }}
         >
-            {/* Color Overlay - Blue */}
-            <div className="absolute inset-0 bg-[#4895ef]/75" />
+            {/* Color Overlay - Purple Gradient */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #5a3db8 50%, #8d4aed 100%)' }} />
 
-            {/* Top Gradient - from HowWeLearn (Green-ish Pink) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#d9bfcc_50%,_transparent_100%)]" />
+            {/* Top Gradient - from HowWeLearn (Deep Blue-Purple) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
-            {/* Bottom Gradient - transition to DiplomadosCards (Light Blue) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#7caef0_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - transition to DiplomadosCards (Light Purple) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">

@@ -52,10 +52,10 @@ const DiplomadosCards = () => {
             style={{ backgroundImage: `url(${diplomadosBackgroundImage})` }}
         >
             {/* Color Overlay - Blue */}
-            <div className="absolute inset-0 bg-[#4895ef]/75" />
+            <div className="absolute inset-0" />
 
-            {/* Top Gradient - from Testimonials (Light Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#7caef0_50%,_transparent_100%)]" />
+            {/* Top Gradient - from Testimonials (Light Purple) */}
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
 
             {/* Bottom Gradient - transition to MasterclassSection (Green-ish Pink) */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#dec5d1_50%,_transparent_100%)]" />
@@ -81,7 +81,7 @@ const DiplomadosCards = () => {
                             data-aos={diplomado.aos}
                             data-aos-duration={diplomado.duration}
                             data-aos-delay={diplomado.delay}
-                            className="group backdrop-blur-sm rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:bg-[#4cc9f0]/3 transition-all duration-300"
+                            className="group backdrop-blur-sm bg-black/50 rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
                         >
                             {/* Icon */}
                             <div className="text-[48px] mb-6 transform group-hover:scale-110 transition-transform duration-300">

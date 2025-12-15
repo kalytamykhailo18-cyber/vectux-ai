@@ -40,14 +40,12 @@ const Bussiness = () => {
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
             style={{ backgroundImage: `url(${bussinessBackgroundImage})` }}
         >
-            {/* Color Overlay - Blue */}
-            <div className="absolute inset-0 bg-[#4895ef]/75" />
+            {/* Color Overlay - Dark */}
+            <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, #343ec2 0%, #5a3db8 50%, #8d4aed 100%)'}}  />
 
             {/* Top Gradient - from Promotion (Cyan-Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#4cc9f0_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[600px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
-            {/* Bottom Gradient - transition to HowWeLearn (Light Blue) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#6ba3eb_50%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -78,10 +76,31 @@ const Bussiness = () => {
                             data-aos="fade-up"
                             data-aos-duration="800"
                             data-aos-delay={index * 100}
-                            className="group bg-black/20 backdrop-blur-sm rounded-[16px] overflow-hidden border border-[#e3e3e330] hover:border-[#4cc9f0] transition-all duration-300"
+                            className="group relative bg-black/50 backdrop-blur-sm rounded-[16px] overflow-hidden border border-[#e3e3e330] hover:border-[#4cc9f0] transition-all duration-300"
                         >
+                            {/* Shimmer effect on hover */}
+                            <div
+                                className="absolute top-0 left-0 w-full h-full pointer-events-none z-10"
+                                style={{
+                                    background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)',
+                                    transform: 'translateX(-100%)',
+                                    transition: 'transform 0.8s ease-out'
+                                }}
+                                ref={(el) => {
+                                    if (el) {
+                                        const parent = el.parentElement;
+                                        parent.addEventListener('mouseenter', () => {
+                                            el.style.transform = 'translateX(100%)';
+                                        });
+                                        parent.addEventListener('mouseleave', () => {
+                                            el.style.transform = 'translateX(-100%)';
+                                        });
+                                    }
+                                }}
+                            />
+
                             {/* Card Image */}
-                            <div className="relative aspect-[16/10] overflow-hidden">
+                            <div className="relative aspect-[16/10] overflow-hidden z-[1]">
                                 <Image
                                     src={card.image}
                                     alt={card.title}
@@ -96,7 +115,7 @@ const Bussiness = () => {
                             </div>
 
                             {/* Card Content */}
-                            <div className="p-6">
+                            <div className="relative p-6 z-[1]">
                                 <h3 className="text-white font-bold text-[18px] leading-[26px] mb-4 group-hover:text-[#1cf9f0] transition-colors duration-300">
                                     {card.title}
                                 </h3>

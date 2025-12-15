@@ -22,8 +22,8 @@ const HeroSection = () => {
       {/* Color Overlay - Blue */}
       <div className="absolute inset-0 bg-[#4895ef]/75" />
 
-      {/* Bottom Gradient - transition to Lecture (Cyan-Blue) */}
-      <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#4cc9f0_50%,_transparent_100%)]" />
+      {/* Bottom Gradient - transition to Lecture (Deep Blue-Purple) */}
+      <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
       <section className='relative min-h-screen flex items-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 py-20 z-20'>
         <div className='grid grid-cols-1 min-[860px]:grid-cols-2 place-content-center gap-12 sm:gap-8 max-w-[1200px] mx-auto w-full'>

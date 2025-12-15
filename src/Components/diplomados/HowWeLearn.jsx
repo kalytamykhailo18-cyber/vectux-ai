@@ -54,10 +54,10 @@ const HowWeLearn = () => {
             <div className="absolute inset-0 bg-[#4895ef]/75" />
 
             {/* Top Gradient - from Bussiness (Light Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#6ba3eb_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
 
-            {/* Bottom Gradient - transition to Testimonials (Green-ish Pink) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#d9bfcc_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - transition to Testimonials (Deep Blue-Purple) */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -76,7 +76,7 @@ const HowWeLearn = () => {
                             data-aos={item.aos}
                             data-aos-duration={item.duration}
                             data-aos-delay={item.delay}
-                            className="group flex flex-col bg-black/20 p-2 items-start gap-4 px-6 border-l-4 border-[#4cc9f0] hover:border-white transition-all duration-300 flex-1 rounded-lg"
+                            className="group flex flex-col bg-black/50 p-2 items-start gap-4 px-6 border-l-4 border-[#4cc9f0] hover:border-white transition-all duration-300 flex-1 rounded-lg"
                         >
                             <span className="text-[32px] flex-shrink-0 group-hover:rotate-360 transition-transform duration-500">{item.icon}</span>
                             <div>
@@ -110,7 +110,7 @@ const HowWeLearn = () => {
                                     data-aos={item.aos}
                                     data-aos-duration={item.duration}
                                     data-aos-delay={item.delay}
-                                    className="group flex items-center gap-6 p-8 bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg hover:bg-white/10 hover:border-[#4cc9f0] transition-all duration-300"
+                                    className="group flex items-center gap-6 p-8 bg-black/50 backdrop-blur-sm border border-white/20 rounded-lg hover:border-[#4cc9f0] transition-all duration-300"
                                 >
                                     <IconComponent className="text-[#4cc9f0] w-8 h-8 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                                     <p className="text-white/80 font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px] group-hover:text-white transition-colors duration-300">
