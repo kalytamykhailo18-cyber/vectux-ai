@@ -2,8 +2,6 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 
-const diplomadosBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221164/vectux-academy/assets/financial-2.jpg"
-
 const diplomados = [
     {
         id: 1,
@@ -47,18 +45,12 @@ const DiplomadosCards = () => {
     const router = useRouter()
 
     return (
-        <div
-            className="relative overflow-hidden bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: `url(${diplomadosBackgroundImage})` }}
-        >
-            {/* Color Overlay - Blue */}
-            <div className="absolute inset-0" />
+        <div className="relative overflow-hidden">
+            {/* Color Overlay - Purple to Pink Gradient */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #8d4aed 0%, #a864c9 50%, #343ec2 100%)' }} />
 
             {/* Top Gradient - from Testimonials (Light Purple) */}
             <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
-
-            {/* Bottom Gradient - transition to MasterclassSection (Green-ish Pink) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#dec5d1_50%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -81,7 +73,7 @@ const DiplomadosCards = () => {
                             data-aos={diplomado.aos}
                             data-aos-duration={diplomado.duration}
                             data-aos-delay={diplomado.delay}
-                            className="group backdrop-blur-sm bg-black/50 rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
+                            className="group bg-[#4628bc]/50 rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
                         >
                             {/* Icon */}
                             <div className="text-[48px] mb-6 transform group-hover:scale-110 transition-transform duration-300">
@@ -94,7 +86,7 @@ const DiplomadosCards = () => {
                             </h3>
 
                             {/* Subtitle */}
-                            <p className="text-[#4cc9f0] font-Manrope text-[14px] sm:text-[15px] font-[600] leading-[24px] mb-4">
+                            <p className="text-[#fa0] font-Manrope text-[14px] sm:text-[15px] font-[600] leading-[24px] mb-4">
                                 {diplomado.subtitle}
                             </p>
 

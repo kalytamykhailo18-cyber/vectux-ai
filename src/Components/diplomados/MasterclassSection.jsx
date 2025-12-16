@@ -15,7 +15,7 @@ const MasterclassSection = () => {
             <div className="absolute inset-0 bg-[#4895ef]/75" />
 
             {/* Top Gradient - from DiplomadosCards (Green-ish Pink) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#dec5d1_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
             {/* Bottom Gradient - transition to ContactSection (Light Blue) */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8db8f2_50%,_transparent_100%)]" />

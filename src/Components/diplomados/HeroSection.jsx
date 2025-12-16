@@ -1,12 +1,11 @@
 "use client"
 import Image from 'next/image';
-import React from 'react';
-
-const heroData = {
-  backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529687/bussiness-2_hpheyc.jpg"
-}
+import React, { useEffect, useRef, useState } from 'react';
 
 const HeroSection = () => {
+  const vantaRef = useRef(null);
+  const [vantaEffect, setVantaEffect] = useState(null);
+
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId)
     if (element) {
@@ -14,13 +13,52 @@ const HeroSection = () => {
     }
   }
 
+  useEffect(() => {
+    let effect = null;
+
+    const loadVanta = async () => {
+      if (typeof window !== 'undefined' && vantaRef.current && !vantaEffect) {
+        const THREE = await import('three');
+        const VANTA = await import('vanta/dist/vanta.birds.min');
+
+        effect = VANTA.default({
+          el: vantaRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0x343ec2,
+          color1: 0x4cc9f0,
+          color2: 0x8d4aed,
+          colorMode: "lerp",
+          birdSize: 1.50,
+          wingSpan: 25.00,
+          speedLimit: 5.00,
+          separation: 60.00,
+          alignment: 30.00,
+          cohesion: 30.00,
+          quantity: 4.00
+        });
+
+        setVantaEffect(effect);
+      }
+    };
+
+    loadVanta();
+
+    return () => {
+      if (effect) effect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <div
-      className="relative overflow-hidden bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${heroData.backgroundImage})` }}
-    >
-      {/* Color Overlay - Blue */}
-      <div className="absolute inset-0 bg-[#4895ef]/75" />
+    <div ref={vantaRef} className="relative overflow-hidden min-h-screen">
+      {/* Top gradient overlay for smooth blend with cursos colors */}
+      <div className="absolute top-0 left-0 w-full h-40 z-[5] bg-gradient-to-b from-[#2895ef] to-transparent" />
 
       {/* Bottom Gradient - transition to Lecture (Deep Blue-Purple) */}
       <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />

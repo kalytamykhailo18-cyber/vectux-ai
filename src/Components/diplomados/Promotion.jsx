@@ -1,81 +1,111 @@
 "use client"
-import React from 'react'
+import React, { useRef } from 'react'
+import Image from 'next/image'
 
 const promotionData = {
-    title: "La experiencia ya no es suficiente. Los datos son el nuevo lenguaje de la dirección.",
-    left: {
-        leftSubContainer: "Tienes la visión de negocio, pero te faltan las herramientas para ejecutarla en la era digital. No dejes que la brecha técnica frene tu crecimiento.",
-        rightSubContainer: [
-            {
-                title: "Antes de Vectux:",
-                text: 'Dependes de otros para obtener reportes, usas Excel manual, tomas decisiones basadas en "lo que creemos".'
-            },
-            {
-                title: "Después de Vectux:",
-                text: "Creas tus propios modelos, automatizas tareas aburridas y presentas hallazgos irrefutables a la dirección."
-            }
-        ]
-    },
-    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765528974/promotion-1_trsdb9.jpg"
+    title: "La experiencia ya no es suficiente.",
+    subtitle: "Los datos son el nuevo lenguaje de la dirección.",
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765886248/Picture2_ltqzm6.jpg",
+    bottomText: "Tienes la visión de negocio, pero te faltan las herramientas para ejecutarla en la era digital. No dejes que la brecha técnica frene tu crecimiento.",
+    finalText: "¡Aprende Data Analytics!"
 }
 
 const Promotion = () => {
+    const imageRef = useRef(null)
+
+    const handleMouseMove = (e) => {
+        if (!imageRef.current) return
+        const rect = imageRef.current.getBoundingClientRect()
+        const x = e.clientX - rect.left
+        const y = e.clientY - rect.top
+        const centerX = rect.width / 2
+        const centerY = rect.height / 2
+        const rotateX = (y - centerY) / 12
+        const rotateY = (centerX - x) / 12
+
+        const shadowX = (centerX - x) / 5
+        const shadowY = (centerY - y) / 5
+
+        imageRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
+        imageRef.current.style.boxShadow = `${shadowX}px ${shadowY}px 40px rgba(0, 0, 0, 0.4), ${shadowX * 0.5}px ${shadowY * 0.5}px 20px rgba(141, 74, 237, 0.2)`
+    }
+
+    const handleMouseLeave = () => {
+        if (!imageRef.current) return
+        imageRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
+        imageRef.current.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+    }
+
     return (
-        <div
-            className="relative overflow-hidden bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: `url(${promotionData.backgroundImage})` }}
-        >
-            {/* Top Gradient - from Lecture (Light Purple) */}
+        <div className="relative overflow-hidden">
+            {/* Color Overlay - Purple to Blue Gradient */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #8d4aed 0%, #5a3db8 50%, #343ec2 100%)' }} />
+
+            {/* Top Gradient - from Lecture */}
             <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
 
-            {/* Bottom Gradient - transition to Bussiness (Cyan-Blue) */}
+            {/* Bottom Gradient - transition to Bussiness */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
-                    {/* Title */}
-                    <h2
-                        data-aos="fade-up"
-                        data-aos-duration="600"
-                        className="text-[#fa0] font-bold text-[28px] md:text-4xl lg:text-[42px] leading-[36px] md:leading-[50px] text-center mb-12"
+                    {/* Title Section */}
+                    <div className="text-center mb-12">
+                        <h2
+                            data-aos="fade-up"
+                            className="text-white font-bold text-3xl md:text-4xl lg:text-[52px] leading-[40px] md:leading-[60px] mb-4"
+                        >
+                            {promotionData.title}
+                        </h2>
+                        <p
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            className="text-[#fa0] font-Manrope text-xl md:text-2xl lg:text-[28px] font-[600]"
+                        >
+                            {promotionData.subtitle}
+                        </p>
+                    </div>
+
+                    {/* Image with 3D effect */}
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        className="flex justify-center mb-12"
+                        onMouseMove={handleMouseMove}
+                        onMouseLeave={handleMouseLeave}
                     >
-                        {promotionData.title}
-                    </h2>
-
-                    <div className="flex flex-col min-[860px]:flex-row items-stretch gap-10 lg:gap-16">
-                        {/* Left - Content */}
-                        <div className="flex flex-col min-[860px]:w-full gap-8">
-                            {/* Left Sub Container - Description */}
-                            <div
-                                data-aos="fade-right"
-                                data-aos-duration="800"
-                                className="bg-black/50 backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330]"
-                            >
-                                <p className="text-white font-Manrope text-[16px] sm:text-[17px] font-[500] leading-[28px]">
-                                    {promotionData.left.leftSubContainer}
-                                </p>
-                            </div>
-
-                            {/* Right Sub Container - Before/After (Vertical) */}
-                            <div className="flex flex-col gap-6">
-                                {promotionData.left.rightSubContainer.map((item, index) => (
-                                    <div
-                                        key={index}
-                                        data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        data-aos-delay={index * 100}
-                                        className={`p-6 rounded-[6px] border backdrop-blur-sm bg-black/50 border-red-500/10`}
-                                    >
-                                        <h3 className={`font-bold text-[18px] mb-3 ${index === 0 ? 'text-red-400' : 'text-green-400'}`}>
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-white font-Manrope text-[14px] sm:text-[15px] leading-[24px]">
-                                            {item.text}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
+                        <div
+                            ref={imageRef}
+                            className="transition-all duration-200 ease-out rounded-[16px] overflow-hidden"
+                            style={{ transformStyle: 'preserve-3d' }}
+                        >
+                            <Image
+                                src={promotionData.image}
+                                alt="Data Analytics"
+                                width={800}
+                                height={450}
+                                unoptimized
+                                className="w-full max-w-[800px] h-auto object-cover"
+                            />
                         </div>
+                    </div>
+
+                    {/* Bottom Text */}
+                    <div className="text-center max-w-[900px] mx-auto">
+                        <p
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            className="text-white/90 font-Manrope text-[17px] md:text-[19px] font-[500] leading-[32px] mb-8"
+                        >
+                            {promotionData.bottomText}
+                        </p>
+                        <p
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            className="text-[#4cc9f0] font-bold text-2xl md:text-3xl lg:text-[36px]"
+                        >
+                            {promotionData.finalText}
+                        </p>
                     </div>
                 </div>
             </section>
