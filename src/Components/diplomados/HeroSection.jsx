@@ -4,7 +4,8 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const HeroSection = () => {
   const vantaRef = useRef(null);
-  const [vantaEffect, setVantaEffect] = useState(null);
+  const vantaEffectRef = useRef(null);
+  const [isClient, setIsClient] = useState(false);
 
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId)
@@ -14,14 +15,30 @@ const HeroSection = () => {
   }
 
   useEffect(() => {
-    let effect = null;
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+
+    let isMounted = true;
 
     const loadVanta = async () => {
-      if (typeof window !== 'undefined' && vantaRef.current && !vantaEffect) {
-        const THREE = await import('three');
+      if (!vantaRef.current || vantaEffectRef.current) return;
+
+      try {
+        const THREE = (await import('three')).default || await import('three');
+
+        // Make THREE available globally for Vanta
+        if (typeof window !== 'undefined') {
+          window.THREE = THREE;
+        }
+
         const VANTA = await import('vanta/dist/vanta.birds.min');
 
-        effect = VANTA.default({
+        if (!isMounted || !vantaRef.current) return;
+
+        vantaEffectRef.current = VANTA.default({
           el: vantaRef.current,
           THREE: THREE,
           mouseControls: true,
@@ -43,20 +60,24 @@ const HeroSection = () => {
           cohesion: 30.00,
           quantity: 4.00
         });
-
-        setVantaEffect(effect);
+      } catch (error) {
+        console.error('Failed to load Vanta effect:', error);
       }
     };
 
     loadVanta();
 
     return () => {
-      if (effect) effect.destroy();
+      isMounted = false;
+      if (vantaEffectRef.current) {
+        vantaEffectRef.current.destroy();
+        vantaEffectRef.current = null;
+      }
     };
-  }, [vantaEffect]);
+  }, [isClient]);
 
   return (
-    <div ref={vantaRef} className="relative overflow-hidden min-h-screen">
+    <div ref={vantaRef} className="relative overflow-hidden min-h-screen" style={{ backgroundColor: '#343ec2' }}>
       {/* Top gradient overlay for smooth blend with cursos colors */}
       <div className="absolute top-0 left-0 w-full h-40 z-[5] bg-gradient-to-b from-[#2895ef] to-transparent" />
 

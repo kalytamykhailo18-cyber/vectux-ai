@@ -10,6 +10,7 @@ const nextConfig = {
       },
     ],
   },
+  transpilePackages: ['three', 'vanta'],
 };
 
 export default nextConfig;
