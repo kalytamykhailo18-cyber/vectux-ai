@@ -7,63 +7,29 @@ const testimonialsBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/
 const testimonials = [
     {
         id: 1,
-        name: "Carlos Mendoza",
-        role: "Director de Operaciones",
-        company: "Banco Nacional",
+        name: "Ricardo Reyes",
+        role: "Gerente de Auditoría Interna Latam en American Express",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221027/vectux-academy/assets/blog-1.webp",
-        text: "El diplomado transformó mi manera de ver los datos. Ahora tomo decisiones estratégicas con confianza y mi equipo ha mejorado significativamente sus indicadores.",
+        text: "El Diplomado en Business Analytics transformó mi carrera. Pasé de generar reportes históricos a construir análisis predictivos con herramientas como Power BI y RapidMiner. Ese conocimiento me permitió cambiar de empresa y mejorar mi compensación en solo un año. Hoy aplico lo aprendido en la implementación de soluciones de inteligencia artificial, usando bases sólidas en data quality, machine learning y storytelling para impulsar el futuro analítico de mi organización.",
         aos: "fade-right",
         duration: "800"
     },
     {
         id: 2,
-        name: "María González",
-        role: "Gerente de Marketing",
-        company: "RetailMax",
+        name: "Samantha Vélez",
+        role: "CX Executive en Phillip Morris",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp",
-        text: "Gracias a Vectux, pude implementar modelos predictivos en nuestras campañas. El ROI aumentó un 40% en solo tres meses.",
-        aos: "zoom-in",
+        text: "El diplomado fortaleció por completo mi trabajo en Customer Experience. El enfoque en pensamiento crítico, Power BI y storytelling me ayudó a entender patrones del journey del cliente con más claridad y comunicar insights de forma mucho más estratégica. Además, las bases de machine learning y de IA me dieron nuevas herramientas para anticipar necesidades y proponer soluciones con mayor impacto.",        aos: "zoom-in",
         duration: "600"
     },
     {
         id: 3,
-        name: "Roberto Sánchez",
-        role: "CFO",
-        company: "TechSolutions",
+        name: "Eduardo Albarrán",
+        role: "Gerente de Contabilidad en Dell Technologies",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221072/vectux-academy/assets/blog-3.webp",
-        text: "La mentoría personalizada fue clave. Los instructores realmente entienden los desafíos del mundo corporativo y te guían paso a paso.",
+        text: "El programa de Business Analytics me ayudó a conectar los números con decisiones reales. Antes veía los datos solo como reportes financieros; ahora entiendo cómo analizarlos, visualizarlos y anticipar escenarios con modelos predictivos. Power BI y Python se convirtieron en herramientas clave de mi gestión. Hoy puedo presentar insights a la dirección con claridad y enfoque estratégico.",
         aos: "fade-left",
         duration: "800"
-    },
-    {
-        id: 4,
-        name: "Ana Lucía Torres",
-        role: "Directora de RRHH",
-        company: "Grupo Industrial",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221077/vectux-academy/assets/blog-4.webp",
-        text: "No tenía background técnico, pero el programa está diseñado para líderes como yo. Ahora lidero proyectos de analítica en toda la organización.",
-        aos: "fade-right",
-        duration: "600"
-    },
-    {
-        id: 5,
-        name: "Fernando Ruiz",
-        role: "Gerente de Ventas",
-        company: "Distribuidora Central",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221090/vectux-academy/assets/blog-5.webp",
-        text: "El certificado blockchain le dio credibilidad a mi perfil. Ya recibí ofertas de empresas en Estados Unidos gracias a las nuevas competencias.",
-        aos: "zoom-in",
-        duration: "800"
-    },
-    {
-        id: 6,
-        name: "Patricia Vega",
-        role: "Analista Senior",
-        company: "Consultora Global",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221094/vectux-academy/assets/blog-6.webp",
-        text: "Vectux no solo enseña herramientas, enseña a pensar estratégicamente. Mi carrera dio un giro de 180 grados después del diplomado.",
-        aos: "fade-left",
-        duration: "600"
     }
 ]
 
@@ -153,11 +119,8 @@ const Testimonials = () => {
                                                 <p className="text-[#4cc9f0] font-Manrope font-[700] text-[16px]">
                                                     {testimonial.name}
                                                 </p>
-                                                <p className="text-white/60 font-Manrope text-[14px]">
+                                                <p className="text-white font-Manrope text-[14px]">
                                                     {testimonial.role}
-                                                </p>
-                                                <p className="text-white/40 font-Manrope text-[13px]">
-                                                    {testimonial.company}
                                                 </p>
                                             </div>
                                         </div>

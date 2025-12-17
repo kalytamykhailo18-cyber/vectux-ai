@@ -75,7 +75,7 @@ const ContactUsSection = () => {
                                 
                             </div>
                             <textarea rows={4} placeholder='Mensaje' className='border-b-[1px] border-[#cccccc] tracking-[0.6px] w-full mt-7 font-Manrope text-[#f1f1f1] placeholder:text-white text-[15px]' name="" id=""></textarea>
-                            <button className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] mt-10 sm:mt-6 text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">Enviar Mensaje</button>
+                            <button className="bg-[#fa0] font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] mt-10 sm:mt-6 text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">Enviar Mensaje</button>
                         </form>
 
                     </div>

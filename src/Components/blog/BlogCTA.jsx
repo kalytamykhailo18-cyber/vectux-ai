@@ -31,7 +31,7 @@ const BlogCTA = () => {
                     </h2>
                     <button
                         onClick={() => router.push(ctaData.link)}
-                        className="inline-block bg-[#4cc9f0] hover:bg-[#3ab8df] text-[#0a0a1a] font-Manrope font-bold text-[13px] uppercase tracking-[1px] px-8 py-4 rounded-full transition-all duration-300 cursor-pointer"
+                        className="inline-block bg-[#fa0] hover:bg-[#b80] text-[#0a0a1a] font-Manrope font-bold text-[13px] uppercase tracking-[1px] px-8 py-4 rounded-full transition-all duration-300 cursor-pointer"
                     >
                         {ctaData.buttonText}
                     </button>

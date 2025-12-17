@@ -11,19 +11,19 @@ const bussinessData = {
     cards: [
         {
             image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529683/bussiness-1_ininrd.jpg",
-            title: "Fase 1: Análisis y Visualización de Datos",
+            title: "Análisis y Visualización de Datos",
             text: "Crea tableros que hablen por sí solos.",
             icon: BarChart3,
         },
         {
             image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529687/bussiness-2_hpheyc.jpg",
-            title: "Fase 2: Predicción con IA",
+            title: "Predicción con IA",
             text: "Usa Machine Learning para anticipar tendencias y comportamientos.",
             icon: Brain,
         },
         {
             image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529686/bussiness-3_o7n35q.jpg",
-            title: "Fase 3: Data Storytelling",
+            title: "Data Storytelling",
             text: "Genera impacto e influencia a través de los datos",
             icon: Presentation,
         }
@@ -104,16 +104,18 @@ const Bussiness = () => {
                                         unoptimized
                                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                                     />
-                                    {/* Phase Badge */}
-                                    <span className="absolute top-4 left-4 bg-[#4cc9f0] text-[#0a0a1a] font-Manrope font-bold text-[12px] uppercase tracking-[1px] px-3 py-1 rounded-full">
-                                        Módulo {index + 1}
-                                    </span>
                                 </div>
 
+
+
                                 {/* Card Content */}
-                                <div className="relative p-6 z-[1] text-center">
-                                    <div className="flex items-center gap-3 mb-4">
-                                        <card.icon className="w-7 h-7 text-[#fa0] group-hover:text-[#1cf9f0] transition-colors duration-300" />
+                                <div className="relative p-6 z-[1]">
+                                    {/* Phase Badge */}
+                                    <span className="ml-4 bg-[#4cc9f0] text-[#0a0a1a] font-Manrope font-bold text-[12px] uppercase px-3 py-1 rounded-full">
+                                        Módulo {index + 1}
+                                    </span>
+                                    <div className="flex items-center gap-3 mt-4 text-center">
+                                        <card.icon className="w-7 h-7 text-[#fff] group-hover:text-[#1cf9f0] transition-colors duration-300" />
                                         <h3 className="text-white font-bold text-[20px] md:text-[22px] leading-[28px] group-hover:text-[#1cf9f0] transition-colors duration-300">
                                             {card.title}
                                         </h3>
@@ -124,6 +126,11 @@ const Bussiness = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <div className="flex justify-center items-center w-full h-[160px]">
+                        <button className='px-4 py-2 bg-[#fa0] hover:bg-[#e80] text-[#fff] cursor-pointer rounded-[3px]'>
+                            Contáctanos
+                        </button>
                     </div>
                 </div>
             </section>

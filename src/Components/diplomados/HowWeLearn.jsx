@@ -52,41 +52,40 @@ const HowWeLearn = () => {
         >
 
             {/* Top Gradient - from Bussiness (Light Purple) - Extended toward center */}
-            <div className="absolute top-0 left-0 w-full h-[65%] z-10 bg-[linear-gradient(to_bottom,_#8d4aed_0%,_#8d4aed_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[40%] z-10 bg-[linear-gradient(to_bottom,_#8d4aed_0%,_#8d4aed_50%,_transparent_100%)]" />
 
             {/* Bottom Gradient - transition to Testimonials (Deep Blue-Purple) - Extended toward center */}
-            <div className="absolute bottom-0 left-0 w-full h-[50%] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_#343ec2_30%,_transparent_100%)]" />
+            <div className="absolute bottom-0 left-0 w-full h-[80%] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_#343ec2_30%,_transparent_100%)]" />
 
-            <section className="relative px-8 sm:px-14 py-20 md:py-28">
+            <section className="relative px-8 sm:px-14 py-4 md:py-8 mb-40">
                 <div className="max-w-[1200px] mx-auto relative z-20">
                     <h2
                         data-aos="fade-up"
                         data-aos-duration="600"
                         className="text-white font-bold text-3xl md:text-[36px] leading-[44px] mb-12 text-center"
                     >
-                        Beneficios diferenciales
+                        ¿A quién están dirigidos?
                     </h2>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-72">
-                        {benefitsItems.map((item, index) => (
-                            <div
-                                key={index}
-                                data-aos={item.aos}
-                                data-aos-duration={item.duration}
-                                data-aos-delay={item.delay}
-                                className="group flex flex-col items-start gap-4 py-4 px-6 border-l-4 border-[#4cc9f0] hover:border-[#fa0] transition-all duration-300 rounded-lg"
-                            >
-                                <span className="text-[32px] flex-shrink-0 group-hover:rotate-[360deg] transition-transform duration-500">{item.icon}</span>
-                                <div>
-                                    <h3 className="text-[#4cc9f0] font-bold text-[18px] md:text-[20px] leading-[28px] mb-2 group-hover:text-[#fa0] transition-colors duration-300">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-white font-Manrope text-[14px] sm:text-[15px] font-[500] leading-[24px] group-hover:text-white transition-colors duration-300">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-72">
+                        {targetAudienceItems.map((item, index) => {
+                            const IconComponent = item.icon
+                            return (
+                                <div
+                                    key={index}
+                                    data-aos={item.aos}
+                                    data-aos-duration={item.duration}
+                                    data-aos-delay={item.delay}
+                                    className="group flex flex-col items-start gap-4 py-4 px-6 border-l-4 border-[#4cc9f0] hover:border-[#fa0] transition-all duration-300 rounded-lg"
+                                >
+                                    <IconComponent className="text-[#4cc9f0] w-10 h-10 flex-shrink-0 group-hover:rotate-[360deg] transition-transform duration-500" />
+                                    <p className="text-white font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[26px] group-hover:text-[#fa0] transition-colors duration-300">
                                         {item.text}
                                     </p>
                                 </div>
-                            </div>
-                        ))}
+                            )
+                        })}
+
                     </div>
 
                     {/* Target Audience Section */}
@@ -96,30 +95,38 @@ const HowWeLearn = () => {
                             data-aos-duration="600"
                             className="text-white font-bold text-3xl md:text-[36px] leading-[44px] mb-12 text-center"
                         >
-                            ¿A quién están dirigidos?
+                            Beneficios diferenciales
                         </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {targetAudienceItems.map((item, index) => {
-                                const IconComponent = item.icon
-                                return (
-                                    <div
-                                        key={index}
-                                        data-aos={item.aos}
-                                        data-aos-duration={item.duration}
-                                        data-aos-delay={item.delay}
-                                        className="group flex flex-col items-start gap-4 py-4 px-6 border-l-4 border-[#4cc9f0] hover:border-[#fa0] transition-all duration-300 rounded-lg"
-                                    >
-                                        <IconComponent className="text-[#4cc9f0] w-10 h-10 flex-shrink-0 group-hover:rotate-[360deg] transition-transform duration-500" />
-                                        <p className="text-white font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[26px] group-hover:text-[#fa0] transition-colors duration-300">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            {benefitsItems.map((item, index) => (
+                                <div
+                                    key={index}
+                                    data-aos={item.aos}
+                                    data-aos-duration={item.duration}
+                                    data-aos-delay={item.delay}
+                                    className="group flex flex-col items-start gap-4 py-4 px-6 border-l-4 border-[#4cc9f0] hover:border-[#fa0] transition-all duration-300 rounded-lg"
+                                >
+                                    <span className="text-[32px] flex-shrink-0 group-hover:rotate-[360deg] transition-transform duration-500">{item.icon}</span>
+                                    <div>
+                                        <h3 className="text-[#4cc9f0] font-bold text-[18px] md:text-[20px] leading-[28px] mb-2 group-hover:text-[#fa0] transition-colors duration-300">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-white font-Manrope text-[14px] sm:text-[15px] font-[500] leading-[24px] group-hover:text-white transition-colors duration-300">
                                             {item.text}
                                         </p>
                                     </div>
-                                )
-                            })}
+                                </div>
+                            ))}
                         </div>
                     </div>
+                    <div className="absolute flex justify-center items-center w-full h-[260px]">
+                        <button className='px-4 py-2 bg-[#fa0] hover:bg-[#e80] text-[#fff] cursor-pointer rounded-[3px]'>
+                            Contáctanos
+                        </button>
+                    </div>
                 </div>
+
             </section>
         </div>
     )

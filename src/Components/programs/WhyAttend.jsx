@@ -85,7 +85,7 @@ export default function WhyAttend() {
                             Nuestros programas están diseñados a medida y enfocados en potenciar las habilidades analíticas "blandas" y "duras" de tus colaboradores, necesarias para mantener tu negocio a la vanguardia en la era de la Inteligencia Artificial.
                         </p>
                         <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600" className="flex flex-col mt-2 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                            <button className="bg-skyBlue cursor-pointer w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
+                            <button className="bg-[#fa0] cursor-pointer w-max font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
                                 Más información
                             </button>
                         </div>

@@ -27,7 +27,7 @@ const InfoSection = () => {
                 <div className="flex flex-col mt-2 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <button
                         onClick={() => scrollToSection('#section-tickets')}
-                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                        className="bg-[#fa0] font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
                     >
                         Descarga el artículo aquí
                     </button>

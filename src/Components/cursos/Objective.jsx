@@ -50,7 +50,7 @@ const Objective = () => {
                             {ObjectiveData.text}
                         </p>
                         <div data-aos="fade-up" data-aos-delay="300" className="mt-4">
-                            <button className="bg-skyBlue cursor-pointer w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
+                            <button className="bg-[#fa0] cursor-pointer w-max font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
                                 Ver Programas
                             </button>
                         </div>

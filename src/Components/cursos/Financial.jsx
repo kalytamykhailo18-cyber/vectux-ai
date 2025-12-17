@@ -194,7 +194,7 @@ const Financial = () => {
                                 {/* Button */}
                                 <button
                                     onClick={() => handleOpenModal(program.modalData)}
-                                    className="bg-transparent border border-[#4cc9f0] text-[#4cc9f0] hover:bg-[#4cc9f0] hover:text-[#0a0a1a] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] px-6 py-3 rounded-full transition-all duration-300 w-max cursor-pointer"
+                                    className="bg-transparent border border-[#b80] text-[#fff] hover:bg-[#fa0] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] px-6 py-3 rounded-full transition-all duration-300 w-max cursor-pointer"
                                 >
                                     {program.buttonText}
                                 </button>

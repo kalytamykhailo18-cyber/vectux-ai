@@ -209,7 +209,7 @@ const Exclusive = () => {
                             {ObjectiveData.text}
                         </p>
                         <div data-aos="fade-up" data-aos-delay="300" className="mt-4">
-                            <button className="bg-skyBlue cursor-pointer w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
+                            <button className="bg-[#fa0] cursor-pointer w-max font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none">
                                 Ver Programas
                             </button>
                         </div>
@@ -295,7 +295,7 @@ const Exclusive = () => {
                             {/* Button */}
                             <button
                                 onClick={() => handleOpenModal(module.modalData)}
-                                className="bg-transparent border border-[#4cc9f0] text-[#4cc9f0] hover:bg-[#4cc9f0] hover:text-[#0a0a1a] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] px-6 py-3 rounded-full transition-all duration-300 cursor-pointer"
+                                className="bg-transparent border border-[#b80] text-[#fff] hover:bg-[#fa0] font-Manrope font-semibold text-[13px] uppercase tracking-[1px] px-6 py-3 rounded-full transition-all duration-300 cursor-pointer"
                             >
                                 Más Información
                             </button>

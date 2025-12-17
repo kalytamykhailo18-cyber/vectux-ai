@@ -100,7 +100,7 @@ const HeroSection = () => {
             <div data-aos="fade-up" data-aos-delay="600" className="mt-4">
               <button
                 onClick={() => scrollToSection('#section-tickets')}
-                className="bg-skyBlue w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                className="bg-[#fa0] w-max font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
               >
                 Contáctanos
               </button>

@@ -47,7 +47,7 @@ const DiplomadosCards = () => {
     return (
         <div className="relative overflow-hidden">
             {/* Color Overlay - Purple to Pink Gradient */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #8d4aed 0%, #a864c9 50%, #343ec2 100%)' }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #8d4aed 0%, #a864c9 50%, #44f 100%)' }} />
 
             {/* Top Gradient - from Testimonials (Light Purple) */}
             <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
@@ -73,7 +73,7 @@ const DiplomadosCards = () => {
                             data-aos={diplomado.aos}
                             data-aos-duration={diplomado.duration}
                             data-aos-delay={diplomado.delay}
-                            className="group bg-[#4628bc]/50 rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
+                            className="flex flex-col justify-between group bg-[#4628bc]/50 rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
                         >
                             {/* Icon */}
                             <div className="text-[48px] mb-6 transform group-hover:scale-110 transition-transform duration-300">
@@ -86,7 +86,7 @@ const DiplomadosCards = () => {
                             </h3>
 
                             {/* Subtitle */}
-                            <p className="text-[#fa0] font-Manrope text-[14px] sm:text-[15px] font-[600] leading-[24px] mb-4">
+                            <p className="text-[#7ef] font-Manrope text-[14px] sm:text-[15px] font-[600] leading-[24px] mb-4">
                                 {diplomado.subtitle}
                             </p>
 
@@ -98,7 +98,7 @@ const DiplomadosCards = () => {
                             {/* Button */}
                             <button
                                 onClick={() => router.push(`/diplomados/${diplomado.slug}`)}
-                                className="inline-block bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none cursor-pointer"
+                                className="inline-block bg-[#fa0] font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none cursor-pointer"
                             >
                                 {diplomado.buttonText}
                             </button>

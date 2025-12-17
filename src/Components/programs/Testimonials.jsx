@@ -106,7 +106,7 @@ const Testimonials = () => {
                                 key={index}
                                 onClick={() => setCurrentIndex(index)}
                                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                                    index === currentIndex ? 'bg-skyBlue w-6' : 'bg-white/40 hover:bg-white/60'
+                                    index === currentIndex ? 'bg-[#fa0] w-6' : 'bg-white/40 hover:bg-white/60'
                                 }`}
                             />
                         ))}

@@ -94,12 +94,12 @@ const Lecture = () => {
 
                             <button
                                 onClick={() => router.push('#diplomados')}
-                                className="relative z-10 inline-block w-max bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                                className="relative z-10 inline-block w-max bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
                             >
                                 {lectureData.left.button}
                             </button>
 
-                            <p className="relative z-10 text-[#fa0] text-center font-Manrope text-[14px] sm:text-[15px] font-[600]">
+                            <p className="relative z-10 text-[#7cf] text-center font-Manrope text-[14px] sm:text-[15px] font-[600]">
                                 {lectureData.left.text}
                             </p>
                         </div>

@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const Letstalk = () => {
     return (
@@ -32,7 +33,8 @@ const Letstalk = () => {
                         <p className="text-sm lg:text-base mb-1">
                             mpaez@vectuxanalytics.com
                         </p>
-                        <p className="text-sm lg:text-base">
+                        <p className="text-sm lg:text-base flex items-center gap-2">
+                            <FaWhatsapp className="bg-[#25D366] text-white w-7 h-7 p-[2px] rounded-[3px]" />
                             +52 56 1195-5405
                         </p>
                     </div>

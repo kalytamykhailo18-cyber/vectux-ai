@@ -2,18 +2,25 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiMenu, HiX, HiChevronDown } from "react-icons/hi";
 
 const menuItems = [
     ["Programas In-Company", "/"],
-    ["Cursos y Diplomados", "/cursos"],
     ["Diplomados", "/diplomados"],
+    ["Cursos", "/cursos"],
     ["Blog", "/blog"],
     ["Nosotros", "/nosotros"]
 ];
 
+const cursosDropdownItems = [
+    { label: "Business Analytics", href: "/analysis" },
+    { label: "Financial Analytics", href: "#financial-analytics" },
+    { label: "Marketing Analytics", href: "#marketing-analytics" }
+];
+
 export default function Navbar({ locoScroll }) {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [cursosDropdownOpen, setCursosDropdownOpen] = useState(false);
     const router = useRouter();
 
     return (
@@ -37,17 +44,51 @@ export default function Navbar({ locoScroll }) {
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex font-Manrope font-[700] space-x-9 flex-grow justify-center text-white text-[15px]">
                         {menuItems.map(([label, href]) => (
-                            <li key={href}>
-                                <button onClick={() => router.push(href)} className="hover:text-purple-400 transition cursor-pointer">
-                                    {label}
-                                </button>
+                            <li key={href} className="relative">
+                                {label === "Cursos" ? (
+                                    <div
+                                        className="relative"
+                                        onMouseEnter={() => setCursosDropdownOpen(true)}
+                                        onMouseLeave={() => setCursosDropdownOpen(false)}
+                                    >
+                                        <button
+                                            onClick={() => router.push(href)}
+                                            className="flex items-center gap-1 hover:text-purple-400 transition cursor-pointer"
+                                        >
+                                            {label}
+                                            <HiChevronDown className={`w-4 h-4 transition-transform duration-200 ${cursosDropdownOpen ? 'rotate-180' : ''}`} />
+                                        </button>
+
+                                        {/* Dropdown Menu */}
+                                        {cursosDropdownOpen && (
+                                            <div className="absolute top-[16px] left-0 mt-2 w-56 backdrop-blur-md rounded-lg shadow-lg border border-[#4cc9f0]/30 overflow-hidden">
+                                                {cursosDropdownItems.map((item, index) => (
+                                                    <button
+                                                        key={index}
+                                                        onClick={() => {
+                                                            router.push(item.href);
+                                                            setCursosDropdownOpen(false);
+                                                        }}
+                                                        className="w-full text-left px-4 py-3 text-white/80 hover:text-white hover:bg-[#4cc9f0]/20 transition-colors duration-200 text-[14px] cursor-pointer"
+                                                    >
+                                                        {item.label}
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <button onClick={() => router.push(href)} className="hover:text-purple-400 transition cursor-pointer">
+                                        {label}
+                                    </button>
+                                )}
                             </li>
                         ))}
                     </ul>
 
                     {/* Right Button */}
                     <div className="hidden min-[840px]:block">
-                        <button className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none">
+                        <button className="bg-[#fa0] font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-[3px] select-none">
                             Contacta con
                         </button>
                     </div>
@@ -74,16 +115,45 @@ export default function Navbar({ locoScroll }) {
                         <ul className="flex flex-col space-y-4 text-white font-medium">
                             {menuItems.map(([label, href]) => (
                                 <li key={href}>
-                                    <button
-                                        onClick={() => { router.push(href); setMenuOpen(false); }}
-                                        className="hover:text-skyBlue transition block cursor-pointer"
-                                    >
-                                        {label}
-                                    </button>
+                                    {label === "Cursos" ? (
+                                        <div>
+                                            <button
+                                                onClick={() => setCursosDropdownOpen(!cursosDropdownOpen)}
+                                                className="flex items-center justify-between w-full hover:text-[#4cc9f0] transition cursor-pointer"
+                                            >
+                                                {label}
+                                                <HiChevronDown className={`w-4 h-4 transition-transform duration-200 ${cursosDropdownOpen ? 'rotate-180' : ''}`} />
+                                            </button>
+                                            {cursosDropdownOpen && (
+                                                <div className="mt-2 ml-4 space-y-2">
+                                                    {cursosDropdownItems.map((item, index) => (
+                                                        <button
+                                                            key={index}
+                                                            onClick={() => {
+                                                                router.push(`/cursos${item.href}`);
+                                                                setMenuOpen(false);
+                                                                setCursosDropdownOpen(false);
+                                                            }}
+                                                            className="block text-white/70 hover:text-white text-[14px] transition"
+                                                        >
+                                                            {item.label}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ) : (
+                                        <button
+                                            onClick={() => { router.push(href); setMenuOpen(false); }}
+                                            className="hover:text-[#4cc9f0] transition block cursor-pointer"
+                                        >
+                                            {label}
+                                        </button>
+                                    )}
                                 </li>
                             ))}
                             <li>
-                                <button className="w-max sm:w-full bg-skyBlue hover:bg-skyBlue transition text-white font-semibold px-5 py-2 rounded-md select-none">
+                                <button className="w-max sm:w-full bg-[#fa0] hover:bg-[#b80] transition text-white font-semibold px-5 py-2 rounded-[3px] select-none">
                                     Contáctanos
                                 </button>
                             </li>

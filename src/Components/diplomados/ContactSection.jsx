@@ -15,7 +15,7 @@ const ContactSection = () => {
             <div className="absolute inset-0 bg-[#4895ef]/75" />
 
             {/* Top Gradient - from MasterclassSection (Light Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8db8f2_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#44f_50%,_transparent_100%)]" />
 
             {/* Bottom Gradient - transition to Footer */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
@@ -55,11 +55,11 @@ const ContactSection = () => {
                         </p>
 
                         {/* Contact Person */}
-                        <div className="bg-black/20 backdrop-blur-sm rounded-[16px] p-6 border border-[#e3e3e330] mb-8">
+                        <div className="bg-[#42f] backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330] mb-8">
                             <p className="text-[#4cc9f0] font-Manrope font-[700] text-[18px] mb-1">
                                 Mercedes Paez
                             </p>
-                            <p className="text-white/60 font-Manrope text-[14px] mb-6">
+                            <p className="text-white font-Manrope text-[14px] mb-6">
                                 Directora de Crecimiento y Alianzas Estratégicas
                             </p>
 

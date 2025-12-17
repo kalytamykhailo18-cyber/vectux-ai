@@ -50,7 +50,7 @@ const HeroSection = () => {
                 >
                     <button
                         onClick={() => scrollToSection('#section-tickets')}
-                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                        className="bg-[#fa0] font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
                     >
                         Más información
                     </button>
