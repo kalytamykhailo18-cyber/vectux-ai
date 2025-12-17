@@ -68,14 +68,14 @@ const LearningSection = () => {
                     {learningData.benefitsTitle}
                 </h2>
 
-                <div className="flex mb-12">
+                <div className="flex flex-wrap mb-12">
                     {learningData.benefits.map((benefit, index) => (
                         <div
                             key={index}
                             data-aos="flip-up"
                             data-aos-delay={index * 100}
                             data-aos-duration="600"
-                            className="flex-1 group hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[16px] p-6 flex flex-col items-center gap-4 text-center"
+                            className="flex-1 min-w-[150px] group hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[16px] p-6 flex flex-col items-center gap-4 text-center"
                         >
                             <Image
                                 src={benefit.image}
