@@ -39,11 +39,31 @@ export default function LenisProvider({ children }) {
 
     rafRef.current = requestAnimationFrame(update)
 
+    // Handle anchor link clicks for smooth scrolling
+    const handleAnchorClick = (e) => {
+      const target = e.target.closest('a[href^="#"]')
+      if (!target) return
+
+      const href = target.getAttribute('href')
+      if (!href || href === '#') return
+
+      e.preventDefault()
+      const targetElement = document.querySelector(href)
+      if (targetElement && lenisRef.current) {
+        lenisRef.current.scrollTo(targetElement, {
+          offset: 0,
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1 - Math.pow(1 - t, 4)),
+        })
+      }
+    }
+
     // Handle resize events to recalculate scroll dimensions
     const handleResize = () => {
       lenisRef.current?.resize()
     }
 
+    document.addEventListener('click', handleAnchorClick)
     window.addEventListener('resize', handleResize)
 
     // Recalculate dimensions after dynamic content loads
@@ -53,6 +73,7 @@ export default function LenisProvider({ children }) {
 
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current)
+      document.removeEventListener('click', handleAnchorClick)
       window.removeEventListener('resize', handleResize)
       clearTimeout(resizeTimeout)
       if (lenisRef.current) {

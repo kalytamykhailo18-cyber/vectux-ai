@@ -45,7 +45,7 @@ export default function Navbar({ locoScroll }) {
                     <ul className="hidden md:flex font-Manrope font-[700] space-x-9 flex-grow justify-center text-white text-[15px]">
                         {menuItems.map(([label, href]) => (
                             <li key={href} className="relative">
-                                {label === "Cursos" ? (
+                                {label === "Diplomados" ? (
                                     <div
                                         className="relative"
                                         onMouseEnter={() => setCursosDropdownOpen(true)}
