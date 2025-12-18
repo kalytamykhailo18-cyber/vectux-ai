@@ -58,10 +58,15 @@ const CardData = [
 
 const AboutSection = () => {
     return (
-        <section className="relative py-20 flex flex-col items-center justify-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#343ec2]">
+        <section className="relative py-20 flex flex-col items-center justify-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 overflow-hidden">
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #3a45c5 50%, #4550cc 100%)' }} />
+
+            {/* Bottom Gradient - blend into ServiceSection */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#4550cc_0%,_transparent_100%)]" />
 
             {/* Benefits Content */}
-            <div className="max-w-[1200px] mt-20">
+            <div className="max-w-[1200px] mt-20 relative z-20">
                 <h2 data-aos="fade-right" data-aos-duration="800" className="text-center text-white font-bold text-[32px] leading-[38px] md:text-4xl lg:text-[48px] sm:leading-[56px] mb-12">
                     <span className="font-bold text-blue-400">Basado en datos:&nbsp;</span>
                     <span className="text-[18px] sm:text-[20px] md:text-4xl lg:text-[34px]">la ventaja competitiva del futuro</span>

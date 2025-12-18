@@ -72,8 +72,14 @@ const SkillsData = [
 
 export default function WhyAttend() {
     return (
-        <section className="bg-gradient-to-b from-[#4895ef] via-[#5a6def] to-[#8d4aed] px-8 pt-4 sm:px-7 md:px-10 min-[860px]:!px-10 lg:!px-14 sm:pt-10 pb-24 sm:pb-16 md:pb-24 flex justify-center items-center">
-            <div className="max-w-[1200px]">
+        <section className="relative px-8 pt-4 sm:px-7 md:px-10 min-[860px]:!px-10 lg:!px-14 sm:pt-10 pb-24 sm:pb-16 md:pb-24 flex justify-center items-center overflow-hidden">
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #5a68d8 0%, #5f70dc 50%, #6478e0 100%)' }} />
+
+            {/* Bottom Gradient - blend into Skills */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#6478e0_0%,_transparent_100%)]" />
+
+            <div className="max-w-[1200px] relative z-20">
                 <div className="flex flex-col min-[860px]:flex-row">
                     <div className="flex flex-col justify-center gap-6 md:w-[60%] lg:w-[65%]">
                         <h1 data-aos="fade-right" data-aos-duration="800" className="text-[#fa0] font-bold text-[38px] md:text-5xl lg:text-[43px] leading-[45px] sm:leading-[56px]">

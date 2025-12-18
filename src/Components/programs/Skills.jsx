@@ -36,11 +36,17 @@ const SkillsData = [
 
 const Skills = () => {
     return (
-        <section className="flex justify-center items-center px-7 md:px-10 lg:px-16 py-20 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#343ec2]">
-            <div className="max-w-[1200px]">
+        <section className="relative flex justify-center items-center px-7 md:px-10 lg:px-16 py-20 overflow-hidden">
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #6478e0 0%, #5f70dc 50%, #5a68d8 100%)' }} />
+
+            {/* Bottom Gradient - blend into LevelsSection */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#5a68d8_0%,_transparent_100%)]" />
+
+            <div className="max-w-[1200px] relative z-20">
                 <div>
                     <div className="flex flex-col justify-center items-center gap-3 text-center">
-                        <h1 data-aos="zoom-in" data-aos-duration="800" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl md:text-5xl lg:text-[48px] leading-[56px]">
+                        <h1 data-aos="zoom-in" data-aos-duration="800" className="text-white font-bold text-4xl md:text-5xl lg:text-[48px] leading-[56px]">
                             Niveles
                         </h1>
                         <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" className="text-white font-Manrope text-[16px] font-[500] leading-[28px] sm:w-[80%] md:w-[60%]">

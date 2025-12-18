@@ -12,8 +12,8 @@ const MarqueeList = [
 
 const RotatedMarquee = () => {
     return (
-        <div className="relative overflow-hidden bg-gradient-to-b from-[#343ec2] via-[#4a45c9] to-[#4895ef]">
-            <div className="relative py-5 whitespace-nowrap flex">
+        <div className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #5078e0 0%, #4b70dc 50%, #4560d4 100%)' }}>
+            <div className="relative py-5 whitespace-nowrap flex z-20">
                 <div className="marquee-track">
                     {MarqueeList.concat(MarqueeList).map((item, i) => (
                         <React.Fragment key={i}>

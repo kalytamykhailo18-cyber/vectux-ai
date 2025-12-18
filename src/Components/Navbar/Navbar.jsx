@@ -13,9 +13,9 @@ const menuItems = [
 ];
 
 const cursosDropdownItems = [
-    { label: "Business Analytics", href: "/analysis" },
-    { label: "Financial Analytics", href: "#financial-analytics" },
-    { label: "Marketing Analytics", href: "#marketing-analytics" }
+    { label: "Business Analytics", href: "/business" },
+    { label: "Financial Analytics", href: "/financial" },
+    { label: "Marketing Analytics", href: "/marketing" }
 ];
 
 export default function Navbar({ locoScroll }) {
@@ -61,7 +61,7 @@ export default function Navbar({ locoScroll }) {
 
                                         {/* Dropdown Menu */}
                                         {cursosDropdownOpen && (
-                                            <div className="absolute top-[16px] left-0 mt-2 w-56 backdrop-blur-md rounded-lg shadow-lg border border-[#4cc9f0]/30 overflow-hidden">
+                                            <div className="absolute top-[16px] left-0 mt-2 w-56 bg-black/10 backdrop-blur-md rounded-lg shadow-lg border border-[#4cc9f0]/30 overflow-hidden">
                                                 {cursosDropdownItems.map((item, index) => (
                                                     <button
                                                         key={index}
@@ -134,7 +134,7 @@ export default function Navbar({ locoScroll }) {
                                                                 setMenuOpen(false);
                                                                 setCursosDropdownOpen(false);
                                                             }}
-                                                            className="block text-white/70 hover:text-white text-[14px] transition"
+                                                            className="block text-white hover:text-white text-[14px] transition"
                                                         >
                                                             {item.label}
                                                         </button>

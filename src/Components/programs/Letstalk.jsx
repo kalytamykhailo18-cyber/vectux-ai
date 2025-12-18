@@ -5,8 +5,14 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const Letstalk = () => {
     return (
-        <section className="bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#343ec2] relative overflow-hidden flex justify-center px-7.5 sm:px-10 min-[860px]:px-16">
-            <div className="py-16 sm:py-20 pt-28 flex flex-col min-[860px]:flex-row max-w-[1200px] w-full justify-center">
+        <section className="relative overflow-hidden flex justify-center px-7.5 sm:px-10 min-[860px]:px-16">
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #3a50cc 0%, #3745c8 50%, #343ec2 100%)' }} />
+
+            {/* Bottom Gradient - blend into Footer */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_transparent_100%)]" />
+
+            <div className="py-16 sm:py-20 pt-28 flex flex-col min-[860px]:flex-row max-w-[1200px] w-full justify-center relative z-20">
                 <div className="min-[860px]:w-1/2 flex flex-col justify-center max-w-lg pr-4">
                     <h1 data-aos="fade-up" data-aos-duration="1500" className="text-white text-[42px] font-bold leading-tight mb-5">
                         ¿Tu empresa está lista para la era de la Inteligencia Artificial?

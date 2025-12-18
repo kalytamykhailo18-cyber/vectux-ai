@@ -21,7 +21,8 @@ const HeroSection = () => {
                 <source src="https://res.cloudinary.com/dcfjvxt5h/video/upload/v1765231165/vectux-academy/video/2.mp4" type="video/mp4" />
             </video>
 
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef60,#343ec280,#8d4aed90)]" />
+            {/* Color Overlay */}
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(52,62,194,0.6)_0%,rgba(52,62,194,0.8)_50%,rgba(58,64,197,0.9)_100%)]" />
 
             <div className="relative z-30 flex flex-col items-center justify-center text-center gap-10 h-full px-4">
                 <h1 className="text-white font-semibold text-[37px] sm:text-[42px] md:text-5xl lg:text-[72px] leading-tight">
@@ -73,8 +74,8 @@ const HeroSection = () => {
                 </p>
             </div>
 
-            {/* Bottom Gradient Blur - blends with AboutSection */}
-            <div className="absolute -bottom-28 -left-20 w-[140%] h-[20%] z-50 bg-gradient-to-b blur-2xl from-[#343ec2] to-[#343ec2]" />
+            {/* Bottom Gradient - blends with AboutSection */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_transparent_100%)]" />
         </section>
     );
 };

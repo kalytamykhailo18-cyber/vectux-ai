@@ -15,10 +15,10 @@ const ProgramasPage = () => {
             <HeroSection />
             <AboutSection />
             <ServiceSection />
-            <LevelsSection />
-            <RotatedMarquee />
             <WhyAttend />
             <Skills />
+            <LevelsSection />
+            <RotatedMarquee />
             <Testimonials />
             <Letstalk />
         </>

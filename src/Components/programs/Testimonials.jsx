@@ -49,10 +49,14 @@ const Testimonials = () => {
             id='bg_1'
             className="relative overflow-hidden px-8 sm:px-12 min-[860px]:px-20 py-20 min-[860px]:!py-40 flex justify-center flex-col items-center bg-cover bg-center bg-fixed"
         >
-            {/* Top Gradient Blur - blends with Skills section */}
-            <div className="absolute top-0 left-0 w-full h-[600px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(69, 96, 212, 0.55) 0%, rgba(64, 88, 208, 0.5) 50%, rgba(58, 80, 204, 0.55) 100%)' }} />
 
-            <div className="absolute inset-0 bg-black opacity-50 transition-all duration-500" />
+            {/* Top Gradient - blend from Marquee */}
+            <div className="absolute top-0 left-0 w-full h-[50%] z-10 bg-[linear-gradient(to_bottom,_#4560d4_20%,_transparent_60%)]" />
+
+            {/* Bottom Gradient - blend into Letstalk */}
+            <div className="absolute bottom-0 left-0 w-full h-[50%] z-10 bg-[linear-gradient(to_top,_#3a50cc_20%,_transparent_60%)]" />
 
             <div className="relative z-50 py-10 max-w-[1200px] w-full overflow-hidden">
                 <div
@@ -78,7 +82,7 @@ const Testimonials = () => {
                             </div>
 
                             <div className="min-[860px]:w-[64%] flex flex-col justify-center mt-8 min-[860px]:pl-10 min-[860px]:mt-0">
-                                <p className="font-Manrope font-[700] text-[22.5px] leading-[33px] sm:text-[27px] min-[860px]:text-[32px] sm:leading-[37px] min-[860px]:leading-[48px] bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent">
+                                <p className="font-Manrope font-[700] text-[22.5px] leading-[33px] sm:text-[27px] min-[860px]:text-[32px] sm:leading-[37px] min-[860px]:leading-[48px] text-white">
                                     "{testimonial.quote}"
                                 </p>
                                 <h4 className="font-Manrope mt-5 text-[17.5px] text-white font-semibold">
@@ -120,8 +124,6 @@ const Testimonials = () => {
                 </div>
             </div>
 
-            {/* Bottom Gradient Blur - blends with Letstalk section */}
-            <div className="absolute bottom-[-300px] left-0 w-full h-[600px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
         </section>
     )
 }

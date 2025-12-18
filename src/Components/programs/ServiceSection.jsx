@@ -41,8 +41,14 @@ const ServiceSection = () => {
     };
 
     return (
-        <section className="relative overflow-hidden px-8 sm:px-20 py-20 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#8d4aed] flex justify-center items-center">
-            <div className="w-full flex flex-col lg:flex-row max-w-[1200px]">
+        <section className="relative overflow-hidden px-8 sm:px-20 py-20 flex justify-center items-center">
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #4550cc 0%, #5058d2 50%, #5a68d8 100%)' }} />
+
+            {/* Bottom Gradient - blend into WhyAttend */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#5a68d8_0%,_transparent_100%)]" />
+
+            <div className="w-full flex flex-col lg:flex-row max-w-[1200px] relative z-20">
                 <div data-aos="fade-right" data-aos-duration="800" className="lg:w-3/5 flex items-center justify-start pl-8 lg:pl-16">
                     <div className="text-left">
                         <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100" className="text-white mb-6">

@@ -46,8 +46,14 @@ const LevelsData = [
 
 const LevelsSection = () => {
     return (
-        <section className="flex flex-col justify-center items-center bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#343ec2] py-20 pb-32 px-7 md:px-10 min-[860px]:!px-16">
-            <div className="max-w-[1200px]">
+        <section className="relative flex flex-col justify-center items-center py-20 pb-32 px-7 md:px-10 min-[860px]:!px-16 overflow-hidden">
+            {/* Color Overlay */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #5a68d8 0%, #5570dc 50%, #5078e0 100%)' }} />
+
+            {/* Bottom Gradient - blend into Marquee */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#5078e0_0%,_transparent_100%)]" />
+
+            <div className="max-w-[1200px] relative z-20">
                 <div className="flex flex-col justify-center items-center gap-3 text-center">
                     <h1 data-aos="zoom-in" data-aos-duration="800" className="text-white font-bold text-4xl md:text-5xl lg:text-[48px] leading-[56px]">
                         Generamos resultados de Alto Impacto
