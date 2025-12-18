@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-const testimonialsBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221798/vectux-academy/assets/sample-1.jpg"
+const testimonialsBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221164/vectux-academy/assets/financial-2.jpg"
 
 const testimonials = [
     {
@@ -50,7 +50,7 @@ const Testimonials = () => {
             style={{ backgroundImage: `url(${testimonialsBackgroundImage})` }}
         >
             {/* Color Overlay - semi-transparent to show fixed background */}
-            {/* <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(85, 96, 216, 0.88) 0%, rgba(96, 104, 220, 0.82) 50%, rgba(101, 112, 224, 0.88) 100%)' }} /> */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(85, 96, 216, 0.88) 0%, rgba(96, 104, 220, 0.5) 50%, rgba(101, 112, 224, 0.3) 100%)' }} />
 
             {/* Top Gradient - blend from Bussiness */}
             <div className="absolute top-0 left-0 w-full h-[70%] z-10 bg-[linear-gradient(to_bottom,_#5560d8_40%,_transparent_70%)]" />

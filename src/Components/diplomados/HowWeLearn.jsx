@@ -3,7 +3,7 @@ import React from 'react'
 import { FaUserTie, FaRocket, FaUsers } from "react-icons/fa"
 
 const howWeLearnData = {
-    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529683/bussiness-1_ininrd.jpg"
+    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221174/vectux-academy/assets/financial-bg.jpg"
 }
 
 const benefitsItems = [
