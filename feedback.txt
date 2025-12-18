@@ -1,0 +1,144 @@
+Vectux Academy – Diplomas Page
+UX/UI Improvement Prototype (Implementation Guide)
+Objective
+Increase clarity, perceived premium quality, and conversion rate for users exploring Vectux Academy diploma programs.
+
+1. Typography System
+Font Families
+Headings: Use a modern, strong sans-serif (e.g. Inter, Poppins, or similar)
+Body text: Same family, lighter weight for consistency
+Font Scale (Desktop / Tablet / Mobile)
+H1 (Hero Title):
+oDesktop: 56–60px
+oTablet: 40–44px
+oMobile: 28–32px
+oFont-weight: 600–700
+H2 (Section Titles):
+oDesktop: 32–36px
+oMobile: 22–26px
+oFont-weight: 600
+H3 (Card / Program Titles):
+oDesktop: 22–24px
+oMobile: 18–20px
+Body Text:
+o16–18px
+oLine-height: 1.5–1.7
+Rules
+Max 2 font families total
+Avoid center-aligned long paragraphs
+Use whitespace instead of bold for emphasis where possible
+
+2. Color System
+Color Roles
+Primary Color: Used for main CTAs (buttons)
+Secondary Color: Headings, section dividers
+Neutral Colors: Backgrounds, body text
+Accent Color: Highlights, tags, icons (use sparingly)
+Guidelines
+Apply 60-30-10 rule
+o60% neutral (white/light gray backgrounds)
+o30% brand color (sections, headers)
+o10% accent (CTAs, emphasis)
+Accessibility
+Minimum contrast ratio WCAG AA
+Buttons must clearly stand out from background
+
+3. Hero Section (Above the Fold)
+Layout
+Left: Value proposition text
+Right: Visual (image or illustration)
+Text Structure
+H1: Clear outcome-driven message
+Example:
+“Diplomas that prepare business leaders for the AI economy”
+Subtitle (max 2 lines):
+Focus on impact, not features
+CTA
+Primary Button:
+“View Diploma Programs”
+Secondary (optional):
+“Talk to an Advisor”
+
+4. Program Cards (Diplomas Section)
+Card Layout
+Title (H3)
+1-sentence value proposition
+3–4 bullet benefits (skills, outcomes)
+CTA button
+Card Styling
+Soft shadow or subtle border
+12–16px internal padding
+Hover effect:
+oSlight elevation
+oShadow increase
+oButton color intensifies
+CTA Button Text
+“View Curriculum”
+“See Program Details”
+Avoid generic text like “Learn more”
+
+5. Buttons (Critical Conversion Element)
+Size
+Minimum height: 44px (mobile-friendly)
+Horizontal padding: 20–28px
+States
+Default
+Hover (desktop): slight scale or color shift
+Active
+Disabled
+Placement
+One primary CTA per section
+Repeat CTAs after major content blocks
+
+6. Images & Visual Content
+Image Strategy
+Use real people when possible (students, mentors, professionals)
+Avoid generic stock photos
+Prefer:
+oLearning environments
+oCollaboration
+oBusiness + technology context
+Technical
+Format: WebP
+Responsive sizes (srcset)
+Lazy loading
+Alt text required for accessibility
+
+7. Motion & Micro-interactions
+Use motion only to guide attention
+Section fade-in on scroll (subtle)
+Button hover transitions (150–250ms)
+Card hover elevation
+Avoid
+Auto-playing animations
+Heavy parallax
+Distracting looping effects
+
+8. Page Flow & Information Hierarchy
+Recommended order:
+1.Hero (value + CTA)
+2.Why this matters now (future of work / AI)
+3.Diploma programs (cards)
+4.Who this is for (profiles)
+5.Outcomes & career impact
+6.Final CTA (strong, repeated)
+Each section should answer one question only.
+
+9. Mobile-First Adjustments
+Single column layout
+Stack buttons vertically
+Reduce text density
+Ensure tap targets ≥ 44px
+Avoid hover-dependent interactions
+
+10. Performance & Quality Checks
+Images < 200kb where possible
+Lighthouse performance score > 85
+First meaningful content visible immediately
+Avoid blocking scripts in head
+
+Success Criteria (How we know it worked)
+Users understand value within 5 seconds
+Clear next action visible at all times
+Page feels premium, not academic
+Diplomas feel like a career investment, not a course

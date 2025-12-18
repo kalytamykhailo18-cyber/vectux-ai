@@ -4,6 +4,11 @@ import Image from 'next/image'
 import { HiMail, HiPhone } from 'react-icons/hi'
 
 const contactBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg"
+const leftBlock={
+    title: "No perderás tu lugar por culpa de la IA. Lo perderás si no te preparas para convertirla en tu aliada.",
+    signer: "- Academia Vectux...",
+    text: "tu salto a la analítica avanzada y la inteligencia artificial"
+}
 
 const ContactSection = () => {
     return (
@@ -23,25 +28,12 @@ const ContactSection = () => {
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Left - Image */}
+                    {/* Left - block */}
                     <div
                         data-aos="fade-right"
                         data-aos-duration="800"
                         className="relative"
                     >
-                        <div className="relative relative">
-                            <img src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765420894/robot_uhbrwt.jpg" alt="" className="absolute -top-20 right-0 w-full h-auto z-10" />
-                            <Image
-                                src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220969/vectux-academy/assets/askus.jpg"
-                                alt="Contáctanos"
-                                width={600}
-                                height={450}
-                                unoptimized
-                                className="w-full h-auto object-cover"
-                            />
-                            {/* Gradient overlay on image */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#343ec2]/30 to-transparent" />
-                        </div>
                     </div>
 
                     {/* Right - Contact Info */}
