@@ -2,7 +2,7 @@
 import React from 'react'
 
 const heroData = {
-    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765981627/Picture1_simdn4.jpg",
+    backgroundImage: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1920&q=80",
     subtitle: "Diplomado en Marketing Analytics",
     title: "Convierte datos en estrategias que impulsan el crecimiento.",
     text: "Un programa ejecutivo para profesionales de marketing que buscan dominar la analítica digital, la segmentación avanzada y la optimización de campañas basada en datos.",

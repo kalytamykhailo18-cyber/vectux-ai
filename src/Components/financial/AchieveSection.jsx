@@ -3,27 +3,27 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 
 const achieveData = {
-    leftImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983345/Picture4-removebg-preview_ipll1w.png",
+    leftImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80",
     title: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture5-removebg-preview_q9c5ot.png",
+            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=100&q=80",
             text: "Construir modelos de pronóstico financiero con machine learning"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture6-removebg-preview_vebab0.png",
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&q=80",
             text: "Analizar y gestionar riesgos financieros con datos en tiempo real"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture7-removebg-preview_omueuf.png",
+            image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=100&q=80",
             text: "Crear dashboards financieros interactivos para la alta dirección"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983228/Picture8-removebg-preview_xm0hqt.png",
+            image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=100&q=80",
             text: "Tomar decisiones de inversión basadas en análisis cuantitativo"
         }
     ],
-    rightImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765982714/Picture3_xuq8zu.jpg"
+    rightImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&q=80"
 }
 
 const AchieveSection = () => {

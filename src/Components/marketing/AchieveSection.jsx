@@ -3,27 +3,27 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 
 const achieveData = {
-    leftImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983345/Picture4-removebg-preview_ipll1w.png",
+    leftImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=80",
     title: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture5-removebg-preview_q9c5ot.png",
+            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=100&q=80",
             text: "Crear segmentaciones de clientes avanzadas con machine learning"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture6-removebg-preview_vebab0.png",
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=100&q=80",
             text: "Optimizar campañas digitales con A/B testing y atribución multicanal"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture7-removebg-preview_omueuf.png",
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&q=80",
             text: "Predecir el comportamiento del consumidor y el lifetime value"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983228/Picture8-removebg-preview_xm0hqt.png",
+            image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=100&q=80",
             text: "Medir y demostrar el ROI de cada acción de marketing"
         }
     ],
-    rightImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765982714/Picture3_xuq8zu.jpg"
+    rightImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&q=80"
 }
 
 const AchieveSection = () => {

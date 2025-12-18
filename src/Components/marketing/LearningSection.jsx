@@ -4,28 +4,28 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const learningData = {
-    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765984576/Picture2-removebg-preview_gvjdkh.png",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
     text: "Nuestra metodología se basa en casos reales de campañas de marketing digital. Trabajarás con datos de Google Ads, Meta Ads, CRM y plataformas de e-commerce para desarrollar estrategias que puedas implementar inmediatamente.\n\nAprenderás las mismas técnicas que utilizan las agencias de marketing más exitosas y los equipos de growth de startups unicornio.",
     benefitsTitle: "Beneficios clave",
     benefits: [
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985229/3-removebg-preview_fvj1fb.png",
+            image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&q=80",
             text: "Mentores de agencias digitales y equipos de growth líderes"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985228/1-removebg-preview_kznghi.png",
+            image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&q=80",
             text: "Proyectos con datos reales de campañas publicitarias"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985228/2-removebg-preview_u02nvn.png",
+            image: "https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?w=100&q=80",
             text: "Clases online en vivo con sesiones de Q&A"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985230/4-removebg-preview_w6zuw6.png",
+            image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=100&q=80",
             text: "Comunidad de marketers data-driven de LATAM"
         },
         {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985521/innovation-1_cdzqsc.png",
+            image: "https://images.unsplash.com/photo-1496200186974-4293800e2c20?w=100&q=80",
             text: "Certificado Vectux en Marketing Analytics reconocido por la industria"
         }
     ],

@@ -2,7 +2,7 @@
 import React from 'react'
 
 const heroData = {
-    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765981627/Picture1_simdn4.jpg",
+    backgroundImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1920&q=80",
     subtitle: "Diplomado en Financial Analytics",
     title: "Transforma los números en decisiones estratégicas.",
     text: "Un programa ejecutivo diseñado para profesionales financieros que buscan dominar el análisis predictivo, la modelación financiera avanzada y la toma de decisiones basada en datos.",
