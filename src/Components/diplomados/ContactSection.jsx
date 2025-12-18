@@ -5,6 +5,7 @@ import { HiMail, HiPhone } from 'react-icons/hi'
 
 const contactBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg"
 const leftBlock={
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765420894/robot_uhbrwt.jpg",
     title: "No perderás tu lugar por culpa de la IA. Lo perderás si no te preparas para convertirla en tu aliada.",
     signer: "- Academia Vectux...",
     text: "tu salto a la analítica avanzada y la inteligencia artificial"
@@ -16,14 +17,11 @@ const ContactSection = () => {
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
             style={{ backgroundImage: `url(${contactBackgroundImage})` }}
         >
-            {/* Color Overlay - Blue */}
-            <div className="absolute inset-0 bg-[#4895ef]/75" />
+            {/* Color Overlay - starts where MasterclassSection ends, ends at footer color */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #5058d0 0%, #4550cc 50%, #343ec2 100%)' }} />
 
-            {/* Top Gradient - from MasterclassSection (Light Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#44f_50%,_transparent_100%)]" />
-
-            {/* Bottom Gradient - transition to Footer */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - blend into Footer */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -34,6 +32,23 @@ const ContactSection = () => {
                         data-aos-duration="800"
                         className="relative"
                     >
+                        <Image
+                            src={leftBlock.image}
+                            alt="AI Robot"
+                            width={500}
+                            height={400}
+                            unoptimized
+                            className="w-full h-auto object-cover rounded-lg mb-8"
+                        />
+                        <p className="text-white font-bold text-2xl md:text-3xl lg:text-[36px] leading-[36px] md:leading-[48px] mb-6 italic">
+                            "{leftBlock.title}"
+                        </p>
+                        <p className="text-[#4cc9f0] font-Manrope font-[600] text-[16px] mb-8">
+                            {leftBlock.signer}
+                        </p>
+                        <p className="text-white/80 font-Manrope text-[15px] sm:text-[17px] font-[500] leading-[28px]">
+                            {leftBlock.text}
+                        </p>
                     </div>
 
                     {/* Right - Contact Info */}
@@ -47,7 +62,7 @@ const ContactSection = () => {
                         </p>
 
                         {/* Contact Person */}
-                        <div className="bg-[#42f] backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330] mb-8">
+                        <div className="bg-black/10 backdrop-blur-sm rounded-[6px] p-6 border border-[#e3e3e330] mb-8">
                             <p className="text-[#4cc9f0] font-Manrope font-[700] text-[18px] mb-1">
                                 Mercedes Paez
                             </p>

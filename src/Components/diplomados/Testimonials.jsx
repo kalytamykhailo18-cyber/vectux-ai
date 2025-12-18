@@ -47,16 +47,16 @@ const Testimonials = () => {
     return (
         <div
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
-            // style={{ backgroundImage: `url(${testimonialsBackgroundImage})` }}
+            style={{ backgroundImage: `url(${testimonialsBackgroundImage})` }}
         >
-            {/* Color Overlay - Purple Gradient */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #5a3db8 50%, #8d4aed 100%)' }} />
+            {/* Color Overlay - semi-transparent to show fixed background */}
+            {/* <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(85, 96, 216, 0.88) 0%, rgba(96, 104, 220, 0.82) 50%, rgba(101, 112, 224, 0.88) 100%)' }} /> */}
 
-            {/* Top Gradient - from HowWeLearn (Deep Blue-Purple) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+            {/* Top Gradient - blend from Bussiness */}
+            <div className="absolute top-0 left-0 w-full h-[70%] z-10 bg-[linear-gradient(to_bottom,_#5560d8_40%,_transparent_70%)]" />
 
-            {/* Bottom Gradient - transition to DiplomadosCards (Light Purple) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - blend into MasterclassSection */}
+            <div className="absolute bottom-0 left-0 w-full h-[70%] z-10 bg-[linear-gradient(to_top,_#6570e0_15%,_transparent_70%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -91,7 +91,7 @@ const Testimonials = () => {
                                 key={testimonial.id}
                                 className="w-full flex-shrink-0 flex-grow-0 basis-full"
                             >
-                                <div className="w-full bg-black/10 backdrop-blur-sm rounded-[20px] p-8 md:p-10 border border-[#e3e3e330]">
+                                <div className="w-full bg-blue/80 backdrop-blur-lg rounded-[6px] p-8 md:p-10 border border-[#e3e3e330]">
                                     <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                                         {/* Avatar */}
                                         <div className="flex-shrink-0">

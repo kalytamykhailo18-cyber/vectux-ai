@@ -51,11 +51,11 @@ const HowWeLearn = () => {
             style={{ backgroundImage: `url(${howWeLearnData.backgroundImage})` }}
         >
 
-            {/* Top Gradient - from Bussiness (Light Purple) - Extended toward center */}
-            <div className="absolute top-0 left-0 w-full h-[40%] z-10 bg-[linear-gradient(to_bottom,_#8d4aed_0%,_#8d4aed_50%,_transparent_100%)]" />
+            {/* Top Gradient - hero-like blue blend from DiplomadosCards */}
+            <div className="absolute top-0 left-0 w-full h-[90%] z-10 bg-[linear-gradient(to_bottom,_#343ec2_20%,_transparent_50%)]" />
 
-            {/* Bottom Gradient - transition to Testimonials (Deep Blue-Purple) - Extended toward center */}
-            <div className="absolute bottom-0 left-0 w-full h-[80%] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_#343ec2_30%,_transparent_100%)]" />
+            {/* Bottom Gradient - hero-like blue blend into Bussiness */}
+            <div className="absolute bottom-0 left-0 w-full h-[60%] z-10 bg-[linear-gradient(to_top,_#343ec2_60%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-4 md:py-8 mb-40">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -89,7 +89,7 @@ const HowWeLearn = () => {
                     </div>
 
                     {/* Target Audience Section */}
-                    <div className="mt-20">
+                    <div className="pt-48">
                         <h2
                             data-aos="fade-up"
                             data-aos-duration="600"

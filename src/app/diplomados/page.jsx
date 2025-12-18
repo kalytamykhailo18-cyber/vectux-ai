@@ -18,12 +18,12 @@ const DiplomadosPage = () => {
     return (
         <>
             <HeroSection />
-            <Lecture />
             <Promotion />
-            <Bussiness />
-            <HowWeLearn />
-            <Testimonials />
+            <Lecture />
             <DiplomadosCards />
+            <HowWeLearn />
+            <Bussiness />
+            <Testimonials />
             <MasterclassSection />
             <ContactSection />
         </>

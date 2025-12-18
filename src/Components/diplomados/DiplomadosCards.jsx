@@ -46,11 +46,11 @@ const DiplomadosCards = () => {
 
     return (
         <div className="relative overflow-hidden">
-            {/* Color Overlay - Purple to Pink Gradient */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #8d4aed 0%, #a864c9 50%, #44f 100%)' }} />
+            {/* Color Overlay - starts where Lecture ends */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #5060d5 0%, #4a58d0 50%, #3f4ac8 100%)' }} />
 
-            {/* Top Gradient - from Testimonials (Light Purple) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - blend into HowWeLearn (hero-like blue) */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">
@@ -73,7 +73,7 @@ const DiplomadosCards = () => {
                             data-aos={diplomado.aos}
                             data-aos-duration={diplomado.duration}
                             data-aos-delay={diplomado.delay}
-                            className="flex flex-col justify-between group bg-[#4628bc]/50 rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
+                            className="flex flex-col justify-between group rounded-[20px] p-8 border border-[#e3e3e330] hover:border-[#4cc9f0] hover:text-[#fff] transition-all duration-300"
                         >
                             {/* Icon */}
                             <div className="text-[48px] mb-6 transform group-hover:scale-110 transition-transform duration-300">

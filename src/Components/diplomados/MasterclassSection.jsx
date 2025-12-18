@@ -8,17 +8,14 @@ const masterclassBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/u
 const MasterclassSection = () => {
     return (
         <div
-            className="relative overflow-hidden bg-[#44f]"
+            className="relative overflow-hidden"
             // style={{ backgroundImage: `url(${masterclassBackgroundImage})` }}
         >
-            {/* Color Overlay - Blue
-            <div className="absolute inset-0 bg-[#4895ef]/75" /> */}
+            {/* Color Overlay - starts where Testimonials ends */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #6570e0 0%, #5a65d8 50%, #5058d0 100%)' }} />
 
-            {/* Top Gradient - from DiplomadosCards (Green-ish Pink) */}
-            {/* <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" /> */}
-
-            {/* Bottom Gradient - transition to ContactSection (Light Blue) */}
-            {/* <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8db8f2_50%,_transparent_100%)]" /> */}
+            {/* Bottom Gradient - blend into ContactSection */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#5058d0_0%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">

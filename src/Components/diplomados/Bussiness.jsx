@@ -36,11 +36,11 @@ const Bussiness = () => {
             className="relative overflow-hidden bg-cover bg-center bg-fixed"
             style={{ backgroundImage: `url(${bussinessBackgroundImage})` }}
         >
-            {/* Color Overlay - Dark */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #5a3db8 50%, #8d4aed 100%)' }} />
+            {/* Color Overlay - starts where HowWeLearn ends (hero-like blue) */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #4550cc 50%, #5560d8 100%)' }} />
 
-            {/* Top Gradient - from Promotion (Cyan-Blue) */}
-            <div className="absolute top-0 left-0 w-full h-[600px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - blend into Testimonials */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#5560d8_0%,_transparent_100%)]" />
 
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">

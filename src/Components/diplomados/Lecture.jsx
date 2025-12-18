@@ -45,14 +45,11 @@ const Lecture = () => {
 
     return (
         <div className="relative overflow-hidden">
-            {/* Color Overlay - Purple Gradient */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #5a3db8 50%, #8d4aed 100%)' }} />
+            {/* Color Overlay - starts where Promotion ends */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #4550cc 0%, #4a55d0 50%, #5060d5 100%)' }} />
 
-            {/* Top Gradient - from HeroSection (Deep Blue-Purple) */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
-
-            {/* Bottom Gradient - transition to Promotion (Light Purple) */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
+            {/* Bottom Gradient - blend into DiplomadosCards */}
+            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#5060d5_0%,_transparent_100%)]" />
 
             <section className="relative px-8 sm:px-14 py-20 md:py-28">
                 <div className="max-w-[1200px] mx-auto relative z-20">

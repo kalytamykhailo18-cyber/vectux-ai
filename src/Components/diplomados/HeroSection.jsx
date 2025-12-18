@@ -78,11 +78,11 @@ const HeroSection = () => {
 
   return (
     <div ref={vantaRef} className="relative overflow-hidden min-h-screen" style={{ backgroundColor: '#343ec2' }}>
-      {/* Top gradient overlay for smooth blend with cursos colors */}
-      <div className="absolute top-0 left-0 w-full h-40 z-[5] bg-gradient-to-b from-[#2895ef] to-transparent" />
+      {/* Top gradient overlay for smooth blend with navbar */}
+      <div className="absolute top-0 left-0 w-full h-40 z-[5] bg-gradient-to-b from-[#343ec2] to-transparent" />
 
-      {/* Bottom Gradient - transition to Lecture (Deep Blue-Purple) */}
-      <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+      {/* Bottom Gradient - blend into Promotion */}
+      <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#3a40c5_0%,_transparent_100%)]" />
 
       <section className='relative min-h-screen flex items-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 py-20 z-20'>
         <div className='grid grid-cols-1 min-[860px]:grid-cols-2 place-content-center gap-12 sm:gap-8 max-w-[1200px] mx-auto w-full'>
