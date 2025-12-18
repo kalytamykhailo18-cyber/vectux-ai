@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import { useRouter } from 'next/navigation'
 
 const heroData = {
     backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765981627/Picture1_simdn4.jpg",
@@ -11,8 +10,6 @@ const heroData = {
 }
 
 const HeroSection = () => {
-    const router = useRouter()
-
     return (
         <section className="relative h-screen flex items-center overflow-hidden bg-fixed bg-center bg-cover" style={{ backgroundImage: `url(${heroData.backgroundImage})`, backgroundAttachment: 'fixed' }}>
             {/* Dark overlay */}
@@ -35,14 +32,14 @@ const HeroSection = () => {
                     <p data-aos="fade-up" data-aos-delay="400" className="text-white/90 font-Manrope text-lg md:text-xl leading-relaxed mb-8">
                         {heroData.text}
                     </p>
-                    <button
+                    <a
                         data-aos="fade-up"
                         data-aos-delay="600"
-                        onClick={() => router.push('#contact')}
-                        className="bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                        href="#contact"
+                        className="inline-block bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
                     >
                         {heroData.button}
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
