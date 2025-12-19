@@ -54,12 +54,12 @@ const AchieveSection = () => {
     }
 
     return (
-        <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #4895ef 0%, #5a67d8 50%, #8d4aed 100%)' }}>
+        <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #6478e0 0%, #5f70dc 35%, #5a68d8 65%, #5058d2 100%)' }}>
             {/* Top gradient boundary */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#4895ef_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#6478e0_50%,_transparent_100%)]" />
 
-            {/* Bottom gradient boundary */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
+            {/* Bottom gradient boundary - connects to WhoIsSection */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5058d2_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
                 <div className="flex flex-col lg:flex-row items-center gap-12">

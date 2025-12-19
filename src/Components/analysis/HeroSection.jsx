@@ -18,8 +18,8 @@ const HeroSection = () => {
             {/* Top gradient boundary */}
             <div className="absolute top-0 left-0 w-full h-[200px] z-20 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
-            {/* Bottom gradient boundary */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-20 bg-[linear-gradient(to_top,_transparent_0%,_#4895ef_50%,_transparent_100%)]" />
+            {/* Bottom gradient boundary - connects to AchieveSection */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-20 bg-[linear-gradient(to_top,_transparent_0%,_#6478e0_50%,_transparent_100%)]" />
 
             <div className="relative z-30 max-w-[1200px] mx-auto px-8 sm:px-14 flex justify-end w-full">
                 <div className="max-w-[600px]">

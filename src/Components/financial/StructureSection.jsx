@@ -36,12 +36,12 @@ const StructureSection = () => {
     const router = useRouter()
 
     return (
-        <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #4a5bb8 50%, #5a67d8 100%)' }}>
+        <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #4550cc 35%, #5058d2 65%, #5a68d8 100%)' }}>
             {/* Top gradient boundary */}
             <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
 
-            {/* Bottom gradient boundary */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5a67d8_50%,_transparent_100%)]" />
+            {/* Bottom gradient boundary - connects to LearningSection */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5a68d8_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
                 <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-6 text-center">

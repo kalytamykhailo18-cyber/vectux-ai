@@ -17,9 +17,9 @@ const contactData = {
 
 const ContactSection = () => {
     return (
-        <section id="contact" className="relative overflow-hidden bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#343ec2]">
+        <section id="contact" className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #3a50cc 0%, #3745c8 35%, #343ec2 65%, #343ec2 100%)' }}>
             {/* Top gradient boundary */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#3a50cc_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
                 <div className="flex flex-col min-[860px]:flex-row gap-8">

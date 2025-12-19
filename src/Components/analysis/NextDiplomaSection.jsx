@@ -41,12 +41,12 @@ const NextDiplomaSection = () => {
     }
 
     return (
-        <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #8d4aed 0%, #6b4bb0 50%, #343ec2 100%)' }}>
+        <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #5078e0 0%, #4a60d4 35%, #4550cc 65%, #3a50cc 100%)' }}>
             {/* Top gradient boundary */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#8d4aed_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#5078e0_50%,_transparent_100%)]" />
 
-            {/* Bottom gradient boundary */}
-            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#343ec2_50%,_transparent_100%)]" />
+            {/* Bottom gradient boundary - connects to ContactSection */}
+            <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#3a50cc_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
                 <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-16">
