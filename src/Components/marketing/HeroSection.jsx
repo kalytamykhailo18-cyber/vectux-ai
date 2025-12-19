@@ -54,7 +54,6 @@ const HeroSection = () => {
     const [progress, setProgress] = useState(0)
     const [scrollPosition, setScrollPosition] = useState(0)
     const slideDuration = 5000 // 5 seconds per slide
-    const cardWidth = 180 // width + gap
 
     const nextSlide = useCallback(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length)
@@ -86,13 +85,14 @@ const HeroSection = () => {
         return () => clearInterval(progressInterval)
     }, [nextSlide])
 
-    // Infinite thumbnail scroll
+    // Infinite vertical thumbnail scroll (flowing upward)
+    const cardHeight = 140 // height + gap
     useEffect(() => {
         const scrollInterval = setInterval(() => {
             setScrollPosition((prev) => {
-                const totalWidth = slides.length * cardWidth
+                const totalHeight = slides.length * cardHeight
                 const newPosition = prev + 1
-                if (newPosition >= totalWidth) {
+                if (newPosition >= totalHeight) {
                     return 0
                 }
                 return newPosition
@@ -125,8 +125,9 @@ const HeroSection = () => {
                 </div>
             ))}
 
-            {/* Hero Content */}
-            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 w-full">
+            {/* Hero Content with Vertical Carousel */}
+            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 w-full flex items-center justify-between">
+                {/* Left: Text Content */}
                 <div className="max-w-[600px]">
                     <p data-aos="fade-up" className="text-[#4cc9f0] font-Manrope text-lg md:text-xl font-[600] mb-4">
                         {heroData.subtitle}
@@ -146,22 +147,19 @@ const HeroSection = () => {
                         {heroData.button}
                     </a>
                 </div>
-            </div>
 
-            {/* Bottom Carousel Controls */}
-            <div className="absolute bottom-8 left-0 right-0 z-30">
-                <div className="max-w-[1200px] mx-auto px-8 sm:px-14">
-                    {/* Infinite Flowing Thumbnail Cards Carousel */}
-                    <div className="relative overflow-hidden mb-6">
-                        {/* Left fade gradient */}
-                        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-black/60 to-transparent z-10 pointer-events-none" />
-                        {/* Right fade gradient */}
-                        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-black/60 to-transparent z-10 pointer-events-none" />
+                {/* Right: Vertical Carousel - Flowing Upward */}
+                <div className="hidden md:block">
+                    <div className="relative h-[400px] overflow-hidden">
+                        {/* Top fade gradient */}
+                        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
+                        {/* Bottom fade gradient */}
+                        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/60 to-transparent z-10 pointer-events-none" />
 
                         <div
-                            className="flex gap-3"
+                            className="flex flex-col gap-3"
                             style={{
-                                transform: `translateX(-${scrollPosition}px)`
+                                transform: `translateY(-${scrollPosition}px)`
                             }}
                         >
                             {/* Duplicate slides for infinite loop */}
@@ -171,7 +169,7 @@ const HeroSection = () => {
                                     onClick={() => goToSlide(index % slides.length)}
                                     className="flex-shrink-0 group cursor-pointer transition-opacity duration-300 hover:opacity-100 opacity-80"
                                 >
-                                    <div className="w-[160px] h-[140px] flex flex-col">
+                                    <div className="w-[120px] h-[130px] flex flex-col">
                                         <div className="relative h-[80px] flex-shrink-0 rounded-sm overflow-hidden mb-2">
                                             <Image
                                                 src={slide.image}
@@ -181,8 +179,7 @@ const HeroSection = () => {
                                                 className="object-cover"
                                             />
                                         </div>
-                                        <div className="h-[2px] flex-shrink-0 mb-2 bg-white/30 group-hover:bg-[#4cc9f0] transition-all duration-300" />
-                                        <p className="text-sm font-Manrope font-[500] text-white group-hover:text-[#4cc9f0] transition-colors duration-300 text-center line-clamp-2">
+                                        <p className="text-xs font-Manrope font-[500] text-white group-hover:text-[#4cc9f0] transition-colors duration-300 text-center line-clamp-2">
                                             {slide.title}
                                         </p>
                                     </div>
@@ -190,7 +187,12 @@ const HeroSection = () => {
                             ))}
                         </div>
                     </div>
+                </div>
+            </div>
 
+            {/* Bottom Navigation Controls */}
+            <div className="absolute bottom-8 left-0 right-0 z-30">
+                <div className="max-w-[1200px] mx-auto px-8 sm:px-14">
                     {/* Navigation Controls */}
                     <div className="flex items-center justify-center gap-4">
                         {/* Prev/Next Buttons */}
