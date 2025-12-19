@@ -3,7 +3,6 @@ import React from 'react'
 
 const heroData = {
     backgroundVideo: "https://res.cloudinary.com/dcfjvxt5h/video/upload/v1766109808/compressed-1_aeqok3.mp4",
-    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529687/bussiness-2_hpheyc.jpg",
     subtitle: "Diplomado en Business Analytics",
     title: "Domina el idioma de los datos. Lidera con inteligencia.",
     text: "Un programa ejecutivo para líderes que quieren dominar el ciclo analítico completo, desde el análisis de datos y realización de predicciones hasta el storytelling estratégico.",
@@ -19,7 +18,6 @@ const HeroSection = () => {
                 muted
                 loop
                 playsInline
-                poster={heroData.backgroundImage}
                 className="absolute inset-0 w-full h-full object-cover z-0 md:ml-[350px]"
             >
                 <source src={heroData.backgroundVideo} type="video/mp4" />

@@ -9,23 +9,23 @@ const structureData = {
     modules: [
         {
             icon: TrendingUp,
-            title: "Módulo I - Fundamentos de Financial Analytics (30 hrs)",
+            title: "Módulo I - Data & Insigts para Decisiones Estratégicas en Finanzas",
             subtitle: "De los estados financieros al análisis automatizado",
-            text: "Domina la extracción, limpieza y análisis de datos financieros. Aprende a crear reportes automatizados y dashboards ejecutivos con Python y Power BI.",
+            text: "Aprenderás a recolectar, limpiar y visualizar datos financieros para tomar decisiones más claras y ágiles. Dominarás Power BI y las bases estadísticas del análisis, fundamentales para construir reportes que hablen el lenguaje del negocio.",
             mentor: "Carlos Mendoza, CFO - Grupo Financiero Regional"
         },
         {
             icon: PieChart,
-            title: "Módulo II - Modelación Financiera Avanzada (45 hrs)",
+            title: "Módulo II - IA Predictiva para Transformar la Gestión Financiera",
             subtitle: "Del análisis a la predicción de mercados",
-            text: "Desarrolla modelos de valuación, análisis de riesgo crediticio y pronósticos financieros usando machine learning y series de tiempo.",
+            text: "Desarrollarás modelos de machine learning aplicados a finanzas: clasificación, segmentación y prescripción. Aprenderás a anticiparte al futuro financiero aplicando algoritmos en contextos reales, con herramientas que no requieren programación avanzada.",
             mentor: "María Elena Ríos, Head of Risk Analytics - Banco Internacional"
         },
         {
             icon: LineChart,
-            title: "Módulo III - Estrategia e Inversiones (15 hrs)",
+            title: "Módulo III - Liderazgo Estratégico y Storytelling en la Era de la IA",
             subtitle: "Del modelo a la decisión de inversión",
-            text: "Aplica análisis cuantitativo para optimización de portafolios, trading algorítmico básico y presentación de casos de inversión a comités directivos.",
+            text: "Transformarás datos complejos en historias visuales que persuaden e impulsan decisiones estratégicas. Aprenderás técnicas para comunicarte con claridad ante comités directivos y audiencias C-Level.",
             mentor: "Roberto Sánchez, Director de Inversiones - Asset Management Corp"
         }
     ],
@@ -51,7 +51,7 @@ const StructureSection = () => {
                     {structureData.text}
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" style={{ gridTemplateRows: 'auto auto auto 1fr auto' }}>
                     {structureData.modules.map((module, index) => {
                         const IconComponent = module.icon
                         return (
@@ -60,10 +60,10 @@ const StructureSection = () => {
                                 data-aos="zoom-in"
                                 data-aos-delay={index * 150}
                                 data-aos-duration="800"
-                                className="group backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[16px] p-6 flex flex-col gap-4"
+                                className="group backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[6px] p-6 grid md:grid-rows-subgrid md:row-span-5 gap-4"
                             >
-                                <div className="flex items-center gap-3 mb-2">
-                                    <IconComponent className="text-[#4cc9f0] w-18 h-18 group-hover:text-[#ffaa00] transition-all duration-500 group-hover:rotate-[360deg]" />
+                                <div className="flex items-start gap-3">
+                                    <IconComponent className="text-[#4cc9f0] w-8 h-8 flex-shrink-0 group-hover:text-[#ffaa00] transition-all duration-500 group-hover:rotate-[360deg]" />
                                     <h3 className="text-white font-bold text-[20px] md:text-[22px]">
                                         {module.title}
                                     </h3>
@@ -74,8 +74,9 @@ const StructureSection = () => {
                                 <p className="text-white/80 font-Manrope text-[15px] leading-relaxed">
                                     {module.text}
                                 </p>
-                                <p className="text-[#4cc9f0] font-Manrope text-sm font-[500] mt-auto">
-                                    {module.mentor}
+                                <div></div>
+                                <p className="text-[#4cc9f0] font-Manrope text-sm font-[500]">
+                                    <strong className='text-[#20px]'>Mentor:</strong> <br/> {module.mentor}
                                 </p>
                             </div>
                         )

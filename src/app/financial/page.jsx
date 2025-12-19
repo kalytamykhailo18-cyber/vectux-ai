@@ -5,6 +5,7 @@ import WhoIsSection from '@/Components/financial/WhoIsSection'
 import StructureSection from '@/Components/financial/StructureSection'
 import LearningSection from '@/Components/financial/LearningSection'
 import ContactSection from '@/Components/financial/ContactSection'
+import NextDiplomaSection from '@/Components/financial/NextDiplomaSection'
 
 export const metadata = {
     title: 'Diplomado en Financial Analytics | Vectux Academy',
@@ -19,6 +20,7 @@ const FinancialAnalyticsPage = () => {
             <WhoIsSection />
             <StructureSection />
             <LearningSection />
+            <NextDiplomaSection />
             <ContactSection />
         </>
     )

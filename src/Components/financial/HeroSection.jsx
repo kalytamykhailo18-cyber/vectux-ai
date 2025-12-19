@@ -2,11 +2,11 @@
 import React from 'react'
 
 const heroData = {
-    backgroundVideo: "https://res.cloudinary.com/dcfjvxt5h/video/upload/v1766109808/compressed-1_aeqok3.mp4",
-    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529687/bussiness-2_hpheyc.jpg",
-    subtitle: "Diplomado en Business Analytics",
-    title: "Domina el idioma de los datos. Lidera con inteligencia.",
-    text: "Un programa ejecutivo para líderes que quieren dominar el ciclo analítico completo, desde el análisis de datos y realización de predicciones hasta el storytelling estratégico.",
+    backgroundVideo: "https://res.cloudinary.com/dcfjvxt5h/video/upload/v1766136677/marketing-bg_r96luh.mp4",
+    backgroundImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765527504/diploma-1_v6wdjl.jpg",
+    subtitle: "Diplomado en Financial Analytics",
+    title: "Transforma los números en decisiones estratégicas.",
+    text: "Un programa ejecutivo diseñado para profesionales financieros que buscan dominar el análisis predictivo, la modelación financiera avanzada y la toma de decisiones basada en datos.",
     button: "Contáctanos"
 }
 
@@ -26,7 +26,7 @@ const HeroSection = () => {
             </video>
 
             <div className="relative z-30 max-w-[1200px] mx-auto px-8 sm:px-14 flex w-full">
-                <div className="max-w-[600px]">
+                <div className="max-w-[600px] backdrop-blur-md bg-black/40 rounded-sm p-8 md:p-10">
                     <p data-aos="fade-up" className="text-[#4cc9f0] font-Manrope text-lg md:text-xl font-[600] mb-4">
                         {heroData.subtitle}
                     </p>

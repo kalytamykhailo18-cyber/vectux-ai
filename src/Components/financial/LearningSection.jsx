@@ -4,28 +4,28 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const learningData = {
-    image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=600&q=80",
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228092/vectux-academy/svg/logo-people-analytics.svg",
     text: "Nuestra metodología combina teoría financiera con aplicación práctica inmediata. Trabajarás con datos reales de mercados, estados financieros de empresas públicas y casos de análisis de inversión.\n\nAprenderás a usar las mismas herramientas que utilizan los profesionales de Wall Street y las principales instituciones financieras del mundo.",
     benefitsTitle: "Beneficios clave",
     benefits: [
         {
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228078/vectux-academy/svg/DD-mayor-eficiencia.svg",
             text: "Mentores con experiencia en banca de inversión y fintech"
         },
         {
-            image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228076/vectux-academy/svg/DD-innovacion-continua.svg",
             text: "Casos prácticos con datos de mercados reales"
         },
         {
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228072/vectux-academy/svg/DD-Decisiones-mas-seguras.svg",
             text: "Clases online en vivo con grabaciones disponibles"
         },
         {
-            image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228068/vectux-academy/svg/DD-agilidad-competitiva.svg",
             text: "Red de profesionales financieros LATAM"
         },
         {
-            image: "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228081/vectux-academy/svg/DD-transparencia-interna.svg",
             text: "Certificado Vectux en Financial Analytics con validez internacional"
         }
     ],
@@ -80,10 +80,10 @@ const LearningSection = () => {
                             <Image
                                 src={benefit.image}
                                 alt={benefit.text}
-                                width={80}
-                                height={80}
+                                width={100}
+                                height={100}
                                 unoptimized
-                                className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+                                className="w-full object-contain group-hover:scale-110 transition-transform duration-300"
                             />
                             <p className="h-full text-white font-Manrope text-base md:text-lg group-hover:text-[#4cc9f0] transition-colors duration-300">
                                 {benefit.text}

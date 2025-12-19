@@ -9,7 +9,7 @@ const testimonials = [
         id: 1,
         name: "Ricardo Reyes",
         role: "Gerente de Auditoría Interna Latam en American Express",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221027/vectux-academy/assets/blog-1.webp",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766106437/Eduardo-removebg-preview_ukycuj.png",
         text: "El Diplomado en Business Analytics transformó mi carrera. Pasé de generar reportes históricos a construir análisis predictivos con herramientas como Power BI y RapidMiner. Ese conocimiento me permitió cambiar de empresa y mejorar mi compensación en solo un año. Hoy aplico lo aprendido en la implementación de soluciones de inteligencia artificial, usando bases sólidas en data quality, machine learning y storytelling para impulsar el futuro analítico de mi organización.",
         aos: "fade-right",
         duration: "800"
@@ -18,7 +18,7 @@ const testimonials = [
         id: 2,
         name: "Samantha Vélez",
         role: "CX Executive en Phillip Morris",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221066/vectux-academy/assets/blog-2.webp",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766106435/Luis_Ricardo-removebg-preview_tnvpgy.png",
         text: "El diplomado fortaleció por completo mi trabajo en Customer Experience. El enfoque en pensamiento crítico, Power BI y storytelling me ayudó a entender patrones del journey del cliente con más claridad y comunicar insights de forma mucho más estratégica. Además, las bases de machine learning y de IA me dieron nuevas herramientas para anticipar necesidades y proponer soluciones con mayor impacto.",        aos: "zoom-in",
         duration: "600"
     },
@@ -26,7 +26,7 @@ const testimonials = [
         id: 3,
         name: "Eduardo Albarrán",
         role: "Gerente de Contabilidad en Dell Technologies",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221072/vectux-academy/assets/blog-3.webp",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766106436/Chica-removebg-preview_p5nuxh.png",
         text: "El programa de Business Analytics me ayudó a conectar los números con decisiones reales. Antes veía los datos solo como reportes financieros; ahora entiendo cómo analizarlos, visualizarlos y anticipar escenarios con modelos predictivos. Power BI y Python se convirtieron en herramientas clave de mi gestión. Hoy puedo presentar insights a la dirección con claridad y enfoque estratégico.",
         aos: "fade-left",
         duration: "800"
@@ -91,11 +91,11 @@ const Testimonials = () => {
                                 key={testimonial.id}
                                 className="w-full flex-shrink-0 flex-grow-0 basis-full"
                             >
-                                <div className="w-full bg-blue/80 backdrop-blur-lg rounded-[6px] p-8 md:p-10 border border-[#e3e3e330]">
+                                <div className="w-full bg-blue/10 backdrop-blur-lg rounded-[6px] p-8 md:p-10 border border-[#e3e3e330]">
                                     <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                                         {/* Avatar */}
-                                        <div className="flex-shrink-0">
-                                            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-3 border-[#4cc9f0]">
+                                        <div className="">
+                                            <div className="w-20 h-20 md:w-48 md:h-48 overflow-hidden">
                                                 <Image
                                                     src={testimonial.image}
                                                     alt={testimonial.name}
@@ -103,6 +103,10 @@ const Testimonials = () => {
                                                     height={96}
                                                     unoptimized
                                                     className="w-full h-full object-cover"
+                                                    style={{
+                                                        maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)',
+                                                        WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)'
+                                                    }}
                                                 />
                                             </div>
                                         </div>
