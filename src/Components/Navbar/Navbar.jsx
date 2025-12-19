@@ -61,7 +61,7 @@ export default function Navbar({ locoScroll }) {
 
                                         {/* Dropdown Menu */}
                                         {cursosDropdownOpen && (
-                                            <div className="absolute top-[16px] left-0 mt-2 w-56 bg-black/10 backdrop-blur-md rounded-lg shadow-lg border border-[#4cc9f0]/30 overflow-hidden">
+                                            <div className="absolute top-[16px] left-0 mt-2 w-56 bg-black/10 backdrop-blur-md rounded-sm shadow-lg border border-[#4cc9f0]/30 overflow-hidden">
                                                 {cursosDropdownItems.map((item, index) => (
                                                     <button
                                                         key={index}
@@ -69,7 +69,7 @@ export default function Navbar({ locoScroll }) {
                                                             router.push(item.href);
                                                             setCursosDropdownOpen(false);
                                                         }}
-                                                        className="w-full text-left px-4 py-3 text-white/80 hover:text-white hover:bg-[#4cc9f0]/20 transition-colors duration-200 text-[14px] cursor-pointer"
+                                                        className="w-full text-left px-4 py-3 text-white/80 hover:text-white bg-black/50 hover:bg-[#4cc9f0]/20 transition-colors duration-200 text-[14px] cursor-pointer"
                                                     >
                                                         {item.label}
                                                     </button>
