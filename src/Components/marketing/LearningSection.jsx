@@ -4,29 +4,25 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const learningData = {
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226666/vectux-academy/raw/uplogo.png",
     text: "Nuestra metodología se basa en casos reales de campañas de marketing digital. Trabajarás con datos de Google Ads, Meta Ads, CRM y plataformas de e-commerce para desarrollar estrategias que puedas implementar inmediatamente.\n\nAprenderás las mismas técnicas que utilizan las agencias de marketing más exitosas y los equipos de growth de startups unicornio.",
     benefitsTitle: "Beneficios clave",
     benefits: [
         {
-            image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228050/vectux-academy/svg/CLH-diagnosticamos.svg",
             text: "Mentores de agencias digitales y equipos de growth líderes"
         },
         {
-            image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228052/vectux-academy/svg/CLH-disenamos.svg",
             text: "Proyectos con datos reales de campañas publicitarias"
         },
         {
-            image: "https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228054/vectux-academy/svg/CLH-guiamos.svg",
             text: "Clases online en vivo con sesiones de Q&A"
         },
         {
-            image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228048/vectux-academy/svg/CLH-aplicamos.svg",
             text: "Comunidad de marketers data-driven de LATAM"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1496200186974-4293800e2c20?w=100&q=80",
-            text: "Certificado Vectux en Marketing Analytics reconocido por la industria"
         }
     ],
     button: "Contáctanos"
@@ -46,14 +42,14 @@ const LearningSection = () => {
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
                 {/* Image with text block */}
                 <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
-                    <div data-aos="fade-right" data-aos-duration="800" className="md:w-1/2">
+                    <div data-aos="fade-right" data-aos-duration="800" className="md:w-1/2 p-10">
                         <Image
                             src={learningData.image}
                             alt="Marketing Learning"
                             width={500}
                             height={400}
                             unoptimized
-                            className="w-full h-auto rounded-tl-[0px] rounded-tr-[40px] rounded-bl-[40px] rounded-br-[0px] object-cover"
+                            className="w-full h-auto object-cover"
                         />
                     </div>
                     <div data-aos="fade-left" data-aos-duration="800" className="md:w-1/2">
@@ -83,7 +79,7 @@ const LearningSection = () => {
                                 width={80}
                                 height={80}
                                 unoptimized
-                                className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+                                className="w-full object-contain group-hover:scale-110 transition-transform duration-300"
                             />
                             <p className="h-full text-white font-Manrope text-base md:text-lg group-hover:text-[#4cc9f0] transition-colors duration-300">
                                 {benefit.text}
@@ -92,7 +88,7 @@ const LearningSection = () => {
                     ))}
                 </div>
 
-                <div className="text-center">
+                <div className="text-center mt-20">
                     <button
                         data-aos="fade-up"
                         onClick={() => router.push('#contact')}

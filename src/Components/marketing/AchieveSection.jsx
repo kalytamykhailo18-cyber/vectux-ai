@@ -3,27 +3,27 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 
 const achieveData = {
-    leftImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=80",
+    leftImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766150860/e8543972-dafa-4037-9a9d-b6ab5a5bf99f_removalai_preview_p6g9oh.png",
     title: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226661/vectux-academy/raw/technology.png",
             text: "Crear segmentaciones de clientes avanzadas con machine learning"
         },
         {
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226660/vectux-academy/raw/storytelling.png",
             text: "Optimizar campañas digitales con A/B testing y atribución multicanal"
         },
         {
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226658/vectux-academy/raw/start-up.png",
             text: "Predecir el comportamiento del consumidor y el lifetime value"
         },
         {
-            image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226656/vectux-academy/raw/searching.png",
             text: "Medir y demostrar el ROI de cada acción de marketing"
         }
     ],
-    rightImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&q=80"
+    rightImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221271/vectux-academy/assets/insight.jpg"
 }
 
 const AchieveSection = () => {
@@ -61,12 +61,15 @@ const AchieveSection = () => {
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5058d2_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
-                <div className="flex flex-col lg:flex-row items-center gap-12">
+                <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-18 text-center">
+                    {achieveData.title}
+                </h2>
+                <div className="flex flex-col lg:flex-row items-center">
                     {/* Left Image with fade edges */}
                     <div
                         data-aos="fade-right"
                         data-aos-duration="800"
-                        className="lg:w-1/4"
+                        className="lg:w-3/10"
                     >
                         <Image
                             src={achieveData.leftImage}
@@ -85,11 +88,8 @@ const AchieveSection = () => {
                     </div>
 
                     {/* Center Content */}
-                    <div className="lg:w-1/2">
-                        <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-8 text-center lg:text-left">
-                            {achieveData.title}
-                        </h2>
-                        <div className="space-y-4">
+                    <div className="lg:w-1/2 lg:-ml-16">
+                        <div className="">
                             {achieveData.list.map((item, index) => (
                                 <div
                                     key={index}
@@ -123,7 +123,7 @@ const AchieveSection = () => {
                     >
                         <div
                             ref={achieveRightRef}
-                            className="transition-all duration-200 ease-out rounded-[12px] overflow-hidden"
+                            className="transition-all duration-200 ease-out rounded-sm overflow-hidden"
                             style={{ transformStyle: 'preserve-3d' }}
                         >
                             <Image

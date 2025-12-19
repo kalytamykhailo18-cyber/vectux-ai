@@ -51,7 +51,7 @@ const StructureSection = () => {
                     {structureData.text}
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" style={{ gridTemplateRows: 'auto auto auto 1fr auto' }}>
                     {structureData.modules.map((module, index) => {
                         const IconComponent = module.icon
                         return (
@@ -60,9 +60,9 @@ const StructureSection = () => {
                                 data-aos="zoom-in"
                                 data-aos-delay={index * 150}
                                 data-aos-duration="800"
-                                className="group backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[16px] p-6 flex flex-col gap-4"
+                                className="group backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[6px] p-6 grid md:grid-rows-subgrid md:row-span-5 gap-4"
                             >
-                                <div className="flex items-center gap-3 mb-2">
+                                <div className="flex items-center gap-3">
                                     <IconComponent className="text-[#4cc9f0] w-18 h-18 group-hover:text-[#ffaa00] transition-all duration-500 group-hover:rotate-[360deg]" />
                                     <h3 className="text-white font-bold text-[20px] md:text-[22px]">
                                         {module.title}
@@ -74,8 +74,8 @@ const StructureSection = () => {
                                 <p className="text-white/80 font-Manrope text-[15px] leading-relaxed">
                                     {module.text}
                                 </p>
-                                <p className="text-[#4cc9f0] font-Manrope text-sm font-[500] mt-auto">
-                                    {module.mentor}
+                                <p className="text-[#4cc9f0] font-Manrope text-sm font-[500]">
+                                    <strong>Mentor:</strong> <br/> {module.mentor}
                                 </p>
                             </div>
                         )

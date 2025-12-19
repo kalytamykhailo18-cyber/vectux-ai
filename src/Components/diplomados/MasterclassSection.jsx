@@ -27,7 +27,7 @@ const MasterclassSection = () => {
                         className="relative"
                     >
                         <Image
-                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765366777/Ana-2-fotor-2025121073910_hiwcgd.png"
+                            src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766151129/Ana-2-fotor-2025121073910_kyxja0.png"
                             alt="Ana Mireya López"
                             width={600}
                             height={700}
