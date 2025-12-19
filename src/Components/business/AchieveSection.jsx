@@ -3,7 +3,12 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 
 const achieveData = {
-    leftImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983345/Picture4-removebg-preview_ipll1w.png",
+    leftblock: {
+        title: "Diplomado en Business Analytics",
+        subtitle: "OBJETIVO",
+        boldText: "Preparar a líderes y profesionales para dominar todo el ciclo analítico —desde la recolección y visualización de datos hasta el análisis predictivo— con un enfoque estratégico, práctico y accionable.",
+        text: "El programa busca que cada participante integre la analítica en su toma de decisiones diaria, desarrolle pensamiento crítico, y logre comunicar con impacto a través del storytelling con datos, convirtiendo cifras complejas en narrativas persuasivas que movilicen a sus equipos, direcciones y organizaciones."
+    },
     title: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
@@ -27,7 +32,6 @@ const achieveData = {
 }
 
 const AchieveSection = () => {
-    const achieveLeftRef = useRef(null)
     const achieveRightRef = useRef(null)
 
     const handle3DMouseMove = (e, ref) => {
@@ -56,38 +60,36 @@ const AchieveSection = () => {
     return (
         <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #6478e0 0%, #5f70dc 35%, #5a68d8 65%, #5058d2 100%)' }}>
             {/* Top gradient boundary */}
-            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#6478e0_50%,_transparent_100%)]" />
+            <div className="absolute top-0 left-0 w-full h-[200px] z-10 -translate-y-1/2 bg-[linear-gradient(to_top,_transparent_0%,_#000_50%,_transparent_100%)]" />
 
             {/* Bottom gradient boundary - connects to WhoIsSection */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5058d2_50%,_transparent_100%)]" />
 
-            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
+            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28 mt-40">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
-                    {/* Left Image with fade edges */}
+                    {/* Left Block */}
                     <div
                         data-aos="fade-right"
                         data-aos-duration="800"
-                        className="lg:w-1/4"
+                        className="lg:w-1/3"
                     >
-                        <Image
-                            src={achieveData.leftImage}
-                            alt="Achievement"
-                            width={300}
-                            height={300}
-                            unoptimized
-                            className="w-full h-auto"
-                            style={{
-                                maskImage: 'linear-gradient(to right, transparent 0%, black 15%), linear-gradient(to top, transparent 0%, black 35%)',
-                                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%), linear-gradient(to top, transparent 0%, black 35%)',
-                                maskComposite: 'intersect',
-                                WebkitMaskComposite: 'source-in'
-                            }}
-                        />
+                        <p className="text-white font-bold text-xl md:text-2xl lg:text-3xl leading-tight text-center">
+                            {achieveData.leftblock.title}
+                        </p>
+                        <h3 className="text-[#4cc9f0] font-bold text-md md:text-xl mb-16">
+                            {achieveData.leftblock.subtitle}
+                        </h3>
+                        <p className="text-white font-Manrope text-base md:text-lg font-[600] leading-relaxed mb-4">
+                            {achieveData.leftblock.boldText}
+                        </p>
+                        <p className="text-white font-Manrope text-sm md:text-[#16px] leading-relaxed">
+                            {achieveData.leftblock.text}
+                        </p>
                     </div>
 
                     {/* Center Content */}
-                    <div className="lg:w-1/2">
-                        <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-8 text-center lg:text-left">
+                    <div className="lg:w-[45%]">
+                        <h2 data-aos="fade-up" className="text-white font-bold text-xl md:text-2xl lg:text-3xl leading-tight mb-8 text-center">
                             {achieveData.title}
                         </h2>
                         <div className="space-y-4">

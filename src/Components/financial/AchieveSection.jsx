@@ -7,19 +7,19 @@ const achieveData = {
     title: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
-            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228064/vectux-academy/svg/D-Guiamos.svg",
             text: "Construir modelos de pronóstico financiero con machine learning"
         },
         {
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228059/vectux-academy/svg/D-diagnosticamos-2.svg",
             text: "Analizar y gestionar riesgos financieros con datos en tiempo real"
         },
         {
-            image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228062/vectux-academy/svg/D-Disenamos.svg",
             text: "Crear dashboards financieros interactivos para la alta dirección"
         },
         {
-            image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=100&q=80",
+            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228057/vectux-academy/svg/D-Aplicamos.svg",
             text: "Tomar decisiones de inversión basadas en análisis cuantitativo"
         }
     ],
