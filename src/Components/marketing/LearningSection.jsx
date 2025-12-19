@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const learningData = {
-    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226666/vectux-academy/raw/uplogo.png",
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228090/vectux-academy/svg/logo-marketing-analytics.svg",
     text: "Nuestra metodología se basa en casos reales de campañas de marketing digital. Trabajarás con datos de Google Ads, Meta Ads, CRM y plataformas de e-commerce para desarrollar estrategias que puedas implementar inmediatamente.\n\nAprenderás las mismas técnicas que utilizan las agencias de marketing más exitosas y los equipos de growth de startups unicornio.",
     benefitsTitle: "Beneficios clave",
     benefits: [
