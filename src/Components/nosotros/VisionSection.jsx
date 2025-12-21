@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 const visionData = {
@@ -38,30 +38,7 @@ const renderText = (textArray) => {
 }
 
 const VisionSection = () => {
-    const imageRef = useRef(null)
-
-    const handle3DMouseMove = (e, ref) => {
-        if (!ref.current) return
-        const rect = ref.current.getBoundingClientRect()
-        const x = e.clientX - rect.left
-        const y = e.clientY - rect.top
-        const centerX = rect.width / 2
-        const centerY = rect.height / 2
-        const rotateX = (y - centerY) / 12
-        const rotateY = (centerX - x) / 12
-
-        const shadowX = (centerX - x) / 5
-        const shadowY = (centerY - y) / 5
-
-        ref.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
-        ref.current.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(0, 0, 0, 0.3)`
-    }
-
-    const handle3DMouseLeave = (ref) => {
-        if (!ref.current) return
-        ref.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
-        ref.current.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)'
-    }
+    const [isFlipped, setIsFlipped] = useState(false)
 
     return (
         <section id="vision" className="relative px-8 sm:px-14 py-20 md:py-28" style={{ background: 'linear-gradient(to bottom, #5058d2 0%, #5a68d8 35%, #5f70dc 65%, #6478e0 100%)' }}>
@@ -84,26 +61,66 @@ const VisionSection = () => {
                         </p>
                     </div>
 
-                    {/* Image with 3D effect */}
+                    {/* Image with Card Flip 3D effect */}
                     <div
                         data-aos="zoom-in"
                         data-aos-delay="200"
-                        className="min-[860px]:w-[45%]"
-                        onMouseMove={(e) => handle3DMouseMove(e, imageRef)}
-                        onMouseLeave={() => handle3DMouseLeave(imageRef)}
+                        className="min-[860px]:w-[45%] p-4"
+                        style={{ perspective: '1000px' }}
                     >
                         <div
-                            ref={imageRef}
-                            className="relative aspect-[16/10] w-full overflow-hidden rounded-[16px] cursor-pointer transition-all duration-200 ease-out"
-                            style={{ transformStyle: 'preserve-3d' }}
+                            className="relative aspect-[16/10] w-full cursor-pointer"
+                            style={{
+                                transformStyle: 'preserve-3d',
+                                transition: 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+                                transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
+                            }}
+                            onClick={() => setIsFlipped(!isFlipped)}
+                            onMouseEnter={() => setIsFlipped(true)}
+                            onMouseLeave={() => setIsFlipped(false)}
                         >
-                            <Image
-                                alt="Vision"
-                                fill
-                                src={visionData.image}
-                                unoptimized
-                                className="object-cover"
-                            />
+                            {/* Front side - Image */}
+                            <div
+                                className="absolute inset-0 rounded-[6px] overflow-hidden"
+                                style={{
+                                    backfaceVisibility: 'hidden',
+                                    boxShadow: '0 20px 50px rgba(0,0,0,0.4)'
+                                }}
+                            >
+                                <Image
+                                    alt="Vision"
+                                    fill
+                                    src={visionData.image}
+                                    unoptimized
+                                    className="object-cover"
+                                />
+                                {/* Subtle overlay hint */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                                <div className="absolute bottom-4 left-4 right-4 text-white text-sm opacity-70">
+                                    Hover para más información
+                                </div>
+                            </div>
+
+                            {/* Back side - Content */}
+                            <div
+                                className="absolute inset-0 rounded-[6px] overflow-hidden flex flex-col justify-center items-center p-6 text-center"
+                                style={{
+                                    backfaceVisibility: 'hidden',
+                                    transform: 'rotateY(180deg)',
+                                    background: 'linear-gradient(135deg, #4cc9f0 0%, #3a45c5 50%, #343ec2 100%)',
+                                    boxShadow: '0 20px 50px rgba(0,0,0,0.4)'
+                                }}
+                            >
+                                <h3 className="text-white font-bold text-xl mb-3">Nuestra Visión</h3>
+                                <p className="text-white/90 text-sm leading-relaxed">
+                                    Liderar la transformación digital a través de la educación en analítica avanzada e inteligencia artificial.
+                                </p>
+                                <div className="mt-4 flex gap-2">
+                                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">IA</span>
+                                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">Analytics</span>
+                                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">Digital</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
