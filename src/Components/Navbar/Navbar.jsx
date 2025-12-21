@@ -89,7 +89,7 @@ export default function Navbar({ locoScroll }) {
                     {/* Right Button */}
                     <div className="hidden min-[840px]:block">
                         <button className="bg-[#fa0] font-Manrope uppercase hover:bg-[#e80] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-[3px] select-none">
-                            Contacta con
+                            Contáctanos
                         </button>
                     </div>
 

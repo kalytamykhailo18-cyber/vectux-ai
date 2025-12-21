@@ -2,12 +2,13 @@
 import React from 'react'
 import Image from 'next/image'
 import { HiMail, HiPhone } from 'react-icons/hi'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const contactBackgroundImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221126/vectux-academy/assets/course-1.jpg"
 const leftBlock={
     image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765420894/robot_uhbrwt.jpg",
     title: "No perderás tu lugar por culpa de la IA. Lo perderás si no te preparas para convertirla en tu aliada.",
-    signer: "- Academia Vectux...",
+    signer: "Vectux Academy…...",
     text: "tu salto a la analítica avanzada y la inteligencia artificial"
 }
 
@@ -83,7 +84,7 @@ const ContactSection = () => {
                                     onClick={() => window.open('tel:+525611955405', '_self')}
                                     className="flex items-center gap-3 text-white/80 hover:text-[#4cc9f0] transition-colors duration-300 cursor-pointer"
                                 >
-                                    <HiPhone className="w-5 h-5 text-[#4cc9f0]" />
+                                    <FaWhatsapp className="w-6 h-6 text-[#fff] bg-[#0c0] p-[2px] rounded-[3px]" />
                                     <span className="font-Manrope text-[15px]">+52 56 1195-5405</span>
                                 </button>
                             </div>
@@ -96,7 +97,7 @@ const ContactSection = () => {
                             data-aos-delay="400"
                             className="flex items-center gap-6"
                         >
-                            <div className="bg-white p-3 rounded-[12px]">
+                            <div className="bg-white p-2 rounded-[12px]">
                                 <Image
                                     src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221777/vectux-academy/assets/qrcode.jpg"
                                     alt="QR Code - Contacto"

@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const SocialLinks = [
     { id: 1, icon: FaFacebook, href: "https://www.facebook.com/profile.php?id=61565445280821" },
@@ -98,7 +98,10 @@ const Footer = () => {
                         <h3 className="text-white font-bold text-[18px] mb-6">Contáctanos</h3>
                         <div className="space-y-3 text-white/70 font-Manrope text-[14px]">
                             <p>mpaez@vectuxanalytics.com</p>
-                            <p>+52 56 1195-5405</p>
+                            <p className='flex gap-2'>
+                                <FaWhatsapp className="bg-[#25D366] text-white w-5 h-5 p-[1px] rounded-[3px]" />
+                                +52 56 1195-5405
+                            </p>
                             <button
                                 onClick={() => router.push('/cursos/#contact')}
                                 className="block text-white/70 hover:text-[#4cc9f0] transition-colors duration-300 mt-4 cursor-pointer"

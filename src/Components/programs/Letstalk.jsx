@@ -44,7 +44,7 @@ const Letstalk = () => {
                             +52 56 1195-5405
                         </p>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="600" className="flex flex-col p-1">
+                    <div data-aos="fade-up" data-aos-delay="600" className="flex flex-col bg-white p-3 rounded-[12px]">
                         <Image
                             alt="QR Code"
                             width={128}

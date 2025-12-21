@@ -3,31 +3,40 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 
 const achieveData = {
-    leftImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766150860/e8543972-dafa-4037-9a9d-b6ab5a5bf99f_removalai_preview_p6g9oh.png",
-    title: "¿Qué lograrás al finalizar el programa?",
-    list: [
-        {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226661/vectux-academy/raw/technology.png",
-            text: "Crear segmentaciones de clientes avanzadas con machine learning"
-        },
-        {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226660/vectux-academy/raw/storytelling.png",
-            text: "Optimizar campañas digitales con A/B testing y atribución multicanal"
-        },
-        {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226658/vectux-academy/raw/start-up.png",
-            text: "Predecir el comportamiento del consumidor y el lifetime value"
-        },
-        {
-            image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226656/vectux-academy/raw/searching.png",
-            text: "Medir y demostrar el ROI de cada acción de marketing"
-        }
-    ],
-    rightImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221271/vectux-academy/assets/insight.jpg"
+    title: {
+        text: "Diplomado en",
+        rightImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228090/vectux-academy/svg/logo-marketing-analytics.svg"
+    },
+    left: {
+        title: "Objetivo del Programa",
+        subtitle: "Capacitar a líderes de marketing, producto y canales digitales para convertir datos de clientes, campañas y comportamiento en decisiones más precisas, rentables y personalizadas.",
+        text: "A través del análisis descriptivo, predictivo y visual, los participantes aprenderán no solo a identificar qué funciona y qué ajustar en sus estrategias, sino también a presentar hallazgos con claridad e influencia, utilizando storytelling comercial para comunicar resultados ante stakeholders y dirección con impacto."
+    },
+    right: {
+        title: "¿Qué lograrás al finalizar el programa?",
+        list: [
+            {
+                image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226661/vectux-academy/raw/technology.png",
+                text: "Crear segmentaciones de clientes avanzadas con machine learning"
+            },
+            {
+                image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226660/vectux-academy/raw/storytelling.png",
+                text: "Optimizar campañas digitales con A/B testing y atribución multicanal"
+            },
+            {
+                image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226658/vectux-academy/raw/start-up.png",
+                text: "Predecir el comportamiento del consumidor y el lifetime value"
+            },
+            {
+                image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765226656/vectux-academy/raw/searching.png",
+                text: "Medir y demostrar el ROI de cada acción de marketing"
+            }
+        ]
+    }
 }
 
 const AchieveSection = () => {
-    const achieveRightRef = useRef(null)
+    const rightCardRef = useRef(null)
 
     const handle3DMouseMove = (e, ref) => {
         if (!ref.current) return
@@ -61,79 +70,70 @@ const AchieveSection = () => {
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5058d2_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
-                <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-18 text-center">
-                    {achieveData.title}
-                </h2>
-                <div className="flex flex-col lg:flex-row items-center">
-                    {/* Left Image with fade edges */}
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="800"
-                        className="lg:w-3/10"
-                    >
-                        <Image
-                            src={achieveData.leftImage}
-                            alt="Marketing Analytics"
-                            width={300}
-                            height={300}
-                            unoptimized
-                            className="w-full h-auto"
-                            style={{
-                                maskImage: 'linear-gradient(to right, transparent 0%, black 15%), linear-gradient(to top, transparent 0%, black 35%)',
-                                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%), linear-gradient(to top, transparent 0%, black 35%)',
-                                maskComposite: 'intersect',
-                                WebkitMaskComposite: 'source-in'
-                            }}
-                        />
+                {/* Title with Logo */}
+                <div data-aos="fade-up" className="flex items-center justify-center gap-4 mb-16">
+                    <h2 className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight">
+                        {achieveData.title.text}
+                    </h2>
+                    <Image
+                        src={achieveData.title.rightImage}
+                        alt="Marketing Analytics"
+                        width={280}
+                        height={60}
+                        unoptimized
+                        className="h-18 md:h-22 w-auto"
+                    />
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    {/* Left: Objetivo del Programa */}
+                    <div data-aos="fade-right" data-aos-duration="800">
+                        <h3 className="text-[#4cc9f0] font-bold text-2xl md:text-3xl mb-6">
+                            {achieveData.left.title}
+                        </h3>
+                        <p className="text-white font-Manrope text-lg md:text-xl font-[600] mb-4 leading-relaxed">
+                            {achieveData.left.subtitle}
+                        </p>
+                        <p className="text-white/80 font-Manrope text-base md:text-lg leading-relaxed">
+                            {achieveData.left.text}
+                        </p>
                     </div>
 
-                    {/* Center Content */}
-                    <div className="lg:w-1/2 lg:-ml-16">
-                        <div className="">
-                            {achieveData.list.map((item, index) => (
-                                <div
-                                    key={index}
-                                    data-aos="fade-left"
-                                    data-aos-delay={index * 100}
-                                    className="flex items-center gap-4 py-4 px-6 border-l-4 border-[#4cc9f0] hover:border-[#ffaa00] transition-all duration-300 rounded-lg"
-                                >
-                                    <Image
-                                        src={item.image}
-                                        alt={item.text}
-                                        width={60}
-                                        height={60}
-                                        unoptimized
-                                        className="w-14 h-14 object-contain flex-shrink-0"
-                                    />
-                                    <p className="text-white font-Manrope text-base md:text-lg">
-                                        {item.text}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Right Image with 3D effect */}
+                    {/* Right: ¿Qué lograrás? */}
                     <div
                         data-aos="fade-left"
                         data-aos-duration="800"
-                        className="lg:w-1/4"
-                        onMouseMove={(e) => handle3DMouseMove(e, achieveRightRef)}
-                        onMouseLeave={() => handle3DMouseLeave(achieveRightRef)}
+                        onMouseMove={(e) => handle3DMouseMove(e, rightCardRef)}
+                        onMouseLeave={() => handle3DMouseLeave(rightCardRef)}
                     >
                         <div
-                            ref={achieveRightRef}
-                            className="transition-all duration-200 ease-out rounded-sm overflow-hidden"
+                            ref={rightCardRef}
+                            className="border border-white/10 rounded-[6px] p-6 transition-all duration-200 ease-out"
                             style={{ transformStyle: 'preserve-3d' }}
                         >
-                            <Image
-                                src={achieveData.rightImage}
-                                alt="Marketing Analytics Team"
-                                width={300}
-                                height={400}
-                                unoptimized
-                                className="w-full h-auto object-cover"
-                            />
+                            <h3 className="text-[#ffaa00] font-bold text-xl md:text-2xl mb-6">
+                                {achieveData.right.title}
+                            </h3>
+                            <div className="space-y-4">
+                                {achieveData.right.list.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex items-center gap-4 py-3 px-4 border-l-4 border-[#4cc9f0] hover:border-[#ffaa00] transition-all duration-300 rounded-r-lg hover:bg-white/5"
+                                    >
+                                        <Image
+                                            src={item.image}
+                                            alt={item.text}
+                                            width={50}
+                                            height={50}
+                                            unoptimized
+                                            className="w-12 h-12 object-contain flex-shrink-0"
+                                        />
+                                        <p className="text-white font-Manrope text-sm md:text-base">
+                                            {item.text}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
