@@ -6,13 +6,7 @@ import Mqrcode from '../LayoutWrapper/Mqrcode'
 
 const Letstalk = () => {
     return (
-        <section className="relative overflow-hidden flex justify-center px-7.5 sm:px-10 min-[860px]:px-16">
-            {/* Color Overlay */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #3a50cc 0%, #3745c8 50%, #343ec2 100%)' }} />
-
-            {/* Bottom Gradient - blend into Footer */}
-            <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#343ec2_0%,_transparent_100%)]" />
-
+        <section className="relative overflow-hidden flex justify-center px-7.5 sm:px-10 min-[860px]:px-16" style={{ background: 'linear-gradient(to bottom, #4550cc 0%, #3a45c5 35%, #343ec2 65%, #343ec2 100%)' }}>
             <div className="py-16 sm:py-20 pt-28 flex flex-col min-[860px]:flex-row max-w-[1200px] w-full justify-center relative z-20">
                 <div className="min-[860px]:w-1/2 flex flex-col justify-center max-w-lg pr-4">
                     <h1 data-aos="fade-up" data-aos-duration="1500" className="text-white text-[42px] font-bold leading-tight mb-5">

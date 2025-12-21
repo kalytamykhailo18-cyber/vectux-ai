@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 
 const visionData = {
@@ -38,11 +38,33 @@ const renderText = (textArray) => {
 }
 
 const VisionSection = () => {
-    return (
-        <section id="vision" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#343ec2]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
+    const imageRef = useRef(null)
 
+    const handle3DMouseMove = (e, ref) => {
+        if (!ref.current) return
+        const rect = ref.current.getBoundingClientRect()
+        const x = e.clientX - rect.left
+        const y = e.clientY - rect.top
+        const centerX = rect.width / 2
+        const centerY = rect.height / 2
+        const rotateX = (y - centerY) / 12
+        const rotateY = (centerX - x) / 12
+
+        const shadowX = (centerX - x) / 5
+        const shadowY = (centerY - y) / 5
+
+        ref.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
+        ref.current.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(0, 0, 0, 0.3)`
+    }
+
+    const handle3DMouseLeave = (ref) => {
+        if (!ref.current) return
+        ref.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
+        ref.current.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)'
+    }
+
+    return (
+        <section id="vision" className="relative px-8 sm:px-14 py-20 md:py-28" style={{ background: 'linear-gradient(to bottom, #5058d2 0%, #5a68d8 35%, #5f70dc 65%, #6478e0 100%)' }}>
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex flex-col min-[860px]:flex-row-reverse items-center gap-10 lg:gap-16">
                     {/* Text Content */}
@@ -62,19 +84,26 @@ const VisionSection = () => {
                         </p>
                     </div>
 
-                    {/* Image */}
-                    <div data-aos="zoom-in" data-aos-delay="200" className="min-[860px]:w-[45%]">
-                        <div className="relative group cursor-pointer">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-[#4cc9f0] via-[#f72585] to-[#4895ef] rounded-[16px] blur-sm opacity-75 group-hover:opacity-100 transition-all duration-500 group-hover:blur-md animate-pulse"></div>
-                            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[16px]">
-                                <Image
-                                    alt="Vision"
-                                    fill
-                                    src={visionData.image}
-                                    unoptimized
-                                    className="object-cover transition-all duration-500 group-hover:scale-105"
-                                />
-                            </div>
+                    {/* Image with 3D effect */}
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="200"
+                        className="min-[860px]:w-[45%]"
+                        onMouseMove={(e) => handle3DMouseMove(e, imageRef)}
+                        onMouseLeave={() => handle3DMouseLeave(imageRef)}
+                    >
+                        <div
+                            ref={imageRef}
+                            className="relative aspect-[16/10] w-full overflow-hidden rounded-[16px] cursor-pointer transition-all duration-200 ease-out"
+                            style={{ transformStyle: 'preserve-3d' }}
+                        >
+                            <Image
+                                alt="Vision"
+                                fill
+                                src={visionData.image}
+                                unoptimized
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </div>

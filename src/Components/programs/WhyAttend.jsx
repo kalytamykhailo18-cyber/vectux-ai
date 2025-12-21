@@ -1,4 +1,5 @@
 "use client"
+import { useRef } from "react";
 import Image from "next/image";
 import { GiBrain, GiArtificialIntelligence, GiBookmarklet, GiPuzzle, GiLightBulb, GiSpeaker } from 'react-icons/gi';
 import { PiListPlus, PiUsersThree } from "react-icons/pi";
@@ -71,6 +72,31 @@ const SkillsData = [
 ];
 
 export default function WhyAttend() {
+    const imageRef = useRef(null)
+
+    const handle3DMouseMove = (e, ref) => {
+        if (!ref.current) return
+        const rect = ref.current.getBoundingClientRect()
+        const x = e.clientX - rect.left
+        const y = e.clientY - rect.top
+        const centerX = rect.width / 2
+        const centerY = rect.height / 2
+        const rotateX = (y - centerY) / 12
+        const rotateY = (centerX - x) / 12
+
+        const shadowX = (centerX - x) / 5
+        const shadowY = (centerY - y) / 5
+
+        ref.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
+        ref.current.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(0, 0, 0, 0.3)`
+    }
+
+    const handle3DMouseLeave = (ref) => {
+        if (!ref.current) return
+        ref.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
+        ref.current.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)'
+    }
+
     return (
         <section className="relative px-8 pt-4 sm:px-7 md:px-10 min-[860px]:!px-10 lg:!px-14 sm:pt-10 pb-24 sm:pb-16 md:pb-24 flex justify-center items-center overflow-hidden">
             {/* Color Overlay */}
@@ -79,7 +105,7 @@ export default function WhyAttend() {
             {/* Bottom Gradient - blend into Skills */}
             <div className="absolute bottom-0 left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_#6478e0_0%,_transparent_100%)]" />
 
-            <div className="max-w-[1200px] relative z-20">
+            <div className="max-w-[1200px] relative z-20 mt-40">
                 <div className="flex flex-col min-[860px]:flex-row">
                     <div className="flex flex-col justify-center gap-6 md:w-[60%] lg:w-[65%]">
                         <h1 data-aos="fade-right" data-aos-duration="800" className="text-[#fa0] font-bold text-[38px] md:text-5xl lg:text-[43px] leading-[45px] sm:leading-[56px]">
@@ -96,16 +122,25 @@ export default function WhyAttend() {
                             </button>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="1000" className="flex justify-end pt-12 md:pt-0 lg:pr-2 min-[860px]:w-[40%] lg:!w-[35%]">
-                        <div className="relative group cursor-pointer">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-[#4cc9f0] via-[#f72585] to-[#4895ef] rounded-[16px] blur-sm opacity-75 group-hover:opacity-100 transition-all duration-500 group-hover:blur-md animate-pulse"></div>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        className="flex justify-end pt-12 md:pt-0 lg:pr-2 min-[860px]:w-[40%] lg:!w-[35%]"
+                        onMouseMove={(e) => handle3DMouseMove(e, imageRef)}
+                        onMouseLeave={() => handle3DMouseLeave(imageRef)}
+                    >
+                        <div
+                            ref={imageRef}
+                            className="cursor-pointer transition-all duration-200 ease-out rounded-tl-none rounded-tr-[72px] rounded-bl-[72px] rounded-br-none overflow-hidden"
+                            style={{ transformStyle: 'preserve-3d' }}
+                        >
                             <Image
                                 alt="services"
                                 width={750}
                                 height={360}
                                 src="https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221176/vectux-academy/assets/frame40.jpg"
                                 unoptimized
-                                className="relative  rounded-tl-none rounded-tr-[72px] rounded-bl-[72px] rounded-br-none transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#4cc9f0]/50"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>

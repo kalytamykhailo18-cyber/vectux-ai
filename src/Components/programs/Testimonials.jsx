@@ -12,14 +12,14 @@ const TestimonialsData = [
     },
     {
         id: 2,
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221838/vectux-academy/assets/testimonial-2.webp",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766305722/4364d424-c55f-48f3-83f2-442ae6849f21.png",
         quote: "El desarrollo de una inteligencia artificial completa podría significar el fin de la raza humana. Despegaría por sí sola y se rediseñaría a un ritmo cada vez mayor. Los humanos, limitados por la lenta evolución biológica, no podrían competir.",
         author: "Stephen Hawking",
         role: "Físico Teórico"
     },
     {
         id: 3,
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221842/vectux-academy/assets/testimonial-3.webp",
+        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766305681/109eedd0-00db-4746-915d-8cc530e328e0.png",
         quote: "La IA es probablemente lo más importante en lo que la humanidad ha trabajado. Lo considero algo más profundo que la electricidad o el fuego. Cualquier tecnología lo suficientemente poderosa para ayudar también puede usarse para hacer daño.",
         author: "Sundar Pichai",
         role: "CEO, Google"

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const WhyVectux = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#8d4aed]">
+        <section className="relative px-8 sm:px-14 py-20 md:py-28" style={{ background: 'linear-gradient(to bottom, #5058d2 0%, #5a68d8 35%, #5f70dc 65%, #6478e0 100%)' }}>
             <div className="grid grid-cols-1 min-[1100px]:grid-cols-4 gap-8 lg:gap-12 max-w-[1200px] lg:max-w-[1400px] mx-auto">
                 {/* Left Text */}
                     <p className="text-white/90 font-Manrope font-[600] text-[22px] sm:text-[28px] text-center min-[1100px]:text-left">
@@ -44,7 +44,6 @@ const WhyVectux = () => {
                 </div>
             </div>
 
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#8d4aed] blur-xl" />
         </section>
     )
 }

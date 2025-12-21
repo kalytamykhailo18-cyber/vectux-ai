@@ -25,10 +25,7 @@ const sdgs = [
 
 const SDGsSection = () => {
     return (
-        <section className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#8d4aed]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#343ec2] blur-xl" />
-
+        <section className="relative px-8 sm:px-14 py-20 md:py-28" style={{ background: 'linear-gradient(to bottom, #5058d2 0%, #4550cc 35%, #3a45c5 65%, #343ec2 100%)' }}>
             <div className="max-w-[1200px] mx-auto">
                 <h2
                     data-aos="fade-up"
@@ -45,7 +42,7 @@ const SDGsSection = () => {
                                 key={index}
                                 data-aos="fade-up"
                                 data-aos-delay={index * 150}
-                                className="p-6 rounded-[16px] border border-[#e3e3e330] bg-black/30 backdrop-blur-sm hover:border-[#4cc9f0] transition-all duration-300 group text-center"
+                                className="p-6 rounded-[6px] border border-[#e3e3e330] hover:border-[#4cc9f0] transition-all duration-300 group text-center"
                             >
                                 <IconComponent className="text-[#4cc9f0] text-[60px] mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                                 <h3 className="text-[#fa0] font-bold text-[22px] mb-2">

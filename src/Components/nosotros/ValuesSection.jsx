@@ -47,10 +47,7 @@ const values = [
 
 const ValuesSection = () => {
     return (
-        <section id="valores" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#8d4aed] via-[#5a3db8] to-[#8d4aed]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#8d4aed] blur-xl" />
-
+        <section id="valores" className="relative px-8 sm:px-14 py-20 md:py-28" style={{ background: 'linear-gradient(to bottom, #343ec2 0%, #3a45c5 35%, #4550cc 65%, #5058d2 100%)' }}>
             <div className="max-w-[1200px] mx-auto">
                 <h2
                     data-aos="zoom-in"
@@ -69,7 +66,7 @@ const ValuesSection = () => {
                                 data-aos={value.aos}
                                 data-aos-duration={value.duration}
                                 data-aos-delay={value.delay}
-                                className="p-6 rounded-[16px] border border-[#e3e3e330] bg-black/30 backdrop-blur-sm hover:border-[#4cc9f0] transition-all duration-300 group"
+                                className="p-6 rounded-[6px] border border-[#e3e3e330] hover:border-[#4cc9f0] transition-all duration-300 group"
                             >
                                 <IconComponent className="text-[#4cc9f0] text-[50px] mb-4 group-hover:scale-110 transition-transform duration-300" />
                                 <h3 className="text-white font-bold text-[18px] leading-[26px] mb-3 group-hover:text-[#4cc9f0] transition-colors duration-300">

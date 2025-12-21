@@ -27,17 +27,6 @@ const teamMembers = [
         delay: 100
     },
     {
-        name: "Horacio Sepúlveda",
-        role: "Director Asociado de Ventas y Promoción IPADE Business School",
-        image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221266/vectux-academy/assets/horacio.png",
-        linkedin: "https://www.linkedin.com/in/hsepulv/",
-        description: "+30 años de experiencia profesional y +24 años de experiencia gerencial en empresas transnacionales como P&G, Unilever y América Móvil. Creador de múltiples productos y soluciones para el negocio de telecomunicaciones e integrador de grandes equipos de trabajo.",
-        credentials: "Ingeniero Químico de la Universidad La Salle, MBA con honores de la Universidad Internacional de La Rioja, y certificado en el programa de desarrollo gerencial D-1 por IPADE Business School.",
-        aos: "fade-right",
-        duration: "1000",
-        delay: 200
-    },
-    {
         name: "Luis Fernando González Lara",
         role: "Maestro, colaborador",
         image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765221316/vectux-academy/assets/Luis.png",
@@ -63,13 +52,7 @@ const teamMembers = [
 
 const TeamSection = () => {
     return (
-        <section id="team-vectux" className="relative px-8 sm:px-14 py-20 md:py-28 bg-gradient-to-b from-[#343ec2] via-[#5a3db8] to-[#343ec2]">
-            {/* Top Gradient Blur for section transition */}
-            <div className="absolute -top-20 left-0 w-full h-40 bg-gradient-to-t from-transparent to-[#343ec2] blur-xl" />
-
-            {/* Bottom Gradient Blur for footer transition */}
-            <div className="absolute -bottom-20 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#343ec2] blur-xl" />
-
+        <section id="team-vectux" className="relative px-8 sm:px-14 py-20 md:py-28" style={{ background: 'linear-gradient(to bottom, #6478e0 0%, #5f70dc 25%, #5a68d8 50%, #5058d2 75%, #4550cc 100%)' }}>
             <div className="max-w-[1200px] mx-auto">
                 <h2
                     data-aos="fade-up"

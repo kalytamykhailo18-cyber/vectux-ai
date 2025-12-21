@@ -1,25 +1,24 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
+
+const bgImage = "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1766306965/f8537d04-d90d-46cf-83f9-1bd491b17074.png"
 
 const HeroSection = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Video Background */}
-            <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-            >
-                <source src="https://res.cloudinary.com/dcfjvxt5h/video/upload/v1765223665/vectux-academy/video/videovectux.mp4" type="video/mp4" />
-            </video>
-
-            {/* Gradient Overlay */}
-            {/* <div className="absolute inset-0 bg-[linear-gradient(180deg,#4895ef80,#343ec2a0,#8d4aeda0)]" /> */}
+        <section className="relative min-h-screen flex items-center justify-end overflow-hidden">
+            {/* Background Image */}
+            <Image
+                src={bgImage}
+                alt="Nosotros Background"
+                fill
+                unoptimized
+                className="object-cover"
+                priority
+            />
 
             {/* Content */}
-            <div className="relative z-10 max-w-[1200px] text-center px-8 sm:px-14 py-12 bg-black/20 backdrop-blur-sm rounded-[16px]">
+            <div className="relative z-10 max-w-[500px] text-center mr-40">
                 <h1 data-aos="fade-up" className="text-white font-bold text-4xl md:text-5xl lg:text-[56px] leading-[50px] sm:leading-[65px]">
                     Sobre Nosotros
                 </h1>
@@ -28,8 +27,8 @@ const HeroSection = () => {
                 </p>
             </div>
 
-            {/* Bottom Gradient Blur */}
-            <div className="absolute -bottom-28 -left-20 w-[140%] h-[20%] z-20 bg-gradient-to-b blur-2xl from-[#343ec2] to-[#343ec2]" />
+            {/* Bottom Gradient - seamless blend into WhoIs */}
+            <div className="absolute bottom-0 left-0 w-full h-[300px] z-20 bg-gradient-to-t from-[#343ec2] via-[#343ec2]/80 to-transparent" />
         </section>
     )
 }
