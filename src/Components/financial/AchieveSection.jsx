@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 const achieveData = {
+    title: "Diplomado en Financial Analytics",
     leftblock: {
-        title: "Diplomado en Financial Analytics",
         subtitle: "OBJETIVO",
         boldText: "Formar profesionales financieros capaces de transformar datos en decisiones estratégicas —desde el análisis de riesgos hasta la modelación predictiva— con un enfoque práctico orientado a resultados.",
         text: "El programa busca que cada participante domine las herramientas analíticas más avanzadas del sector financiero, desarrolle capacidad de pronóstico y logre comunicar insights financieros con claridad a la alta dirección."
     },
-    title: "¿Qué lograrás al finalizar el programa?",
+    subtitle: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
             image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228064/vectux-academy/svg/D-Guiamos.svg",
@@ -35,7 +35,8 @@ const achieveData = {
         "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765225233/vectux-academy/raw/3333.jpg",
         "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765529686/bussiness-3_o7n35q.jpg",
         "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765220972/vectux-academy/assets/benefits1.jpg"
-    ]
+    ],
+    button: "Solicitar el programa completo"
 }
 
 const AchieveSection = () => {
@@ -67,20 +68,20 @@ const AchieveSection = () => {
             {/* Bottom gradient boundary - connects to WhoIsSection */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5058d2_50%,_transparent_100%)]" />
 
-            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28 mt-40">
-                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28 my-20">
+                <h3 className="text-[#fff] font-bold text-4xl text-center md:text-6xl my-26">
+                    {achieveData.title}
+                </h3>
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                     {/* Left Block */}
                     <div
                         data-aos="fade-right"
                         data-aos-duration="800"
                         className="w-full lg:w-1/3"
                     >
-                        <p className="text-white font-bold text-xl md:text-2xl lg:text-3xl leading-tight text-center">
-                            {achieveData.leftblock.title}
-                        </p>
-                        <h3 className="text-[#4cc9f0] font-bold text-md md:text-xl mb-16">
+                        <p className="text-[#4cc9f0] font-bold text-lg md:text-xl lg:text-2xl leading-tight text-center mb-20">
                             {achieveData.leftblock.subtitle}
-                        </h3>
+                        </p>
                         <p className="text-white font-Manrope text-base md:text-lg font-[600] leading-relaxed mb-4">
                             {achieveData.leftblock.boldText}
                         </p>
@@ -122,7 +123,7 @@ const AchieveSection = () => {
                     <div
                         data-aos="fade-left"
                         data-aos-duration="800"
-                        className="w-full sm:w-2/3 lg:w-1/4 h-[250px] md:h-[350px] lg:h-[450px] overflow-hidden relative mx-auto"
+                        className="w-full sm:w-2/3 lg:w-1/4 h-[550px] overflow-hidden relative mx-auto"
                     >
                         <div className="h-full relative">
                             {/* Top fade gradient */}
@@ -156,6 +157,15 @@ const AchieveSection = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="text-center mt-20">
+                    <button
+                        data-aos="fade-up"
+                        onClick={() => router.push('#contact')}
+                        className="bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                    >
+                        {achieveData.button}
+                    </button>
                 </div>
             </div>
         </section>

@@ -9,24 +9,27 @@ const structureData = {
     modules: [
         {
             icon: BarChart3,
-            title: "Módulo I - Fundamentos de Business Analytics (30 hrs)",
+            title: "Módulo I - Fundamentos de Business Analytics",
             subtitle: "De los datos a la visualización",
             text: "Aprende a recolectar, limpiar y visualizar datos para tomar decisiones claras. Dominarás Power BI y las bases estadísticas del análisis.",
-            mentor: "Luis Fernando González, Commercial Insights & Analytics Lead, Johnson & Johnson México"
+            mentor: "Luis Fernando González, Commercial Insights & Analytics Lead, Johnson & Johnson México",
+            hours: 30 
         },
         {
             icon: Brain,
-            title: "Módulo II - Business Analytics Aplicado (51 hrs)",
+            title: "Módulo II - Business Analytics Aplicado",
             subtitle: "Del análisis a la predicción",
             text: "Desarrolla modelos de machine learning, clasificación y segmentación. Aplica análisis prescriptivo con herramientas reales.",
-            mentor: "Francisco Vargas, Chief Data Officer - Bimbonet (Grupo Bimbo)"
+            mentor: "Francisco Vargas, Chief Data Officer - Bimbonet (Grupo Bimbo)",
+            hours: 51 
         },
         {
             icon: Target,
-            title: "Módulo III - Storytelling con Datos (9 hrs)",
+            title: "Módulo III - Storytelling con Datos",
             subtitle: "Del modelo al relato convincente",
             text: "Convierte resultados complejos en historias que persuadan. Aprende a comunicar con impacto a líderes C-level.",
-            mentor: "Ana Mireya López, CEO de Vectux Analytics y Vectux Academy"
+            mentor: "Ana Mireya López, CEO de Vectux Analytics y Vectux Academy",
+            hours: 9 
         }
     ],
     button: "Solicitar el programa completo"
@@ -60,12 +63,14 @@ const StructureSection = () => {
                                 data-aos="zoom-in"
                                 data-aos-delay={index * 150}
                                 data-aos-duration="800"
-                                className="group backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[16px] p-6 grid md:grid-rows-subgrid md:row-span-5 gap-4"
+                                className="group backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#4cc9f0]/30 transition-all duration-300 rounded-[6px] p-6 grid md:grid-rows-subgrid md:row-span-5 gap-4"
                             >
                                 <div className="flex items-start gap-3">
                                      <IconComponent className="text-[#4cc9f0] w-8 h-8 flex-shrink-0 group-hover:text-[#ffaa00] transition-all duration-500 group-hover:rotate-[360deg]" />
                                     <h3 className="text-white font-bold text-[20px] md:text-[22px]">
                                         {module.title}
+                                        <br/>
+                                        <span className='text-[#4cc9f0] text-lg'> {module.hours} hours </span>
                                     </h3>
                                 </div>
                                 <p className="text-[#ffaa00] font-Manrope text-base font-[600]">
@@ -83,7 +88,7 @@ const StructureSection = () => {
                     })}
                 </div>
 
-                <div className="text-center">
+                <div className="text-center mt-20">
                     <button
                         data-aos="fade-up"
                         onClick={() => router.push('#contact')}

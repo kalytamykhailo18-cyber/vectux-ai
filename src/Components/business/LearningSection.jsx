@@ -29,7 +29,6 @@ const learningData = {
             text: "Certificado Vectux en Blockchain con reconocimiento en empresas líderes"
         }
     ],
-    button: "Contáctanos"
 }
 
 const LearningSection = () => {
@@ -43,7 +42,7 @@ const LearningSection = () => {
             {/* Bottom gradient boundary - connects to NextDiplomaSection */}
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5078e0_50%,_transparent_100%)]" />
 
-            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28">
+            <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 pt-10 md:pt-20">
                 {/* Image with text block */}
                 <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
                     <div data-aos="fade-right" data-aos-duration="800" className="md:w-1/2">
@@ -64,7 +63,7 @@ const LearningSection = () => {
                 </div>
 
                 {/* Benefits */}
-                <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-12 text-center">
+                <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight pt-40 text-center">
                     {learningData.benefitsTitle}
                 </h2>
 
@@ -90,16 +89,6 @@ const LearningSection = () => {
                             </p>
                         </div>
                     ))}
-                </div>
-
-                <div className="text-center">
-                    <button
-                        data-aos="fade-up"
-                        onClick={() => router.push('#contact')}
-                        className="bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
-                    >
-                        {learningData.button}
-                    </button>
                 </div>
             </div>
         </section>

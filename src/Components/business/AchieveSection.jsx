@@ -1,15 +1,15 @@
 "use client"
-import React, { useRef } from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 const achieveData = {
     leftblock: {
-        title: "Diplomado en Business Analytics",
         subtitle: "OBJETIVO",
         boldText: "Preparar a líderes y profesionales para dominar todo el ciclo analítico —desde la recolección y visualización de datos hasta el análisis predictivo— con un enfoque estratégico, práctico y accionable.",
         text: "El programa busca que cada participante integre la analítica en su toma de decisiones diaria, desarrolle pensamiento crítico, y logre comunicar con impacto a través del storytelling con datos, convirtiendo cifras complejas en narrativas persuasivas que movilicen a sus equipos, direcciones y organizaciones."
     },
-    title: "¿Qué lograrás al finalizar el programa?",
+    title: "Diplomado en Business Analytics",
+    subtitle: "¿Qué lograrás al finalizar el programa?",
     list: [
         {
             image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765983227/Picture5-removebg-preview_q9c5ot.png",
@@ -28,35 +28,10 @@ const achieveData = {
             text: "Presentar insights a tu dirección con claridad y poder de influencia"
         }
     ],
-    rightImage: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765982714/Picture3_xuq8zu.jpg"
+    button: "Solicitar el programa completo"
 }
 
 const AchieveSection = () => {
-    const achieveRightRef = useRef(null)
-
-    const handle3DMouseMove = (e, ref) => {
-        if (!ref.current) return
-        const rect = ref.current.getBoundingClientRect()
-        const x = e.clientX - rect.left
-        const y = e.clientY - rect.top
-        const centerX = rect.width / 2
-        const centerY = rect.height / 2
-        const rotateX = (y - centerY) / 12
-        const rotateY = (centerX - x) / 12
-
-        const shadowX = (centerX - x) / 5
-        const shadowY = (centerY - y) / 5
-
-        ref.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
-        ref.current.style.boxShadow = `${shadowX}px ${shadowY}px 40px rgba(0, 0, 0, 0.4), ${shadowX * 0.5}px ${shadowY * 0.5}px 20px rgba(76, 201, 240, 0.2)`
-    }
-
-    const handle3DMouseLeave = (ref) => {
-        if (!ref.current) return
-        ref.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
-        ref.current.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
-    }
-
     return (
         <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #6478e0 0%, #5f70dc 35%, #5a68d8 65%, #5058d2 100%)' }}>
             {/* Top gradient boundary */}
@@ -66,79 +41,62 @@ const AchieveSection = () => {
             <div className="absolute bottom-[-100px] left-0 w-full h-[200px] z-10 bg-[linear-gradient(to_top,_transparent_0%,_#5058d2_50%,_transparent_100%)]" />
 
             <div className="relative z-20 max-w-[1200px] mx-auto px-8 sm:px-14 py-20 md:py-28 mt-40">
-                <div className="flex flex-col lg:flex-row items-center gap-12">
+                <h2 data-aos="fade-up" className="m-20 text-white font-bold text-2xl md:text-4xl lg:text-6xl leading-tight text-center">
+                    {achieveData.title}
+                </h2>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
                     {/* Left Block */}
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="800"
-                        className="lg:w-1/3"
-                    >
-                        <p className="text-white font-bold text-xl md:text-2xl lg:text-3xl leading-tight text-center">
-                            {achieveData.leftblock.title}
-                        </p>
-                        <h3 className="text-[#4cc9f0] font-bold text-md md:text-xl mb-16">
+                    <div data-aos="fade-right" data-aos-duration="800">
+                        <h3 className="text-[#4cc9f0] font-bold text-md md:text-xl mb-6">
                             {achieveData.leftblock.subtitle}
                         </h3>
                         <p className="text-white font-Manrope text-base md:text-lg font-[600] leading-relaxed mb-4">
                             {achieveData.leftblock.boldText}
                         </p>
-                        <p className="text-white font-Manrope text-sm md:text-[#16px] leading-relaxed">
+                        <p className="text-white/80 font-Manrope text-sm md:text-base leading-relaxed">
                             {achieveData.leftblock.text}
                         </p>
                     </div>
 
-                    {/* Center Content */}
-                    <div className="lg:w-[45%]">
-                        <h2 data-aos="fade-up" className="text-white font-bold text-xl md:text-2xl lg:text-3xl leading-tight mb-8 text-center">
-                            {achieveData.title}
-                        </h2>
+                    {/* Right Content - List */}
+                    <div data-aos="fade-left" data-aos-duration="800">
+                        <h3 className="text-[#ffaa00] font-bold text-xl md:text-2xl mb-6 text-center">
+                            {achieveData.subtitle}
+                        </h3>
                         <div className="space-y-4">
                             {achieveData.list.map((item, index) => (
                                 <div
                                     key={index}
                                     data-aos="fade-left"
                                     data-aos-delay={index * 100}
-                                    className="flex items-center gap-4 py-4 px-6 border-l-4 border-[#4cc9f0] hover:border-[#ffaa00] transition-all duration-300 rounded-lg"
+                                    className="flex items-center gap-4 py-3 px-4 border-l-4 border-[#4cc9f0] hover:border-[#ffaa00] transition-all duration-300 rounded-r-lg hover:bg-white/5"
                                 >
                                     <Image
                                         src={item.image}
                                         alt={item.text}
-                                        width={60}
-                                        height={60}
+                                        width={50}
+                                        height={50}
                                         unoptimized
-                                        className="w-14 h-14 object-contain flex-shrink-0"
+                                        className="w-12 h-12 object-contain flex-shrink-0"
                                     />
-                                    <p className="text-white font-Manrope text-base md:text-lg">
+                                    <p className="text-white font-Manrope text-sm md:text-base">
                                         {item.text}
                                     </p>
                                 </div>
                             ))}
                         </div>
                     </div>
-
-                    {/* Right Image with 3D effect */}
-                    <div
-                        data-aos="fade-left"
-                        data-aos-duration="800"
-                        className="lg:w-1/4"
-                        onMouseMove={(e) => handle3DMouseMove(e, achieveRightRef)}
-                        onMouseLeave={() => handle3DMouseLeave(achieveRightRef)}
+                </div>
+                <div className="text-center mt-20">
+                    <button
+                        data-aos="fade-up"
+                        onClick={() => router.push('#contact')}
+                        className="bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
                     >
-                        <div
-                            ref={achieveRightRef}
-                            className="transition-all duration-200 ease-out rounded-[12px] overflow-hidden"
-                            style={{ transformStyle: 'preserve-3d' }}
-                        >
-                            <Image
-                                src={achieveData.rightImage}
-                                alt="Business Analytics"
-                                width={300}
-                                height={400}
-                                unoptimized
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
-                    </div>
+                        {achieveData.button}
+                    </button>
                 </div>
             </div>
         </section>

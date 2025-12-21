@@ -11,7 +11,8 @@ const nextDiplomaData = {
         "💳 Inversión: $39,900 MXN ($2,220 USD)",
         "🎓 Becas disponibles y planes a meses sin intereses"
     ],
-    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985867/Picture2_lw1qho.jpg"
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765985867/Picture2_lw1qho.jpg",
+    button: "Contáctanos"
 }
 
 const NextDiplomaSection = () => {
@@ -92,6 +93,15 @@ const NextDiplomaSection = () => {
                             />
                         </div>
                     </div>
+                </div>
+                <div className="text-center mt-40">
+                    <button
+                        data-aos="fade-up"
+                        onClick={() => router.push('#contact')}
+                        className="bg-[#ffaa00] font-Manrope uppercase hover:bg-[#e09500] transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none cursor-pointer"
+                    >
+                        {nextDiplomaData.button}
+                    </button>
                 </div>
             </div>
         </section>

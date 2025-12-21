@@ -12,21 +12,24 @@ const structureData = {
             title: "Módulo I - Data & Insigts para Decisiones Estratégicas en Finanzas",
             subtitle: "De los estados financieros al análisis automatizado",
             text: "Aprenderás a recolectar, limpiar y visualizar datos financieros para tomar decisiones más claras y ágiles. Dominarás Power BI y las bases estadísticas del análisis, fundamentales para construir reportes que hablen el lenguaje del negocio.",
-            mentor: "Carlos Mendoza, CFO - Grupo Financiero Regional"
+            mentor: "Carlos Mendoza, CFO - Grupo Financiero Regional",
+            hours: 30 
         },
         {
             icon: PieChart,
             title: "Módulo II - IA Predictiva para Transformar la Gestión Financiera",
             subtitle: "Del análisis a la predicción de mercados",
             text: "Desarrollarás modelos de machine learning aplicados a finanzas: clasificación, segmentación y prescripción. Aprenderás a anticiparte al futuro financiero aplicando algoritmos en contextos reales, con herramientas que no requieren programación avanzada.",
-            mentor: "María Elena Ríos, Head of Risk Analytics - Banco Internacional"
+            mentor: "María Elena Ríos, Head of Risk Analytics - Banco Internacional",
+            hours: 51 
         },
         {
             icon: LineChart,
             title: "Módulo III - Liderazgo Estratégico y Storytelling en la Era de la IA",
             subtitle: "Del modelo a la decisión de inversión",
             text: "Transformarás datos complejos en historias visuales que persuaden e impulsan decisiones estratégicas. Aprenderás técnicas para comunicarte con claridad ante comités directivos y audiencias C-Level.",
-            mentor: "Roberto Sánchez, Director de Inversiones - Asset Management Corp"
+            mentor: "Roberto Sánchez, Director de Inversiones - Asset Management Corp",
+            hours: 9 
         }
     ],
     button: "Solicitar el programa completo"
@@ -66,6 +69,8 @@ const StructureSection = () => {
                                     <IconComponent className="text-[#4cc9f0] w-8 h-8 flex-shrink-0 group-hover:text-[#ffaa00] transition-all duration-500 group-hover:rotate-[360deg]" />
                                     <h3 className="text-white font-bold text-[20px] md:text-[22px]">
                                         {module.title}
+                                        <br/>
+                                        <span className='text-[#4cc9f0] text-lg'> {module.hours} hours </span>
                                     </h3>
                                 </div>
                                 <p className="text-[#ffaa00] font-Manrope text-base font-[600]">

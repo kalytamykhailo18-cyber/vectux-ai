@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const learningData = {
-    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765228092/vectux-academy/svg/logo-people-analytics.svg",
+    image: "https://res.cloudinary.com/dcfjvxt5h/image/upload/v1765984576/Picture2-removebg-preview_gvjdkh.png",
     text: "Nuestra metodología combina teoría financiera con aplicación práctica inmediata. Trabajarás con datos reales de mercados, estados financieros de empresas públicas y casos de análisis de inversión.\n\nAprenderás a usar las mismas herramientas que utilizan los profesionales de Wall Street y las principales instituciones financieras del mundo.",
     benefitsTitle: "Beneficios clave",
     benefits: [
