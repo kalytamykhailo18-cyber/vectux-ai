@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaWhatsapp } from 'react-icons/fa'
+import Mqrcode from '../LayoutWrapper/Mqrcode'
 
 const contactData = {
     title: "El marketing del futuro es impulsado por datos.",
@@ -59,16 +60,7 @@ const ContactSection = () => {
                                 {contactData.phone}
                             </p>
                         </div>
-                        <div data-aos="fade-up" data-aos-delay="600" className="flex flex-col bg-white p-3 rounded-[12px]">
-                            <Image
-                                alt="QR Code"
-                                width={128}
-                                height={128}
-                                src={contactData.qrCode}
-                                unoptimized
-                                className="mb-2"
-                            />
-                        </div>
+                        <Mqrcode/>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import AchieveSection from '@/Components/marketing/AchieveSection'
 import WhoIsSection from '@/Components/marketing/WhoIsSection'
 import StructureSection from '@/Components/marketing/StructureSection'
 import LearningSection from '@/Components/marketing/LearningSection'
-import ContactSection from '@/Components/marketing/ContactSection'
+import ContactSection from '@/Components/diplomados/ContactSection'
 
 export const metadata = {
     title: 'Diplomado en Marketing Analytics | Vectux Academy',
