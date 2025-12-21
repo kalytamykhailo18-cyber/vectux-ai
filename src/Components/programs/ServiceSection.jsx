@@ -52,11 +52,15 @@ const ServiceSection = () => {
                 <div data-aos="fade-right" data-aos-duration="800" className="lg:w-3/5 flex items-center justify-start pl-8 lg:pl-16">
                     <div className="text-left">
                         <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100" className="text-white mb-6">
-                            <p className='text-[120px]'>IA</p>
-                            <p>
-                                <span className='text-[#fa0] text-[60px]'>+</span>
-                                <span className='text-[#4cc9f0] text-[50px]'>Programa Shift</span>
+                            <p className='text-[120px]'>The AI</p>
+                            <p className='text-4xl -mt-10 mb-10'>
+                                <span className='text-[#ea0]'> + </span> <span className='text-[#4cc9f0]'>Shift </span><span className='text-[#4cc9f0]'>program</span>
                             </p>
+                        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" className="text-3xl lg:text-4xl xl:text-3xl leading-tight">
+                            <span className="text-white">Data.</span>
+                            <span className="text-[#4cc9f0]"> Thinking.</span>
+                            <span className="text-white"> Action</span>
+                        </div>
                         </div>
                         <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" className="text-white text-lg lg:text-xl max-w-lg mb-8 leading-relaxed border-l-4 border-[#00acf4] pl-4">
                             El Programa IA Shift no es un curso más.

@@ -5,7 +5,7 @@ import Image from 'next/image'
 const nextDiplomaData = {
     title: "Próximo Diplomado:",
     details: [
-        "🗓️ Inicio: Martes 17 de febrero 2026",
+        "🗓️ Inicio: Abril 2026",
         "📍 Modalidad: Online en vivo",
         "🕕 Martes y jueves, 6:00–9:00 pm (CDMX)",
         "💳 Inversión: $39,900 MXN ($2,220 USD)",

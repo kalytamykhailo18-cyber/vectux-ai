@@ -68,7 +68,7 @@ const AboutSection = () => {
             {/* Benefits Content */}
             <div className="max-w-[1200px] mt-20 relative z-20">
                 <h2 data-aos="fade-right" data-aos-duration="800" className="text-center text-white font-bold text-[32px] leading-[38px] md:text-4xl lg:text-[48px] sm:leading-[56px] mb-12">
-                    <span className="font-bold text-blue-400">Basado en datos:&nbsp;</span>
+                    <span className="font-bold text-blue-400">Data Driven:&nbsp;</span>
                     <span className="text-[18px] sm:text-[20px] md:text-4xl lg:text-[34px]">la ventaja competitiva del futuro</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">

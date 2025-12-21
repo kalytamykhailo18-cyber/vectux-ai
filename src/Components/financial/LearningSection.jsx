@@ -64,7 +64,7 @@ const LearningSection = () => {
                 </div>
 
                 {/* Benefits */}
-                <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mb-12 text-center">
+                <h2 data-aos="fade-up" className="text-white font-bold text-3xl md:text-4xl lg:text-[42px] leading-tight mt-48 mb-22 text-center">
                     {learningData.benefitsTitle}
                 </h2>
 
